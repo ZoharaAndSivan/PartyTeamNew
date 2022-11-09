@@ -1,0 +1,735 @@
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\obj\Debug\PartyTeam.csprojAssemblyReference.cache
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\obj\Debug\PartyTeam.csproj.CoreCompileInputs.cache
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\ApplicationInsights.config
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\PartyTeam.dll.config
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\PartyTeam.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\PartyTeam.pdb
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\csc.exe
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\csc.exe.config
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\csc.rsp
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\csi.exe
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\csi.exe.config
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\csi.rsp
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.CodeAnalysis.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.CSharp.Core.targets
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.Managed.Core.targets
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.VisualBasic.Core.targets
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.AppContext.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Collections.Immutable.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Console.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Diagnostics.StackTrace.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.IO.Compression.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.IO.FileSystem.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.IO.FileSystem.Primitives.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.IO.Pipes.AccessControl.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.IO.Pipes.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Reflection.Metadata.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Security.AccessControl.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Security.Claims.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Security.Cryptography.Encoding.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Security.Cryptography.Primitives.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Security.Principal.Windows.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Text.Encoding.CodePages.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.ValueTuple.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Xml.ReaderWriter.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Xml.XmlDocument.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Xml.XPath.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Xml.XPath.XDocument.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\vbc.exe
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\vbc.exe.config
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\vbc.rsp
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\VBCSCompiler.exe
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\roslyn\VBCSCompiler.exe.config
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\Antlr3.Runtime.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AI.Agent.Intercept.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AI.DependencyCollector.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AI.PerfCounterCollector.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AI.ServerTelemetryChannel.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AI.Web.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AI.WindowsServer.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\Microsoft.ApplicationInsights.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\Microsoft.Web.Infrastructure.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\Newtonsoft.Json.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Diagnostics.DiagnosticSource.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Net.Http.Formatting.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Web.Helpers.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Web.Http.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Web.Http.WebHost.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Web.Mvc.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Web.Optimization.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Web.Razor.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Web.WebPages.Deployment.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Web.WebPages.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Web.WebPages.Razor.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\WebGrease.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\Newtonsoft.Json.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Net.Http.Formatting.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Web.Helpers.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Web.Http.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Web.Http.WebHost.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Web.Mvc.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Web.Optimization.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Web.Razor.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Web.WebPages.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Web.WebPages.Deployment.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Web.WebPages.Razor.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\Antlr3.Runtime.pdb
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\System.Diagnostics.DiagnosticSource.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AI.DependencyCollector.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AI.WindowsServer.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AI.Web.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\obj\Debug\PartyTeam.csproj.CopyComplete
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\obj\Debug\PartyTeam.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\obj\Debug\PartyTeam.pdb
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\BLL.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\DTO.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\DAL.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\EntityFramework.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\BLL.pdb
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\DTO.pdb
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\DAL.pdb
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\DAL.dll.config
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\EntityFramework.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\EntityFramework.SqlServer.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\PartyTeam\bin\EntityFramework.SqlServer.xml
+D:\PartyTeam\PartyTeam\bin\ApplicationInsights.config
+D:\PartyTeam\PartyTeam\bin\PartyTeam.dll.config
+D:\PartyTeam\PartyTeam\bin\PartyTeam.dll
+D:\PartyTeam\PartyTeam\bin\PartyTeam.pdb
+D:\PartyTeam\PartyTeam\bin\Microsoft.Win32.Primitives.dll
+D:\PartyTeam\PartyTeam\bin\netstandard.dll
+D:\PartyTeam\PartyTeam\bin\System.AppContext.dll
+D:\PartyTeam\PartyTeam\bin\System.Collections.Concurrent.dll
+D:\PartyTeam\PartyTeam\bin\System.Collections.dll
+D:\PartyTeam\PartyTeam\bin\System.Collections.NonGeneric.dll
+D:\PartyTeam\PartyTeam\bin\System.Collections.Specialized.dll
+D:\PartyTeam\PartyTeam\bin\System.ComponentModel.dll
+D:\PartyTeam\PartyTeam\bin\System.ComponentModel.EventBasedAsync.dll
+D:\PartyTeam\PartyTeam\bin\System.ComponentModel.Primitives.dll
+D:\PartyTeam\PartyTeam\bin\System.ComponentModel.TypeConverter.dll
+D:\PartyTeam\PartyTeam\bin\System.Console.dll
+D:\PartyTeam\PartyTeam\bin\System.Data.Common.dll
+D:\PartyTeam\PartyTeam\bin\System.Diagnostics.Contracts.dll
+D:\PartyTeam\PartyTeam\bin\System.Diagnostics.Debug.dll
+D:\PartyTeam\PartyTeam\bin\System.Diagnostics.FileVersionInfo.dll
+D:\PartyTeam\PartyTeam\bin\System.Diagnostics.Process.dll
+D:\PartyTeam\PartyTeam\bin\System.Diagnostics.StackTrace.dll
+D:\PartyTeam\PartyTeam\bin\System.Diagnostics.TextWriterTraceListener.dll
+D:\PartyTeam\PartyTeam\bin\System.Diagnostics.Tools.dll
+D:\PartyTeam\PartyTeam\bin\System.Diagnostics.TraceSource.dll
+D:\PartyTeam\PartyTeam\bin\System.Diagnostics.Tracing.dll
+D:\PartyTeam\PartyTeam\bin\System.Drawing.Primitives.dll
+D:\PartyTeam\PartyTeam\bin\System.Dynamic.Runtime.dll
+D:\PartyTeam\PartyTeam\bin\System.Globalization.Calendars.dll
+D:\PartyTeam\PartyTeam\bin\System.Globalization.dll
+D:\PartyTeam\PartyTeam\bin\System.Globalization.Extensions.dll
+D:\PartyTeam\PartyTeam\bin\System.IO.Compression.dll
+D:\PartyTeam\PartyTeam\bin\System.IO.Compression.ZipFile.dll
+D:\PartyTeam\PartyTeam\bin\System.IO.dll
+D:\PartyTeam\PartyTeam\bin\System.IO.FileSystem.dll
+D:\PartyTeam\PartyTeam\bin\System.IO.FileSystem.DriveInfo.dll
+D:\PartyTeam\PartyTeam\bin\System.IO.FileSystem.Primitives.dll
+D:\PartyTeam\PartyTeam\bin\System.IO.FileSystem.Watcher.dll
+D:\PartyTeam\PartyTeam\bin\System.IO.IsolatedStorage.dll
+D:\PartyTeam\PartyTeam\bin\System.IO.MemoryMappedFiles.dll
+D:\PartyTeam\PartyTeam\bin\System.IO.Pipes.dll
+D:\PartyTeam\PartyTeam\bin\System.IO.UnmanagedMemoryStream.dll
+D:\PartyTeam\PartyTeam\bin\System.Linq.dll
+D:\PartyTeam\PartyTeam\bin\System.Linq.Expressions.dll
+D:\PartyTeam\PartyTeam\bin\System.Linq.Parallel.dll
+D:\PartyTeam\PartyTeam\bin\System.Linq.Queryable.dll
+D:\PartyTeam\PartyTeam\bin\System.Net.Http.dll
+D:\PartyTeam\PartyTeam\bin\System.Net.NameResolution.dll
+D:\PartyTeam\PartyTeam\bin\System.Net.NetworkInformation.dll
+D:\PartyTeam\PartyTeam\bin\System.Net.Ping.dll
+D:\PartyTeam\PartyTeam\bin\System.Net.Primitives.dll
+D:\PartyTeam\PartyTeam\bin\System.Net.Requests.dll
+D:\PartyTeam\PartyTeam\bin\System.Net.Security.dll
+D:\PartyTeam\PartyTeam\bin\System.Net.Sockets.dll
+D:\PartyTeam\PartyTeam\bin\System.Net.WebHeaderCollection.dll
+D:\PartyTeam\PartyTeam\bin\System.Net.WebSockets.Client.dll
+D:\PartyTeam\PartyTeam\bin\System.Net.WebSockets.dll
+D:\PartyTeam\PartyTeam\bin\System.ObjectModel.dll
+D:\PartyTeam\PartyTeam\bin\System.Reflection.dll
+D:\PartyTeam\PartyTeam\bin\System.Reflection.Extensions.dll
+D:\PartyTeam\PartyTeam\bin\System.Reflection.Primitives.dll
+D:\PartyTeam\PartyTeam\bin\System.Resources.Reader.dll
+D:\PartyTeam\PartyTeam\bin\System.Resources.ResourceManager.dll
+D:\PartyTeam\PartyTeam\bin\System.Resources.Writer.dll
+D:\PartyTeam\PartyTeam\bin\System.Runtime.CompilerServices.VisualC.dll
+D:\PartyTeam\PartyTeam\bin\System.Runtime.dll
+D:\PartyTeam\PartyTeam\bin\System.Runtime.Extensions.dll
+D:\PartyTeam\PartyTeam\bin\System.Runtime.Handles.dll
+D:\PartyTeam\PartyTeam\bin\System.Runtime.InteropServices.dll
+D:\PartyTeam\PartyTeam\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\PartyTeam\PartyTeam\bin\System.Runtime.Numerics.dll
+D:\PartyTeam\PartyTeam\bin\System.Runtime.Serialization.Formatters.dll
+D:\PartyTeam\PartyTeam\bin\System.Runtime.Serialization.Json.dll
+D:\PartyTeam\PartyTeam\bin\System.Runtime.Serialization.Primitives.dll
+D:\PartyTeam\PartyTeam\bin\System.Runtime.Serialization.Xml.dll
+D:\PartyTeam\PartyTeam\bin\System.Security.Claims.dll
+D:\PartyTeam\PartyTeam\bin\System.Security.Cryptography.Algorithms.dll
+D:\PartyTeam\PartyTeam\bin\System.Security.Cryptography.Csp.dll
+D:\PartyTeam\PartyTeam\bin\System.Security.Cryptography.Encoding.dll
+D:\PartyTeam\PartyTeam\bin\System.Security.Cryptography.Primitives.dll
+D:\PartyTeam\PartyTeam\bin\System.Security.Cryptography.X509Certificates.dll
+D:\PartyTeam\PartyTeam\bin\System.Security.Principal.dll
+D:\PartyTeam\PartyTeam\bin\System.Security.SecureString.dll
+D:\PartyTeam\PartyTeam\bin\System.Text.Encoding.dll
+D:\PartyTeam\PartyTeam\bin\System.Text.Encoding.Extensions.dll
+D:\PartyTeam\PartyTeam\bin\System.Text.RegularExpressions.dll
+D:\PartyTeam\PartyTeam\bin\System.Threading.dll
+D:\PartyTeam\PartyTeam\bin\System.Threading.Overlapped.dll
+D:\PartyTeam\PartyTeam\bin\System.Threading.Tasks.dll
+D:\PartyTeam\PartyTeam\bin\System.Threading.Tasks.Parallel.dll
+D:\PartyTeam\PartyTeam\bin\System.Threading.Thread.dll
+D:\PartyTeam\PartyTeam\bin\System.Threading.ThreadPool.dll
+D:\PartyTeam\PartyTeam\bin\System.Threading.Timer.dll
+D:\PartyTeam\PartyTeam\bin\System.ValueTuple.dll
+D:\PartyTeam\PartyTeam\bin\System.Xml.ReaderWriter.dll
+D:\PartyTeam\PartyTeam\bin\System.Xml.XDocument.dll
+D:\PartyTeam\PartyTeam\bin\System.Xml.XmlDocument.dll
+D:\PartyTeam\PartyTeam\bin\System.Xml.XmlSerializer.dll
+D:\PartyTeam\PartyTeam\bin\System.Xml.XPath.dll
+D:\PartyTeam\PartyTeam\bin\System.Xml.XPath.XDocument.dll
+D:\PartyTeam\PartyTeam\bin\Antlr3.Runtime.dll
+D:\PartyTeam\PartyTeam\bin\BLL.dll
+D:\PartyTeam\PartyTeam\bin\DAL.dll
+D:\PartyTeam\PartyTeam\bin\DTO.dll
+D:\PartyTeam\PartyTeam\bin\EntityFramework.dll
+D:\PartyTeam\PartyTeam\bin\EntityFramework.SqlServer.dll
+D:\PartyTeam\PartyTeam\bin\Microsoft.AI.Agent.Intercept.dll
+D:\PartyTeam\PartyTeam\bin\Microsoft.AI.DependencyCollector.dll
+D:\PartyTeam\PartyTeam\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\PartyTeam\PartyTeam\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\PartyTeam\PartyTeam\bin\Microsoft.AI.Web.dll
+D:\PartyTeam\PartyTeam\bin\Microsoft.AI.WindowsServer.dll
+D:\PartyTeam\PartyTeam\bin\Microsoft.ApplicationInsights.dll
+D:\PartyTeam\PartyTeam\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\PartyTeam\PartyTeam\bin\Microsoft.AspNetCore.Cors.dll
+D:\PartyTeam\PartyTeam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\PartyTeam\PartyTeam\bin\Microsoft.Web.Infrastructure.dll
+D:\PartyTeam\PartyTeam\bin\Newtonsoft.Json.dll
+D:\PartyTeam\PartyTeam\bin\System.Diagnostics.DiagnosticSource.dll
+D:\PartyTeam\PartyTeam\bin\System.Net.Http.Formatting.dll
+D:\PartyTeam\PartyTeam\bin\System.Web.Cors.dll
+D:\PartyTeam\PartyTeam\bin\System.Web.Helpers.dll
+D:\PartyTeam\PartyTeam\bin\System.Web.Http.Cors.dll
+D:\PartyTeam\PartyTeam\bin\System.Web.Http.dll
+D:\PartyTeam\PartyTeam\bin\System.Web.Http.WebHost.dll
+D:\PartyTeam\PartyTeam\bin\System.Web.Mvc.dll
+D:\PartyTeam\PartyTeam\bin\System.Web.Optimization.dll
+D:\PartyTeam\PartyTeam\bin\System.Web.Razor.dll
+D:\PartyTeam\PartyTeam\bin\System.Web.WebPages.Deployment.dll
+D:\PartyTeam\PartyTeam\bin\System.Web.WebPages.dll
+D:\PartyTeam\PartyTeam\bin\System.Web.WebPages.Razor.dll
+D:\PartyTeam\PartyTeam\bin\WebGrease.dll
+D:\PartyTeam\PartyTeam\bin\BLL.pdb
+D:\PartyTeam\PartyTeam\bin\DAL.pdb
+D:\PartyTeam\PartyTeam\bin\DAL.dll.config
+D:\PartyTeam\PartyTeam\bin\DTO.pdb
+D:\PartyTeam\PartyTeam\bin\EntityFramework.xml
+D:\PartyTeam\PartyTeam\bin\EntityFramework.SqlServer.xml
+D:\PartyTeam\PartyTeam\bin\Microsoft.AspNetCore.Cors.xml
+D:\PartyTeam\PartyTeam\bin\System.Net.Http.Formatting.xml
+D:\PartyTeam\PartyTeam\bin\System.Web.Http.xml
+D:\PartyTeam\PartyTeam\bin\System.Web.Http.Cors.xml
+D:\PartyTeam\PartyTeam\bin\Newtonsoft.Json.xml
+D:\PartyTeam\PartyTeam\bin\System.Web.Helpers.xml
+D:\PartyTeam\PartyTeam\bin\System.Web.Http.WebHost.xml
+D:\PartyTeam\PartyTeam\bin\System.Web.Mvc.xml
+D:\PartyTeam\PartyTeam\bin\System.Web.Optimization.xml
+D:\PartyTeam\PartyTeam\bin\System.Web.Razor.xml
+D:\PartyTeam\PartyTeam\bin\System.Web.WebPages.xml
+D:\PartyTeam\PartyTeam\bin\System.Web.WebPages.Deployment.xml
+D:\PartyTeam\PartyTeam\bin\System.Web.WebPages.Razor.xml
+D:\PartyTeam\PartyTeam\bin\Antlr3.Runtime.pdb
+D:\PartyTeam\PartyTeam\bin\System.Diagnostics.DiagnosticSource.xml
+D:\PartyTeam\PartyTeam\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\PartyTeam\PartyTeam\bin\Microsoft.AI.DependencyCollector.xml
+D:\PartyTeam\PartyTeam\bin\Microsoft.AI.WindowsServer.xml
+D:\PartyTeam\PartyTeam\bin\Microsoft.AI.Web.xml
+D:\PartyTeam\PartyTeam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\PartyTeam\PartyTeam\obj\Debug\PartyTeam.csproj.AssemblyReference.cache
+D:\PartyTeam\PartyTeam\obj\Debug\PartyTeam.csproj.CoreCompileInputs.cache
+D:\PartyTeam\PartyTeam\obj\Debug\PartyTeam.csproj.CopyComplete
+D:\PartyTeam\PartyTeam\obj\Debug\PartyTeam.dll
+D:\PartyTeam\PartyTeam\obj\Debug\PartyTeam.pdb
+D:\PartyTeam\PartyTeam\bin\roslyn\csc.exe
+D:\PartyTeam\PartyTeam\bin\roslyn\csc.exe.config
+D:\PartyTeam\PartyTeam\bin\roslyn\csc.rsp
+D:\PartyTeam\PartyTeam\bin\roslyn\csi.exe
+D:\PartyTeam\PartyTeam\bin\roslyn\csi.exe.config
+D:\PartyTeam\PartyTeam\bin\roslyn\csi.rsp
+D:\PartyTeam\PartyTeam\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\PartyTeam\PartyTeam\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\Microsoft.Managed.Core.targets
+D:\PartyTeam\PartyTeam\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\PartyTeam\PartyTeam\bin\roslyn\System.AppContext.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.Collections.Immutable.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.Console.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.IO.Compression.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.IO.FileSystem.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.IO.Pipes.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.Reflection.Metadata.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.Security.AccessControl.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.Security.Claims.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.Security.Principal.Windows.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.ValueTuple.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.Xml.XmlDocument.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.Xml.XPath.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\PartyTeam\PartyTeam\bin\roslyn\vbc.exe
+D:\PartyTeam\PartyTeam\bin\roslyn\vbc.exe.config
+D:\PartyTeam\PartyTeam\bin\roslyn\vbc.rsp
+D:\PartyTeam\PartyTeam\bin\roslyn\VBCSCompiler.exe
+D:\PartyTeam\PartyTeam\bin\roslyn\VBCSCompiler.exe.config
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\ApplicationInsights.config
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\PartyTeam.dll.config
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\PartyTeam.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\PartyTeam.pdb
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\csc.exe
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\csc.exe.config
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\csc.rsp
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\csi.exe
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\csi.exe.config
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\csi.rsp
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\Microsoft.CodeAnalysis.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\Microsoft.CSharp.Core.targets
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\Microsoft.Managed.Core.targets
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\Microsoft.VisualBasic.Core.targets
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.AppContext.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.Collections.Immutable.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.Console.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.Diagnostics.StackTrace.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.IO.Compression.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.IO.FileSystem.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.IO.FileSystem.Primitives.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.IO.Pipes.AccessControl.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.IO.Pipes.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.Reflection.Metadata.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.Security.AccessControl.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.Security.Claims.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.Security.Cryptography.Encoding.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.Security.Cryptography.Primitives.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.Security.Principal.Windows.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.Text.Encoding.CodePages.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.ValueTuple.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.Xml.ReaderWriter.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.Xml.XmlDocument.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.Xml.XPath.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\System.Xml.XPath.XDocument.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\vbc.exe
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\vbc.exe.config
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\vbc.rsp
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\VBCSCompiler.exe
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\roslyn\VBCSCompiler.exe.config
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Microsoft.Win32.Primitives.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\netstandard.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.AppContext.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Collections.Concurrent.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Collections.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Collections.NonGeneric.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Collections.Specialized.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.ComponentModel.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.ComponentModel.EventBasedAsync.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.ComponentModel.Primitives.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.ComponentModel.TypeConverter.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Console.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Data.Common.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Diagnostics.Contracts.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Diagnostics.Debug.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Diagnostics.FileVersionInfo.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Diagnostics.Process.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Diagnostics.StackTrace.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Diagnostics.TextWriterTraceListener.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Diagnostics.Tools.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Diagnostics.TraceSource.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Diagnostics.Tracing.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Drawing.Primitives.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Dynamic.Runtime.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Globalization.Calendars.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Globalization.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Globalization.Extensions.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.IO.Compression.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.IO.Compression.ZipFile.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.IO.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.IO.FileSystem.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.IO.FileSystem.DriveInfo.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.IO.FileSystem.Primitives.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.IO.FileSystem.Watcher.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.IO.IsolatedStorage.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.IO.MemoryMappedFiles.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.IO.Pipes.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.IO.UnmanagedMemoryStream.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Linq.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Linq.Expressions.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Linq.Parallel.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Linq.Queryable.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Net.Http.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Net.NameResolution.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Net.NetworkInformation.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Net.Ping.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Net.Primitives.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Net.Requests.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Net.Security.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Net.Sockets.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Net.WebHeaderCollection.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Net.WebSockets.Client.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Net.WebSockets.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.ObjectModel.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Reflection.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Reflection.Extensions.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Reflection.Primitives.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Resources.Reader.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Resources.ResourceManager.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Resources.Writer.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Runtime.CompilerServices.VisualC.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Runtime.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Runtime.Extensions.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Runtime.Handles.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Runtime.InteropServices.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Runtime.Numerics.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Runtime.Serialization.Formatters.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Runtime.Serialization.Json.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Runtime.Serialization.Primitives.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Runtime.Serialization.Xml.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Security.Claims.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Security.Cryptography.Algorithms.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Security.Cryptography.Csp.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Security.Cryptography.Encoding.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Security.Cryptography.Primitives.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Security.Cryptography.X509Certificates.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Security.Principal.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Security.SecureString.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Text.Encoding.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Text.Encoding.Extensions.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Text.RegularExpressions.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Threading.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Threading.Overlapped.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Threading.Tasks.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Threading.Tasks.Parallel.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Threading.Thread.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Threading.ThreadPool.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Threading.Timer.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.ValueTuple.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Xml.ReaderWriter.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Xml.XDocument.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Xml.XmlDocument.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Xml.XmlSerializer.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Xml.XPath.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Xml.XPath.XDocument.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Antlr3.Runtime.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\BLL.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\DAL.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\DTO.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\EntityFramework.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\EntityFramework.SqlServer.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Microsoft.AI.Agent.Intercept.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Microsoft.AI.DependencyCollector.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Microsoft.AI.PerfCounterCollector.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Microsoft.AI.ServerTelemetryChannel.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Microsoft.AI.Web.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Microsoft.AI.WindowsServer.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Microsoft.ApplicationInsights.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Microsoft.AspNetCore.Cors.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Microsoft.Web.Infrastructure.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Newtonsoft.Json.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Diagnostics.DiagnosticSource.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Net.Http.Formatting.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Web.Cors.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Web.Helpers.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Web.Http.Cors.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Web.Http.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Web.Http.WebHost.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Web.Mvc.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Web.Optimization.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Web.Razor.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Web.WebPages.Deployment.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Web.WebPages.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Web.WebPages.Razor.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\WebGrease.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\BLL.pdb
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\DAL.pdb
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\DAL.dll.config
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\DTO.pdb
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\EntityFramework.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\EntityFramework.SqlServer.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Microsoft.AspNetCore.Cors.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Net.Http.Formatting.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Web.Http.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Web.Http.Cors.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Newtonsoft.Json.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Web.Helpers.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Web.Http.WebHost.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Web.Mvc.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Web.Optimization.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Web.Razor.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Web.WebPages.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Web.WebPages.Deployment.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Web.WebPages.Razor.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Antlr3.Runtime.pdb
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\System.Diagnostics.DiagnosticSource.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Microsoft.AI.DependencyCollector.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Microsoft.AI.WindowsServer.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\bin\Microsoft.AI.Web.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\obj\Debug\PartyTeam.csprojAssemblyReference.cache
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\obj\Debug\PartyTeam.csproj.CoreCompileInputs.cache
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\obj\Debug\PartyTeam.csproj.CopyComplete
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\obj\Debug\PartyTeam.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\PartyTeam\obj\Debug\PartyTeam.pdb
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\ApplicationInsights.config
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\PartyTeam.dll.config
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\PartyTeam.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\PartyTeam.pdb
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\csc.exe
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\csc.exe.config
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\csc.rsp
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\csi.exe
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\csi.exe.config
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\csi.rsp
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.AppContext.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Console.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.IO.Compression.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.IO.Pipes.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Security.Claims.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.ValueTuple.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Xml.XPath.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\vbc.exe
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\vbc.exe.config
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\vbc.rsp
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\VBCSCompiler.exe
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Microsoft.Win32.Primitives.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\netstandard.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.AppContext.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Collections.Concurrent.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Collections.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Collections.NonGeneric.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Collections.Specialized.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.ComponentModel.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.ComponentModel.EventBasedAsync.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.ComponentModel.Primitives.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.ComponentModel.TypeConverter.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Console.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Data.Common.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Diagnostics.Contracts.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Diagnostics.Debug.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Diagnostics.FileVersionInfo.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Diagnostics.Process.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Diagnostics.StackTrace.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Diagnostics.Tools.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Diagnostics.TraceSource.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Diagnostics.Tracing.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Drawing.Primitives.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Dynamic.Runtime.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Globalization.Calendars.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Globalization.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Globalization.Extensions.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.IO.Compression.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.IO.Compression.ZipFile.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.IO.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.IO.FileSystem.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.IO.FileSystem.DriveInfo.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.IO.FileSystem.Primitives.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.IO.FileSystem.Watcher.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.IO.IsolatedStorage.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.IO.MemoryMappedFiles.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.IO.Pipes.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.IO.UnmanagedMemoryStream.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Linq.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Linq.Expressions.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Linq.Parallel.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Linq.Queryable.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Net.Http.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Net.NameResolution.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Net.NetworkInformation.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Net.Ping.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Net.Primitives.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Net.Requests.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Net.Security.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Net.Sockets.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Net.WebHeaderCollection.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Net.WebSockets.Client.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Net.WebSockets.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.ObjectModel.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Reflection.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Reflection.Extensions.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Reflection.Primitives.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Resources.Reader.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Resources.ResourceManager.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Resources.Writer.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Runtime.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Runtime.Extensions.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Runtime.Handles.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Runtime.InteropServices.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Runtime.Numerics.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Runtime.Serialization.Formatters.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Runtime.Serialization.Json.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Runtime.Serialization.Primitives.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Runtime.Serialization.Xml.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Security.Claims.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Security.Cryptography.Algorithms.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Security.Cryptography.Csp.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Security.Cryptography.Encoding.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Security.Cryptography.Primitives.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Security.Cryptography.X509Certificates.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Security.Principal.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Security.SecureString.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Text.Encoding.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Text.Encoding.Extensions.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Text.RegularExpressions.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Threading.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Threading.Overlapped.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Threading.Tasks.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Threading.Tasks.Parallel.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Threading.Thread.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Threading.ThreadPool.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Threading.Timer.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.ValueTuple.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Xml.ReaderWriter.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Xml.XDocument.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Xml.XmlDocument.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Xml.XmlSerializer.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Xml.XPath.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Xml.XPath.XDocument.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Antlr3.Runtime.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\BLL.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\DAL.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\DTO.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\EntityFramework.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\EntityFramework.SqlServer.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AI.Web.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Microsoft.ApplicationInsights.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AspNetCore.Cors.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Newtonsoft.Json.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Net.Http.Formatting.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Web.Cors.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Web.Helpers.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Web.Http.Cors.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Web.Http.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Web.Http.WebHost.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Web.Mvc.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Web.Optimization.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Web.Razor.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Web.WebPages.Deployment.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Web.WebPages.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Web.WebPages.Razor.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\WebGrease.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\BLL.pdb
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\DAL.pdb
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\DAL.dll.config
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\DTO.pdb
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\EntityFramework.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\EntityFramework.SqlServer.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AspNetCore.Cors.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Net.Http.Formatting.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Web.Http.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Web.Http.Cors.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Newtonsoft.Json.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Web.Helpers.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Web.Http.WebHost.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Web.Mvc.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Web.Optimization.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Web.Razor.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Web.WebPages.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Web.WebPages.Deployment.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Web.WebPages.Razor.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Antlr3.Runtime.pdb
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\bin\Microsoft.AI.Web.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\obj\Debug\PartyTeam.csproj.AssemblyReference.cache
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\obj\Debug\PartyTeam.csproj.CoreCompileInputs.cache
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\obj\Debug\PartyTeam.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\obj\Debug\PartyTeam.pdb
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\PartyTeam\obj\Debug\PartyTeam.csproj.CopyComplete

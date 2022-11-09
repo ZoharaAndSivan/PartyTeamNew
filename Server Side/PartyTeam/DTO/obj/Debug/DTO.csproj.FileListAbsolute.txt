@@ -1,0 +1,74 @@
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DTO\bin\Debug\DTO.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DTO\bin\Debug\DTO.pdb
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DTO\bin\Debug\DAL.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DTO\bin\Debug\EntityFramework.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DTO\bin\Debug\DAL.pdb
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DTO\bin\Debug\DAL.dll.config
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DTO\bin\Debug\EntityFramework.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DTO\obj\Debug\DTO.csproj.CopyComplete
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DTO\obj\Debug\DTO.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DTO\obj\Debug\DTO.pdb
+D:\PartyTeam\DTO\bin\Debug\DTO.dll
+D:\PartyTeam\DTO\bin\Debug\DTO.pdb
+D:\PartyTeam\DTO\bin\Debug\DAL.dll
+D:\PartyTeam\DTO\bin\Debug\Newtonsoft.Json.dll
+D:\PartyTeam\DTO\bin\Debug\System.Net.Http.Formatting.dll
+D:\PartyTeam\DTO\bin\Debug\System.Web.Cors.dll
+D:\PartyTeam\DTO\bin\Debug\System.Web.Http.Cors.dll
+D:\PartyTeam\DTO\bin\Debug\System.Web.Http.dll
+D:\PartyTeam\DTO\bin\Debug\EntityFramework.dll
+D:\PartyTeam\DTO\bin\Debug\DAL.pdb
+D:\PartyTeam\DTO\bin\Debug\DAL.dll.config
+D:\PartyTeam\DTO\bin\Debug\Newtonsoft.Json.xml
+D:\PartyTeam\DTO\bin\Debug\System.Net.Http.Formatting.xml
+D:\PartyTeam\DTO\bin\Debug\System.Web.Http.xml
+D:\PartyTeam\DTO\bin\Debug\System.Web.Http.Cors.xml
+D:\PartyTeam\DTO\bin\Debug\EntityFramework.xml
+D:\PartyTeam\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\PartyTeam\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\PartyTeam\DTO\obj\Debug\DTO.csproj.CopyComplete
+D:\PartyTeam\DTO\obj\Debug\DTO.dll
+D:\PartyTeam\DTO\obj\Debug\DTO.pdb
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DTO\bin\Debug\DTO.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DTO\bin\Debug\DTO.pdb
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DTO\bin\Debug\DAL.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DTO\bin\Debug\Newtonsoft.Json.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DTO\bin\Debug\System.Net.Http.Formatting.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DTO\bin\Debug\System.Web.Cors.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DTO\bin\Debug\System.Web.Http.Cors.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DTO\bin\Debug\System.Web.Http.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DTO\bin\Debug\EntityFramework.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DTO\bin\Debug\DAL.pdb
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DTO\bin\Debug\DAL.dll.config
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DTO\bin\Debug\Newtonsoft.Json.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DTO\bin\Debug\System.Net.Http.Formatting.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DTO\bin\Debug\System.Web.Http.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DTO\bin\Debug\System.Web.Http.Cors.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DTO\bin\Debug\EntityFramework.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DTO\obj\Debug\DTO.csproj.CopyComplete
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DTO\obj\Debug\DTO.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DTO\obj\Debug\DTO.pdb
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\bin\Debug\DTO.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\bin\Debug\DTO.pdb
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\bin\Debug\DAL.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\bin\Debug\Newtonsoft.Json.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\bin\Debug\System.Web.Cors.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\bin\Debug\System.Web.Http.Cors.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\bin\Debug\System.Web.Http.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\bin\Debug\EntityFramework.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\bin\Debug\DAL.pdb
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\bin\Debug\DAL.dll.config
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\bin\Debug\Newtonsoft.Json.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\bin\Debug\System.Web.Http.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\bin\Debug\System.Web.Http.Cors.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\bin\Debug\EntityFramework.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\obj\Debug\DTO.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\obj\Debug\DTO.pdb
