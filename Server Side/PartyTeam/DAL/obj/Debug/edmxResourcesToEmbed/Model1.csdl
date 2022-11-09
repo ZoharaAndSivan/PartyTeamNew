@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="masterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="category">
+    <Key>
+      <PropertyRef Name="TypeId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="40" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="typeevents" Relationship="Self.FK_typeevent_category" FromRole="category" ToRole="typeevent" />
+  </EntityType>
+  <EntityType Name="celebration">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="PepoleAmount" Type="Int32" />
+    <Property Name="DateCelebration" Type="DateTime" Precision="0" />
+    <Property Name="StartHour" Type="Time" Precision="7" />
+    <Property Name="Lenght" Type="Int32" />
+    <Property Name="ImportantText" Type="String" MaxLength="300" FixedLength="true" Unicode="true" />
+    <Property Name="EncodedCelebration" Type="Boolean" />
+    <Property Name="InEditingCelebration" Type="Boolean" />
+    <Property Name="CelebrationType" Type="Int32" />
+    <NavigationProperty Name="customerofevents" Relationship="Self.FK_customerofevent_celebration" FromRole="celebration" ToRole="customerofevent" />
+    <NavigationProperty Name="typeevent" Relationship="Self.FK_event_typeevent" FromRole="celebration" ToRole="typeevent" />
+    <NavigationProperty Name="itemtoevents" Relationship="Self.FK_itemtoevent_event" FromRole="celebration" ToRole="itemtoevent" />
+    <NavigationProperty Name="noteevents" Relationship="Self.FK_noteevent_event" FromRole="celebration" ToRole="noteevent" />
+    <Property Name="Address" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="Approve" Type="Boolean" />
+    <Property Name="Image" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="customerofevents" Relationship="Self.FK_customerofevent_customer" FromRole="customer" ToRole="customerofevent" />
+  </EntityType>
+  <EntityType Name="customerofevent">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerId" Type="Int32" />
+    <Property Name="CelebrationId" Type="Int32" />
+    <Property Name="Status" Type="Boolean" />
+    <NavigationProperty Name="celebration" Relationship="Self.FK_customerofevent_celebration" FromRole="customerofevent" ToRole="celebration" />
+    <NavigationProperty Name="customer" Relationship="Self.FK_customerofevent_customer" FromRole="customerofevent" ToRole="customer" />
+  </EntityType>
+  <EntityType Name="ItemOfList">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KindId" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Double" />
+    <Property Name="AmountOfPerson" Type="Int32" />
+    <NavigationProperty Name="typeevent" Relationship="Self.FK_ItemOfList_TypeCelebration" FromRole="ItemOfList" ToRole="typeevent" />
+  </EntityType>
+  <EntityType Name="itemtoevent">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CelebrationId" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="15" FixedLength="true" Unicode="true" />
+    <Property Name="Price" Type="Double" />
+    <Property Name="Describe" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="Amount" Type="Int32" />
+    <Property Name="CustomerId" Type="Int32" />
+    <Property Name="ToBeTaken" Type="Boolean" />
+    <Property Name="ToEveryone" Type="Boolean" />
+    <NavigationProperty Name="celebration" Relationship="Self.FK_itemtoevent_event" FromRole="itemtoevent" ToRole="celebration" />
+  </EntityType>
+  <EntityType Name="noteevent">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CelebrationId" Type="Int32" />
+    <Property Name="ToShow" Type="Boolean" />
+    <Property Name="Note" Type="String" MaxLength="350" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="celebration" Relationship="Self.FK_noteevent_event" FromRole="noteevent" ToRole="celebration" />
+  </EntityType>
+  <EntityType Name="typeevent">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryId" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Describe" Type="String" MaxLength="60" FixedLength="true" Unicode="true" />
+    <Property Name="Status" Type="Boolean" />
+    <NavigationProperty Name="category" Relationship="Self.FK_typeevent_category" FromRole="typeevent" ToRole="category" />
+    <NavigationProperty Name="celebrations" Relationship="Self.FK_event_typeevent" FromRole="typeevent" ToRole="celebration" />
+    <NavigationProperty Name="ItemOfList" Relationship="Self.FK_ItemOfList_TypeCelebration" FromRole="typeevent" ToRole="ItemOfList" />
+  </EntityType>
+  <EntityType Name="MSreplication_options">
+    <Key>
+      <PropertyRef Name="optname" />
+      <PropertyRef Name="value" />
+      <PropertyRef Name="major_version" />
+      <PropertyRef Name="minor_version" />
+      <PropertyRef Name="revision" />
+      <PropertyRef Name="install_failures" />
+    </Key>
+    <Property Name="optname" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="value" Type="Boolean" Nullable="false" />
+    <Property Name="major_version" Type="Int32" Nullable="false" />
+    <Property Name="minor_version" Type="Int32" Nullable="false" />
+    <Property Name="revision" Type="Int32" Nullable="false" />
+    <Property Name="install_failures" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spt_fallback_db">
+    <Key>
+      <PropertyRef Name="xserver_name" />
+      <PropertyRef Name="xdttm_ins" />
+      <PropertyRef Name="xdttm_last_ins_upd" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="dbid" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="version" />
+    </Key>
+    <Property Name="xserver_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="xdttm_ins" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="xdttm_last_ins_upd" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="xfallback_dbid" Type="Int16" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="dbid" Type="Int16" Nullable="false" />
+    <Property Name="status" Type="Int16" Nullable="false" />
+    <Property Name="version" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spt_fallback_dev">
+    <Key>
+      <PropertyRef Name="xserver_name" />
+      <PropertyRef Name="xdttm_ins" />
+      <PropertyRef Name="xdttm_last_ins_upd" />
+      <PropertyRef Name="low" />
+      <PropertyRef Name="high" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="phyname" />
+    </Key>
+    <Property Name="xserver_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="xdttm_ins" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="xdttm_last_ins_upd" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="xfallback_low" Type="Int32" />
+    <Property Name="xfallback_drive" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="low" Type="Int32" Nullable="false" />
+    <Property Name="high" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int16" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="phyname" Type="String" MaxLength="127" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spt_fallback_usg">
+    <Key>
+      <PropertyRef Name="xserver_name" />
+      <PropertyRef Name="xdttm_ins" />
+      <PropertyRef Name="xdttm_last_ins_upd" />
+      <PropertyRef Name="dbid" />
+      <PropertyRef Name="segmap" />
+      <PropertyRef Name="lstart" />
+      <PropertyRef Name="sizepg" />
+      <PropertyRef Name="vstart" />
+    </Key>
+    <Property Name="xserver_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="xdttm_ins" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="xdttm_last_ins_upd" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="xfallback_vstart" Type="Int32" />
+    <Property Name="dbid" Type="Int16" Nullable="false" />
+    <Property Name="segmap" Type="Int32" Nullable="false" />
+    <Property Name="lstart" Type="Int32" Nullable="false" />
+    <Property Name="sizepg" Type="Int32" Nullable="false" />
+    <Property Name="vstart" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spt_monitor">
+    <Key>
+      <PropertyRef Name="lastrun" />
+      <PropertyRef Name="cpu_busy" />
+      <PropertyRef Name="io_busy" />
+      <PropertyRef Name="idle" />
+      <PropertyRef Name="pack_received" />
+      <PropertyRef Name="pack_sent" />
+      <PropertyRef Name="connections" />
+      <PropertyRef Name="pack_errors" />
+      <PropertyRef Name="total_read" />
+      <PropertyRef Name="total_write" />
+      <PropertyRef Name="total_errors" />
+    </Key>
+    <Property Name="lastrun" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="cpu_busy" Type="Int32" Nullable="false" />
+    <Property Name="io_busy" Type="Int32" Nullable="false" />
+    <Property Name="idle" Type="Int32" Nullable="false" />
+    <Property Name="pack_received" Type="Int32" Nullable="false" />
+    <Property Name="pack_sent" Type="Int32" Nullable="false" />
+    <Property Name="connections" Type="Int32" Nullable="false" />
+    <Property Name="pack_errors" Type="Int32" Nullable="false" />
+    <Property Name="total_read" Type="Int32" Nullable="false" />
+    <Property Name="total_write" Type="Int32" Nullable="false" />
+    <Property Name="total_errors" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_typeevent_category">
+    <End Role="category" Type="Self.category" Multiplicity="0..1" />
+    <End Role="typeevent" Type="Self.typeevent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="category">
+        <PropertyRef Name="TypeId" />
+      </Principal>
+      <Dependent Role="typeevent">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_customerofevent_celebration">
+    <End Role="celebration" Type="Self.celebration" Multiplicity="0..1" />
+    <End Role="customerofevent" Type="Self.customerofevent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="celebration">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="customerofevent">
+        <PropertyRef Name="CelebrationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_event_typeevent">
+    <End Role="typeevent" Type="Self.typeevent" Multiplicity="0..1" />
+    <End Role="celebration" Type="Self.celebration" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="typeevent">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="celebration">
+        <PropertyRef Name="CelebrationType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_itemtoevent_event">
+    <End Role="celebration" Type="Self.celebration" Multiplicity="0..1" />
+    <End Role="itemtoevent" Type="Self.itemtoevent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="celebration">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="itemtoevent">
+        <PropertyRef Name="CelebrationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_noteevent_event">
+    <End Role="celebration" Type="Self.celebration" Multiplicity="0..1" />
+    <End Role="noteevent" Type="Self.noteevent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="celebration">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="noteevent">
+        <PropertyRef Name="CelebrationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_customerofevent_customer">
+    <End Role="customer" Type="Self.customer" Multiplicity="0..1" />
+    <End Role="customerofevent" Type="Self.customerofevent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="customerofevent">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemOfList_TypeCelebration">
+    <End Role="typeevent" Type="Self.typeevent" Multiplicity="1" />
+    <End Role="ItemOfList" Type="Self.ItemOfList" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="typeevent">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ItemOfList">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="masterEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="categories" EntityType="Self.category" />
+    <EntitySet Name="celebrations" EntityType="Self.celebration" />
+    <EntitySet Name="customers" EntityType="Self.customer" />
+    <EntitySet Name="customerofevents" EntityType="Self.customerofevent" />
+    <EntitySet Name="ItemOfLists" EntityType="Self.ItemOfList" />
+    <EntitySet Name="itemtoevents" EntityType="Self.itemtoevent" />
+    <EntitySet Name="noteevents" EntityType="Self.noteevent" />
+    <EntitySet Name="typeevents" EntityType="Self.typeevent" />
+    <EntitySet Name="MSreplication_options" EntityType="Self.MSreplication_options" />
+    <EntitySet Name="spt_fallback_db" EntityType="Self.spt_fallback_db" />
+    <EntitySet Name="spt_fallback_dev" EntityType="Self.spt_fallback_dev" />
+    <EntitySet Name="spt_fallback_usg" EntityType="Self.spt_fallback_usg" />
+    <EntitySet Name="spt_monitor" EntityType="Self.spt_monitor" />
+    <AssociationSet Name="FK_typeevent_category" Association="Self.FK_typeevent_category">
+      <End Role="category" EntitySet="categories" />
+      <End Role="typeevent" EntitySet="typeevents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_customerofevent_celebration" Association="Self.FK_customerofevent_celebration">
+      <End Role="celebration" EntitySet="celebrations" />
+      <End Role="customerofevent" EntitySet="customerofevents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_event_typeevent" Association="Self.FK_event_typeevent">
+      <End Role="typeevent" EntitySet="typeevents" />
+      <End Role="celebration" EntitySet="celebrations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_itemtoevent_event" Association="Self.FK_itemtoevent_event">
+      <End Role="celebration" EntitySet="celebrations" />
+      <End Role="itemtoevent" EntitySet="itemtoevents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_noteevent_event" Association="Self.FK_noteevent_event">
+      <End Role="celebration" EntitySet="celebrations" />
+      <End Role="noteevent" EntitySet="noteevents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_customerofevent_customer" Association="Self.FK_customerofevent_customer">
+      <End Role="customer" EntitySet="customers" />
+      <End Role="customerofevent" EntitySet="customerofevents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemOfList_TypeCelebration" Association="Self.FK_ItemOfList_TypeCelebration">
+      <End Role="typeevent" EntitySet="typeevents" />
+      <End Role="ItemOfList" EntitySet="ItemOfLists" />
+    </AssociationSet>
+    <EntitySet Name="abouts" EntityType="masterModel.about" />
+  </EntityContainer>
+  <EntityType Name="about">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Content" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

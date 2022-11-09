@@ -1,0 +1,74 @@
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DAL\bin\Debug\DAL.dll.config
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DAL\bin\Debug\DAL.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DAL\bin\Debug\DAL.pdb
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DAL\bin\Debug\EntityFramework.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DAL\bin\Debug\EntityFramework.SqlServer.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DAL\bin\Debug\EntityFramework.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DAL\bin\Debug\EntityFramework.SqlServer.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DAL\obj\Debug\DAL.csproj.CopyComplete
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DAL\obj\Debug\DAL.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam\DAL\obj\Debug\DAL.pdb
+D:\PartyTeam\DAL\bin\Debug\DAL.dll.config
+D:\PartyTeam\DAL\bin\Debug\DAL.dll
+D:\PartyTeam\DAL\bin\Debug\DAL.pdb
+D:\PartyTeam\DAL\bin\Debug\EntityFramework.dll
+D:\PartyTeam\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\PartyTeam\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\PartyTeam\DAL\bin\Debug\System.Net.Http.Formatting.dll
+D:\PartyTeam\DAL\bin\Debug\System.Web.Cors.dll
+D:\PartyTeam\DAL\bin\Debug\System.Web.Http.Cors.dll
+D:\PartyTeam\DAL\bin\Debug\System.Web.Http.dll
+D:\PartyTeam\DAL\bin\Debug\EntityFramework.xml
+D:\PartyTeam\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\PartyTeam\DAL\bin\Debug\Newtonsoft.Json.xml
+D:\PartyTeam\DAL\bin\Debug\System.Net.Http.Formatting.xml
+D:\PartyTeam\DAL\bin\Debug\System.Web.Http.xml
+D:\PartyTeam\DAL\bin\Debug\System.Web.Http.Cors.xml
+D:\PartyTeam\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\PartyTeam\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\PartyTeam\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\PartyTeam\DAL\obj\Debug\DAL.dll
+D:\PartyTeam\DAL\obj\Debug\DAL.pdb
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DAL\bin\Debug\DAL.dll.config
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DAL\bin\Debug\DAL.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DAL\bin\Debug\DAL.pdb
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DAL\bin\Debug\EntityFramework.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DAL\bin\Debug\EntityFramework.SqlServer.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DAL\bin\Debug\Newtonsoft.Json.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DAL\bin\Debug\System.Net.Http.Formatting.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DAL\bin\Debug\System.Web.Cors.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DAL\bin\Debug\System.Web.Http.Cors.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DAL\bin\Debug\System.Web.Http.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DAL\bin\Debug\EntityFramework.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DAL\bin\Debug\EntityFramework.SqlServer.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DAL\bin\Debug\Newtonsoft.Json.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DAL\bin\Debug\System.Net.Http.Formatting.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DAL\bin\Debug\System.Web.Http.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DAL\bin\Debug\System.Web.Http.Cors.xml
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DAL\obj\Debug\DAL.csproj.CopyComplete
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DAL\obj\Debug\DAL.dll
+U:\ו6\סיוון סויונוב\פרויקט גמר\Server Side\PartyTeam - עם התקנת CORS\DAL\obj\Debug\DAL.pdb
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\obj\Debug\DAL.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\obj\Debug\DAL.pdb
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\bin\Debug\DAL.dll.config
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\bin\Debug\DAL.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\bin\Debug\DAL.pdb
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\bin\Debug\EntityFramework.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\bin\Debug\System.Web.Cors.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\bin\Debug\System.Web.Http.Cors.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\bin\Debug\System.Web.Http.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\bin\Debug\EntityFramework.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\bin\Debug\System.Web.Http.xml
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\bin\Debug\System.Web.Http.Cors.xml
