@@ -8,27 +8,27 @@ namespace DAL.Actions
 {
     public class Customer
     {
-        static masterEntities db = new masterEntities();
+        static PartyTeamEntities db = new PartyTeamEntities();
         public static List<customer> Get()
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                return db.customers.ToList();
+                return db.customer.ToList();
             }
         }
         public static customer GetCustomerById(int id)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                return db.customers.FirstOrDefault(x => x.Id == id);
+                return db.customer.FirstOrDefault(x => x.Id == id);
 
             }
         }
         public static customer Post(customer customer)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                db.customers.Add(customer);
+                db.customer.Add(customer);
                 db.SaveChanges();
                 return customer;
             }
@@ -36,12 +36,12 @@ namespace DAL.Actions
         }
         public static customer Put(customer customer)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                customer newCustomer = db.customers.FirstOrDefault(x => x.Id == customer.Id);
+                customer newCustomer = db.customer.FirstOrDefault(x => x.Id == customer.Id);
                 newCustomer.Name = customer.Name;
                 newCustomer.Approve = customer.Approve;
-                newCustomer.customerofevents = customer.customerofevents;
+                newCustomer.customerofevent = customer.customerofevent;
                 newCustomer.Email = customer.Email;
                 newCustomer.Image = customer.Image;
                 newCustomer.Password = customer.Password;
@@ -53,10 +53,10 @@ namespace DAL.Actions
         }
         public static void Delete(int id)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                customer c = db.customers.FirstOrDefault(ca => ca.Id == id);
-                db.customers.Remove(c);
+                customer c = db.customer.FirstOrDefault(ca => ca.Id == id);
+                db.customer.Remove(c);
                 db.SaveChanges();
             }
         }

@@ -8,35 +8,35 @@ namespace DAL.Actions
 {
     public class CustomerOfEvent
     {
-        static masterEntities db = new masterEntities();
+        static PartyTeamEntities db = new PartyTeamEntities();
         public static List<customerofevent> Get()
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                return db.customerofevents.ToList();
+                return db.customerofevent.ToList();
             }
         }
         public static customerofevent GetCustomerById(int id)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                return db.customerofevents.FirstOrDefault(x => x.Id == id);
+                return db.customerofevent.FirstOrDefault(x => x.Id == id);
             }
         }
         public static customerofevent Post(customerofevent customerofevent)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                customerofevent = db.customerofevents.Add(customerofevent);
+                customerofevent = db.customerofevent.Add(customerofevent);
                 db.SaveChanges();
                 return customerofevent;
             }
         }
         public static customerofevent Put(customerofevent customerofevent)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                customerofevent newCustomerofevent = db.customerofevents.FirstOrDefault(x => x.Id == customerofevent.Id);
+                customerofevent newCustomerofevent = db.customerofevent.FirstOrDefault(x => x.Id == customerofevent.Id);
                 newCustomerofevent.CelebrationId = customerofevent.CelebrationId;
                 newCustomerofevent.customer = customerofevent.customer;
                 newCustomerofevent.CustomerId = customerofevent.CustomerId;
@@ -47,10 +47,10 @@ namespace DAL.Actions
         }
         public static void Delete(int id)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                customerofevent coe = db.customerofevents.FirstOrDefault(ca => ca.Id == id);
-                db.customerofevents.Remove(coe);
+                customerofevent coe = db.customerofevent.FirstOrDefault(ca => ca.Id == id);
+                db.customerofevent.Remove(coe);
                 db.SaveChanges();
             }
         }

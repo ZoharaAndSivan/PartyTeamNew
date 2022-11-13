@@ -4,28 +4,23 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="ec3c8daa48b741128f3ae9a684576488" Name="Diagram1">
-        <EntityTypeShape EntityType="masterModel.category" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="masterModel.celebration" Width="1.5" PointX="5.25" PointY="4.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="masterModel.customer" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="masterModel.customerofevent" Width="1.5" PointX="7.5" PointY="3" IsExpanded="true" />
-        <EntityTypeShape EntityType="masterModel.ItemOfList" Width="1.5" PointX="5.25" PointY="9.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="masterModel.itemtoevent" Width="1.5" PointX="7.5" PointY="6.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="masterModel.noteevent" Width="1.5" PointX="7.5" PointY="9.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="masterModel.typeevent" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="masterModel.MSreplication_options" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="masterModel.spt_fallback_db" Width="1.5" PointX="9.75" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="masterModel.spt_fallback_dev" Width="1.5" PointX="0.75" PointY="10.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="masterModel.spt_fallback_usg" Width="1.5" PointX="9.75" PointY="5.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="masterModel.spt_monitor" Width="1.5" PointX="9.75" PointY="9.125" IsExpanded="true" />
-        <AssociationConnector Association="masterModel.FK_typeevent_category" ManuallyRouted="false" />
-        <AssociationConnector Association="masterModel.FK_customerofevent_celebration" ManuallyRouted="false" />
-        <AssociationConnector Association="masterModel.FK_event_typeevent" ManuallyRouted="false" />
-        <AssociationConnector Association="masterModel.FK_itemtoevent_event" ManuallyRouted="false" />
-        <AssociationConnector Association="masterModel.FK_noteevent_event" ManuallyRouted="false" />
-        <AssociationConnector Association="masterModel.FK_customerofevent_customer" ManuallyRouted="false" />
-        <AssociationConnector Association="masterModel.FK_ItemOfList_TypeCelebration" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="masterModel.about" Width="1.5" PointX="12.375" PointY="0.75" />
+      <Diagram DiagramId="af66efe6a79045c3924076504ba0a5ab" Name="Diagram1">
+        <EntityTypeShape EntityType="PartyTeamModel.category" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PartyTeamModel.celebration" Width="1.5" PointX="5.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PartyTeamModel.customer" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PartyTeamModel.customerofevent" Width="1.5" PointX="7.5" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="PartyTeamModel.ItemOfList" Width="1.5" PointX="5.25" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PartyTeamModel.itemtoevent" Width="1.5" PointX="7.5" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PartyTeamModel.noteevent" Width="1.5" PointX="7.5" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PartyTeamModel.typeevent" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PartyTeamModel.about" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <AssociationConnector Association="PartyTeamModel.FK_typeevent_category" ManuallyRouted="false" />
+        <AssociationConnector Association="PartyTeamModel.FK_customerofevent_celebration" ManuallyRouted="false" />
+        <AssociationConnector Association="PartyTeamModel.FK_event_typeevent" ManuallyRouted="false" />
+        <AssociationConnector Association="PartyTeamModel.FK_itemtoevent_event" ManuallyRouted="false" />
+        <AssociationConnector Association="PartyTeamModel.FK_noteevent_event" ManuallyRouted="false" />
+        <AssociationConnector Association="PartyTeamModel.FK_customerofevent_customer" ManuallyRouted="false" />
+        <AssociationConnector Association="PartyTeamModel.FK_ItemOfList_TypeCelebration" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

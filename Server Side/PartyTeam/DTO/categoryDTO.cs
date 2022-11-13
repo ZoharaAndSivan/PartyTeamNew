@@ -25,7 +25,7 @@ namespace DTO
             Id = ca.Id;
             TypeId = (int)ca.TypeId;
             Name = ca.Name;
-            typeEvents = typeeventDTO.CreateDTOList(ca.typeevents.ToList());
+            typeEvents = typeeventDTO.CreateDTOList(ca.typeevent.ToList());
         }
         public category FromDTOToTable()
         {

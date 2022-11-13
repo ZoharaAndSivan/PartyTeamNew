@@ -72,3 +72,24 @@ C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\
 C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\bin\Debug\System.Web.Http.xml
 C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\bin\Debug\System.Web.Http.Cors.xml
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\obj\Debug\DAL.dll
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\obj\Debug\DAL.pdb
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\bin\Debug\DAL.dll.config
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\bin\Debug\DAL.dll
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\bin\Debug\DAL.pdb
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\bin\Debug\EntityFramework.dll
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\bin\Debug\System.Web.Cors.dll
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\bin\Debug\System.Web.Http.Cors.dll
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\bin\Debug\System.Web.Http.dll
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\bin\Debug\EntityFramework.xml
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\bin\Debug\System.Web.Http.xml
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\bin\Debug\System.Web.Http.Cors.xml
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\obj\Debug\DAL.csproj.CopyComplete

@@ -72,3 +72,24 @@ C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\
 C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\obj\Debug\DTO.dll
 C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DTO\obj\Debug\DTO.pdb
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\bin\Debug\DTO.dll
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\bin\Debug\DTO.pdb
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\bin\Debug\DAL.dll
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\bin\Debug\Newtonsoft.Json.dll
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\bin\Debug\System.Web.Cors.dll
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\bin\Debug\System.Web.Http.Cors.dll
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\bin\Debug\System.Web.Http.dll
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\bin\Debug\EntityFramework.dll
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\bin\Debug\DAL.pdb
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\bin\Debug\DAL.dll.config
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\bin\Debug\Newtonsoft.Json.xml
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\bin\Debug\System.Web.Http.xml
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\bin\Debug\System.Web.Http.Cors.xml
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\bin\Debug\EntityFramework.xml
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\obj\Debug\DTO.dll
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\obj\Debug\DTO.pdb

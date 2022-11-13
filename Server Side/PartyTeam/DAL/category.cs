@@ -17,7 +17,7 @@ namespace DAL
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public category()
         {
-            this.typeevents = new HashSet<typeevent>();
+            this.typeevent = new HashSet<typeevent>();
         }
     
         public int Id { get; set; }
@@ -25,6 +25,6 @@ namespace DAL
         public string Name { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<typeevent> typeevents { get; set; }
+        public virtual ICollection<typeevent> typeevent { get; set; }
     }
 }

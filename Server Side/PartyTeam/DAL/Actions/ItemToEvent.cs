@@ -8,35 +8,35 @@ namespace DAL.Actions
 {
     public class ItemToEvent
     {
-        static masterEntities db = new masterEntities();
+        static PartyTeamEntities db = new PartyTeamEntities();
         public static List<itemtoevent> Get()
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                return db.itemtoevents.ToList();
+                return db.itemtoevent.ToList();
             }
         }
         public static itemtoevent GetItemById(int id)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                return db.itemtoevents.FirstOrDefault(x => x.Id == id);
+                return db.itemtoevent.FirstOrDefault(x => x.Id == id);
             }
         }
         public static itemtoevent Post(itemtoevent itemtoevent)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                itemtoevent = db.itemtoevents.Add(itemtoevent);
+                itemtoevent = db.itemtoevent.Add(itemtoevent);
                 db.SaveChanges();
                 return itemtoevent;
             }
         }
         public static itemtoevent Put(itemtoevent itemtoevent)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                itemtoevent newItemtoevent = db.itemtoevents.FirstOrDefault(x => x.Id == itemtoevent.Id);
+                itemtoevent newItemtoevent = db.itemtoevent.FirstOrDefault(x => x.Id == itemtoevent.Id);
                 newItemtoevent.CelebrationId = itemtoevent.CelebrationId;
                 newItemtoevent.Amount = itemtoevent.Amount;
                 newItemtoevent.celebration = itemtoevent.celebration;
@@ -52,10 +52,10 @@ namespace DAL.Actions
         }
         public static void Delete(int id)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                itemtoevent ite = db.itemtoevents.FirstOrDefault(ca => ca.Id == id);
-                db.itemtoevents.Remove(ite);
+                itemtoevent ite = db.itemtoevent.FirstOrDefault(ca => ca.Id == id);
+                db.itemtoevent.Remove(ite);
                 db.SaveChanges();
             }
         }

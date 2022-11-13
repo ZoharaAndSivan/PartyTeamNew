@@ -8,50 +8,50 @@ namespace DAL.Actions
 {
     public class TypeEvent
     {
-        static masterEntities db = new masterEntities();
+        static PartyTeamEntities db = new PartyTeamEntities();
         public static List<typeevent> Get()
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                return db.typeevents.ToList();
+                return db.typeevent.ToList();
             }
         }
         public static typeevent GetTypeById(int id)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                return db.typeevents.FirstOrDefault(x => x.Id == id);
+                return db.typeevent.FirstOrDefault(x => x.Id == id);
             }
         }
         public static typeevent Post(typeevent typeevent)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                typeevent = db.typeevents.Add(typeevent);
+                typeevent = db.typeevent.Add(typeevent);
                 db.SaveChanges();
                 return typeevent;
             }
         }
         public static typeevent Put(typeevent typeevent)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                typeevent newTypeevents = db.typeevents.FirstOrDefault(x => x.Id == typeevent.Id);
-                newTypeevents.category = typeevent.category;
-                newTypeevents.celebrations = typeevent.celebrations;
-                newTypeevents.Describe = typeevent.Describe;
-                newTypeevents.Name = typeevent.Name;
-                newTypeevents.Status = typeevent.Status;
+                typeevent newtypeevent = db.typeevent.FirstOrDefault(x => x.Id == typeevent.Id);
+                newtypeevent.category = typeevent.category;
+                newtypeevent.celebration = typeevent.celebration;
+                newtypeevent.Describe = typeevent.Describe;
+                newtypeevent.Name = typeevent.Name;
+                newtypeevent.Status = typeevent.Status;
                 db.SaveChanges();
-                return newTypeevents;
+                return newtypeevent;
             }
         }
         public static void Delete(int id)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                typeevent te = db.typeevents.FirstOrDefault(ca => ca.Id == id);
-                db.typeevents.Remove(te);
+                typeevent te = db.typeevent.FirstOrDefault(ca => ca.Id == id);
+                db.typeevent.Remove(te);
                 db.SaveChanges();
             }
         }

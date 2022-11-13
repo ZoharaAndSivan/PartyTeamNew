@@ -8,35 +8,35 @@ namespace DAL.Actions
 {
     public class NoteEvent
     {
-        static masterEntities db = new masterEntities();
+        static PartyTeamEntities db = new PartyTeamEntities();
         public static List<noteevent> Get()
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                return db.noteevents.ToList();
+                return db.noteevent.ToList();
             }
         }
         public static noteevent GetNoteById(int id)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                return db.noteevents.FirstOrDefault(x => x.Id == id);
+                return db.noteevent.FirstOrDefault(x => x.Id == id);
             }
         }
         public static noteevent Post(noteevent noteevent)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                noteevent = db.noteevents.Add(noteevent);
+                noteevent = db.noteevent.Add(noteevent);
                 db.SaveChanges();
                 return noteevent;
             }
         }
         public static noteevent Put(noteevent noteevent)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                noteevent newNoteevent = db.noteevents.FirstOrDefault(x => x.Id == noteevent.Id);
+                noteevent newNoteevent = db.noteevent.FirstOrDefault(x => x.Id == noteevent.Id);
                 newNoteevent.CelebrationId = noteevent.CelebrationId;
                 newNoteevent.celebration = noteevent.celebration;
                 newNoteevent.Note = noteevent.Note;
@@ -47,10 +47,10 @@ namespace DAL.Actions
         }
         public static void Delete(int id)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                noteevent ne = db.noteevents.FirstOrDefault(ca => ca.Id == id);
-                db.noteevents.Remove(ne);
+                noteevent ne = db.noteevent.FirstOrDefault(ca => ca.Id == id);
+                db.noteevent.Remove(ne);
                 db.SaveChanges();
             }
         }

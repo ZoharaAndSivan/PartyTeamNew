@@ -8,59 +8,59 @@ namespace DAL.Actions
 {
     public class Celebration
     {
-        static masterEntities db = new masterEntities();
+        static PartyTeamEntities db = new PartyTeamEntities();
         public static List<celebration> Get()
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                return db.celebrations.ToList();
+                return db.celebration.ToList();
             }
         }
         public static celebration GetCelebrationById(int id)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                return db.celebrations.FirstOrDefault(x => x.Id == id);
+                return db.celebration.FirstOrDefault(x => x.Id == id);
             }
         }
         public static celebration Post(celebration celebration)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                celebration = db.celebrations.Add(celebration);
+                celebration = db.celebration.Add(celebration);
                 db.SaveChanges();
                 return celebration;
             }
         }
         public static celebration Put(celebration celebration)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                celebration newCelebration = db.celebrations.FirstOrDefault(x => x.Id == celebration.Id);
+                celebration newCelebration = db.celebration.FirstOrDefault(x => x.Id == celebration.Id);
                 newCelebration.Name = celebration.Name;
                 newCelebration.DateCelebration = celebration.DateCelebration;
                 newCelebration.EncodedCelebration = celebration.EncodedCelebration;
                 newCelebration.ImportantText = celebration.ImportantText;
                 newCelebration.InEditingCelebration = celebration.InEditingCelebration;
-                newCelebration.itemtoevents = celebration.itemtoevents;
+                newCelebration.itemtoevent = celebration.itemtoevent;
                 newCelebration.Lenght = celebration.Lenght;
-                newCelebration.noteevents = celebration.noteevents;
+                newCelebration.noteevent = celebration.noteevent;
                 newCelebration.PepoleAmount = celebration.PepoleAmount;
                 newCelebration.StartHour = celebration.StartHour;
                 newCelebration.CelebrationType = celebration.CelebrationType;
                 newCelebration.Address = celebration.Address;
                 newCelebration.typeevent = celebration.typeevent;
-                newCelebration.customerofevents = celebration.customerofevents;
+                newCelebration.customerofevent = celebration.customerofevent;
                 db.SaveChanges();
                 return newCelebration;
             }
         }
         public static void Delete(int id)
         {
-            using (masterEntities db = new masterEntities())
+            using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                celebration c = db.celebrations.FirstOrDefault(ca => ca.Id == id);
-                db.celebrations.Remove(c);
+                celebration c = db.celebration.FirstOrDefault(ca => ca.Id == id);
+                db.celebration.Remove(c);
                 db.SaveChanges();
             }
         }

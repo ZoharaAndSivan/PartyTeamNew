@@ -17,7 +17,7 @@ namespace DAL
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public customer()
         {
-            this.customerofevents = new HashSet<customerofevent>();
+            this.customerofevent = new HashSet<customerofevent>();
         }
     
         public int Id { get; set; }
@@ -30,6 +30,6 @@ namespace DAL
         public string Image { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<customerofevent> customerofevents { get; set; }
+        public virtual ICollection<customerofevent> customerofevent { get; set; }
     }
 }

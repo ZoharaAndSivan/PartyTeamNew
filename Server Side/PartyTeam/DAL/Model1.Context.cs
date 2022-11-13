@@ -13,10 +13,10 @@ namespace DAL
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class masterEntities : DbContext
+    public partial class PartyTeamEntities : DbContext
     {
-        public masterEntities()
-            : base("name=masterEntities")
+        public PartyTeamEntities()
+            : base("name=PartyTeamEntities")
         {
         }
     
@@ -25,19 +25,14 @@ namespace DAL
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<category> categories { get; set; }
-        public virtual DbSet<celebration> celebrations { get; set; }
-        public virtual DbSet<customer> customers { get; set; }
-        public virtual DbSet<customerofevent> customerofevents { get; set; }
-        public virtual DbSet<ItemOfList> ItemOfLists { get; set; }
-        public virtual DbSet<itemtoevent> itemtoevents { get; set; }
-        public virtual DbSet<noteevent> noteevents { get; set; }
-        public virtual DbSet<typeevent> typeevents { get; set; }
-        public virtual DbSet<MSreplication_options> MSreplication_options { get; set; }
-        public virtual DbSet<spt_fallback_db> spt_fallback_db { get; set; }
-        public virtual DbSet<spt_fallback_dev> spt_fallback_dev { get; set; }
-        public virtual DbSet<spt_fallback_usg> spt_fallback_usg { get; set; }
-        public virtual DbSet<spt_monitor> spt_monitor { get; set; }
-        public virtual DbSet<about> abouts { get; set; }
+        public virtual DbSet<category> category { get; set; }
+        public virtual DbSet<celebration> celebration { get; set; }
+        public virtual DbSet<customer> customer { get; set; }
+        public virtual DbSet<customerofevent> customerofevent { get; set; }
+        public virtual DbSet<ItemOfList> ItemOfList { get; set; }
+        public virtual DbSet<itemtoevent> itemtoevent { get; set; }
+        public virtual DbSet<noteevent> noteevent { get; set; }
+        public virtual DbSet<typeevent> typeevent { get; set; }
+        public virtual DbSet<about> about { get; set; }
     }
 }

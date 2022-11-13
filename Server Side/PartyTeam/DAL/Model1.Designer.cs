@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeam\Server Side\PartyTeam\DAL\Model1.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\Model1.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

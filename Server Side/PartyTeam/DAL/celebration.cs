@@ -17,9 +17,9 @@ namespace DAL
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public celebration()
         {
-            this.customerofevents = new HashSet<customerofevent>();
-            this.itemtoevents = new HashSet<itemtoevent>();
-            this.noteevents = new HashSet<noteevent>();
+            this.customerofevent = new HashSet<customerofevent>();
+            this.itemtoevent = new HashSet<itemtoevent>();
+            this.noteevent = new HashSet<noteevent>();
         }
     
         public int Id { get; set; }
@@ -35,11 +35,11 @@ namespace DAL
         public string Address { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<customerofevent> customerofevents { get; set; }
+        public virtual ICollection<customerofevent> customerofevent { get; set; }
         public virtual typeevent typeevent { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<itemtoevent> itemtoevents { get; set; }
+        public virtual ICollection<itemtoevent> itemtoevent { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<noteevent> noteevents { get; set; }
+        public virtual ICollection<noteevent> noteevent { get; set; }
     }
 }
