@@ -10,7 +10,9 @@ namespace DTO
     public class customerofeventDTO
     {
         public int Id { get; set; }
-        public int Customerid { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
         public int CelebrationId { get; set; }
         public bool Status { get; set; }
         public customerofeventDTO()
@@ -20,15 +22,19 @@ namespace DTO
         public customerofeventDTO(customerofevent coe)
         {
             Id = coe.Id;
-            Customerid = (int)coe.CustomerId;
-            CelebrationId = (int)coe.CelebrationId;
+            Name = coe.Name;
+            Email = coe.Email;
+            Phone = coe.Phone;
+            CelebrationId = coe.CelebrationId;
             Status = (bool)coe.Status;
         }
         public customerofevent FromDTOToTable()
         {
             customerofevent coe = new customerofevent();
             coe.Id = Id;
-            coe.CustomerId = Customerid;
+            coe.Name = Name;
+            coe.Email = Email;
+            coe.Phone = Phone;
             coe.CelebrationId = CelebrationId;
             coe.Status = Status;
             return coe;

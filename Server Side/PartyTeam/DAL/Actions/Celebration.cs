@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
+
 
 namespace DAL.Actions
 {
@@ -13,7 +15,22 @@ namespace DAL.Actions
         {
             using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                return db.celebration.ToList();
+                return db.celebration.Include(cel=>cel.customer).ToList();
+            }
+        }
+
+        public static List<celebration> GetMyCelebrationByUserId(int id)
+        {
+            using (PartyTeamEntities db = new PartyTeamEntities())
+            {
+                return db.celebration.Include(cel => cel.customer).Where(cel=>cel.EventManager == id ).ToList();
+            }
+        }
+        public static List<celebration> GetOrderCelebrationByUserEmail(string email)
+        {
+            using (PartyTeamEntities db = new PartyTeamEntities())
+            {
+                return db.celebration.Include(cel => cel.customer).Where(cel=>cel.customerofevent.Any(coe=>coe.Email==email)).ToList();
             }
         }
         public static celebration GetCelebrationById(int id)
@@ -32,6 +49,16 @@ namespace DAL.Actions
                 return celebration;
             }
         }
+        public static celebration ChangeEventStatus(int id, bool answer)
+        {
+            using (PartyTeamEntities db = new PartyTeamEntities())
+            {
+                db.celebration.FirstOrDefault(x => x.Id == id).EncodedCelebration = answer;
+                db.SaveChanges();
+                return db.celebration.FirstOrDefault(x => x.Id == id);
+            }
+        }
+
         public static celebration Put(celebration celebration)
         {
             using (PartyTeamEntities db = new PartyTeamEntities())
@@ -41,9 +68,6 @@ namespace DAL.Actions
                 newCelebration.DateCelebration = celebration.DateCelebration;
                 newCelebration.EncodedCelebration = celebration.EncodedCelebration;
                 newCelebration.ImportantText = celebration.ImportantText;
-                newCelebration.InEditingCelebration = celebration.InEditingCelebration;
-                newCelebration.itemtoevent = celebration.itemtoevent;
-                newCelebration.Lenght = celebration.Lenght;
                 newCelebration.noteevent = celebration.noteevent;
                 newCelebration.PepoleAmount = celebration.PepoleAmount;
                 newCelebration.StartHour = celebration.StartHour;

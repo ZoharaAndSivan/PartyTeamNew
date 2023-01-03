@@ -23,6 +23,25 @@ namespace BLL
             List<celebrationDTO> celebrationDTOs = celebrationDTO.CreateDTOList(celebrations);
             return celebrationDTOs;
         }
+        public static List<celebrationDTO> GetCelebrationNotApproval()
+        {
+            List<celebration> list = Celebration.Get();
+            List<celebration> celebrations = list.Where(c => c.EncodedCelebration == false).ToList();
+            List<celebrationDTO> celebrationDTOs = celebrationDTO.CreateDTOList(celebrations);
+            return celebrationDTOs;
+        }
+        public static List<celebrationDTO> GetMyCelebrationByUserId(int id)
+        {
+            List<celebration> list = Celebration.GetMyCelebrationByUserId(id);
+            List < celebrationDTO > myCelebrationDTOs = celebrationDTO.CreateDTOList(list);
+            return myCelebrationDTOs;
+        }
+        public static List<celebrationDTO> GetOrderCelebrationByUserEmail(string email)
+        {
+            List<celebration> list = Celebration.GetOrderCelebrationByUserEmail(email);
+            List<celebrationDTO> myOrderCelebrationDTOs = celebrationDTO.CreateDTOList(list);
+            return myOrderCelebrationDTOs;
+        }
         public static void PostCelebration(celebration c)
         {
             Celebration.Post(c);            
@@ -30,6 +49,10 @@ namespace BLL
         public static void PutCelebration(celebration c)
         {
             Celebration.Put(c);
+        }
+        public static celebration ChangeEventStatus(int id, bool answer)
+        {
+            return Celebration.ChangeEventStatus(id, answer);
         }
         public static void Delete(int i)
         {

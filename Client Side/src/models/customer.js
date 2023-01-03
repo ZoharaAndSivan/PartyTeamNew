@@ -1,4 +1,4 @@
-function Customer1(id,password,name,phone,email,status,approve,image)
+function Customer(id,password,name,phone,email,status,approve,image)
 {
    this.id=id;
    this.password=password;
@@ -10,5 +10,4 @@ function Customer1(id,password,name,phone,email,status,approve,image)
    this.image=image;
 }
 
-
-export default Customer1;
+export default Customer;

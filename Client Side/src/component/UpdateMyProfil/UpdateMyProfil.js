@@ -1,75 +1,105 @@
-import { connect } from 'react-redux';
-import { useNavigate, useParams } from 'react-router-dom'
-import { updateUserAction } from "../../action/action";
+import { connect } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { updateUserAction } from "../../action/Customer";
 
 const UpdateMyProfil = (props) => {
-    let nav = useNavigate();
-    const {id} = useParams();
-    let user = {...props.users.find(x => x.id == id)};
-    let r = {
-        id: user.id,
-        name: "",
-        email: "",
-        passWord: "",
-        phoneNumber: "",
-        status: "",
-        approve: true,
-        houseNum: 0,
-        image: ""
-    }
-    const change = (e) => {
-        let { name, value, type } = e.target;
-        if (type === "number")
-            value = +value;
-        if (type === "password" && value.length === 8)
-            value = +value;
-        r[name] = value;
-    }
-    const updateUser = (r) => {
-        props.updateUserAction(r);
-        nav("/homepage");
-    }
-    return (
-        <>
-            <h1>הרשמה</h1>
-            <form role="form">
-                {/* <div class="form-group">
-                     <label>id </label>
-                    <input type="number" name="id" class="form-control" placeholder="הכנס id " onChange={change} /> 
-                </div>  */}
-                <div class="form-group">
-                    <label>שם משתמש</label>
-                    <input type="text" name="name" class="form-control" placeholder="שינוי שם משתמש" onChange={change} defaultValue={user.name}/>
-                </div>
-                <div class="form-group">
-                    <label>מייל</label>
-                    <input type="email" name="email" class="form-control" placeholder="שינוי מייל" onChange={change} defaultValue={user.email}/>
-                </div>
-                <div class="form-group">
-                    <label>סיסמא</label>
-                    <input type="password" name="password" class="form-control" placeholder="שינוי סיסמא" onChange={change} />
-                </div>
-                <div class="form-group">
-                    <label>אימות סיסמא</label>
-                    <input type="password" name="password" class="form-control" placeholder="הכנס בשנית סיסמא" onChange={change} />
-                </div>
-                <div class="form-group">
-                    <label>טלפון</label>
-                    <input type="phone" name="phone" class="form-control" placeholder="החלף מספר טלפון" onChange={change} defaultValue={user.phoneNumber}/>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputFile">החלף תמונה</label>
-                    <input type="text" name="image" placeholder="הוסף תמונה" onChange={change} defaultValue={user.image}/>
-                    {/* <p class="help-block">Example block-level help text here.</p> */}
-                </div>
-                <button type="submit" class="btn btn-default" onClick={() => { updateUser(r) }}>הירשם</button>
-            </form>
-        </>
-    )
-}
+  let nav = useNavigate();
+  let user = props.currentUser;
+  const change = (e) => {
+    let { name, value, type } = e.target;
+    if (type === "number") value = +value;
+    if (type === "password" && value.length === 8) value = +value;
+    user[name] = value;
+  };
+  const updateUser = (r) => {
+    props.updateUserAction(r);
+    nav("/homepage");
+  };
+  return (
+    <>
+      <h1>פרטי משתמש</h1>
+      <form role="form">
+        <div className="form-group">
+          <img src={user.Image} ></img>
+          <label>שם משתמש</label><br/>
+          <input
+            type="text"
+            name="Name"
+            // className="form-control"
+            placeholder="שינוי שם משתמש"
+            onChange={change}
+            defaultValue={user.Name}
+          />
+        </div>
+        <div className="form-group">
+          <label>מייל</label><br/>
+          <input
+            type="email"
+            name="Email"
+            // className="form-control"
+            placeholder="שינוי מייל"
+            onChange={change}
+            defaultValue={user.Email}
+          />
+        </div>
+        <div className="form-group">
+          <label>סיסמא</label><br/>
+          <input
+            type="password"
+            name="Password"
+            // className="form-control"
+            placeholder="שינוי סיסמא"
+            onChange={change}
+          />
+        </div>
+        <div className="form-group">
+          <label>אימות סיסמא</label><br/>
+          <input
+            type="password"
+            name="Password"
+            // className="form-control"
+            placeholder="הכנס בשנית סיסמא"
+            onChange={change}
+          />
+        </div>
+        <div className="form-group">
+          <label>טלפון</label><br/>
+          <input
+            type="phone"
+            name="Phone"
+            // className="form-control"
+            placeholder="הכנס מספר טלפון"
+            onChange={change}
+            defaultValue={user.Phone}
+          />
+        </div>
+        {/* <div className="form-group">
+          <label>החלף תמונה</label><br/>
+          <input
+            type="file"
+            name="image"
+            placeholder="הוסף תמונה"
+            onChange={change}
+            // defaultValue={user.Image}
+          />
+        </div> */}
+        <button
+          type="submit"
+          className="btn btn-primary"
+          onClick={() => {
+            updateUser(user);
+            console.log(user);
+          }}
+        >
+          הירשם
+        </button>
+      </form>
+    </>
+  );
+};
 const mapStateToProps = (state) => {
-    return {
-        users: state.users
-    }
-}
-export default connect(mapStateToProps,{updateUserAction} )(UpdateMyProfil);
+  return {
+    currentUser: state.currentUser,
+  };
+};
+export default connect(mapStateToProps, { updateUserAction })(UpdateMyProfil);

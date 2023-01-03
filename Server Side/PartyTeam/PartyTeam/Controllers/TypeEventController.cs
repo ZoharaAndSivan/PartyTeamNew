@@ -14,21 +14,22 @@ namespace PartyTeam.Controllers
     {
         //עובדדדדדד
         // GET: api/TypeEvent
-        public List<typeeventDTO> Get() { return TypeEventManager.Gettypes(); }
+        public List<typeeventDTO> Get() { return TypeEventManager.GetTypes(); }
 
         //עובדדדדדד
         // GET: api/TypeEvent/5
         public List<typeeventDTO> GetTypeEventManagerByEventId(int id) { return TypeEventManager.GetTypeEventById(id); }
+        public List<typeeventDTO> GetTypesByCategoryId(int id) { return TypeEventManager.GetTypesByCategoryId(id); }
 
-        //לא עובדדד
+        //עובדדד
         // POST: api/TypeEvent
-        public void Post([FromBody]typeevent value) { TypeEventManager.PostType(value); }
+        public void Post([FromBody] typeevent value) { TypeEventManager.PostType(value); }
 
-        //לנסותתת
+        //עובד
         // PUT: api/TypeEvent/5
-        public void Put([FromBody]typeevent value) { TypeEventManager.PutTE(value); }
+        public void Put([FromBody] typeevent value) { TypeEventManager.PutTE(value); }
 
-        // לנסות אחרי שההוספה תעבוד
+        // עובד
         // DELETE: api/TypeEvent/5
         public void Delete(int id) { TypeEventManager.Delete(id); }
     }

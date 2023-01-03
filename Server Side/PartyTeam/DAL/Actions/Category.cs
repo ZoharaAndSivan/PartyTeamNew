@@ -3,17 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
+
+
 
 namespace DAL.Actions
 {
     public class Category
     {
-        static PartyTeamEntities db = new PartyTeamEntities();
         public static List<category> Get()
         {
             using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                return db.category.ToList();
+                return db.category.Include(c => c.typeevent).ToList();
             }
         }
         public static category GetCategoryById(int id)

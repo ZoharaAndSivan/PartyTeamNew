@@ -13,7 +13,6 @@ namespace DTO
         public int Id { get; set; }
         public string Name { get; set; }
         public string Describe { get; set; }
-        public bool Status { get; set; }
 
         public typeeventDTO()
         {
@@ -24,7 +23,6 @@ namespace DTO
             Id = t.Id;
             Name = t.Name;
             Describe = t.Describe;
-            Status = (bool)t.Status;
         }
         public typeevent FromDTOToTable()
         {
@@ -32,7 +30,6 @@ namespace DTO
             t.Id = Id;
             t.Name = Name;
             t.Describe = Describe;
-            t.Status = Status;
             return t;
         }
         public static List<typeeventDTO> CreateDTOList(List<typeevent> list)

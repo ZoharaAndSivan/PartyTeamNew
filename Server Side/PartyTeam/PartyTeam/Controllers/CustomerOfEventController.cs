@@ -1,5 +1,6 @@
 ﻿using BLL;
 using DAL;
+using DAL.Actions;
 using DTO;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ using System.Web.Http;
 namespace PartyTeam.Controllers
 {
     public class CustomerOfEventController : ApiController
-    {        
+    {
         //עובדדדדדד
         // GET: api/CostomerOfEvent
         public List<customerofeventDTO> Get() { return CustomerOfEventManager.GetCustomers(); }
@@ -19,16 +20,23 @@ namespace PartyTeam.Controllers
         //עובדדדדדד
         // GET: api/CostomerOfEvent/GetCustomerOfEventByEventId/5
         public List<customerofeventDTO> GetCustomerOfEventByEventId(int id) { return CustomerOfEventManager.GetCustomerOfEventById(id); }
+        public List<customerofeventDTO> GetCustomersConfirmedArrival(int id) { return CustomerOfEventManager.GetCustomersConfirmedArrival(id); }
+        public List<customerofeventDTO> GetCustomersNotConfirmedArrival(int id) { return CustomerOfEventManager.GetCustomersNotConfirmedArrival(id); }
 
-        public customer GetManagerOfEvent(int id) { return CustomerOfEventManager.GetManagerOfEvent(id); }
-
-        //עובדדדדדד
+        //עובדדדדדד לא
         // POST: api/CostomerOfEvent
-        public void Post([FromBody]customerofevent value) { CustomerOfEventManager.PostCustomerOfEvent(value); }
+        public customerofeventDTO Post([FromBody] customerofevent value) { return CustomerOfEventManager.PostCustomerOfEvent(value); }
 
-        //לנסות
+        //עובדד  
         // PUT: api/CostomerOfEvent/5
-        public void Put([FromBody]customerofevent value) { CustomerOfEventManager.PutCOE(value); }
+        public void Put([FromBody] customerofevent value) { CustomerOfEventManager.PutCOE(value); }
+        [HttpPut]
+        public customerofevent ConfirmArrival([FromBody] customerofevent cust)
+        {
+            string email = cust.Email;
+            bool answer = (bool)cust.Status;
+            return CustomerOfEventManager.ConfirmArrival(email, answer);
+        }
 
         //עובדדדדדד
         // DELETE: api/CostomerOfEvent/5

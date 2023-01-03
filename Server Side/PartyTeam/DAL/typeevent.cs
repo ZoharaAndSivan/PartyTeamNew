@@ -18,17 +18,18 @@ namespace DAL
         public typeevent()
         {
             this.celebration = new HashSet<celebration>();
+            this.ItemOfList = new HashSet<ItemOfList>();
         }
     
         public int Id { get; set; }
         public Nullable<int> CategoryId { get; set; }
         public string Name { get; set; }
         public string Describe { get; set; }
-        public Nullable<bool> Status { get; set; }
     
         public virtual category category { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<celebration> celebration { get; set; }
-        public virtual ItemOfList ItemOfList { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ItemOfList> ItemOfList { get; set; }
     }
 }

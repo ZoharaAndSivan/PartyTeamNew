@@ -19,7 +19,7 @@ namespace PartyTeam.Controllers
         //עובדדדדדדדדד
         // GET: api/ItemOfList/5
         public List<itemoflistDTO> GetItemById(int id) { return ItemOfListManager.GetItemOfListById(id); }
-        
+
         //לא עובדדדדדדדדד
         // POST: api/ItemOfList
         public void Post([FromBody]ItemOfList value) { ItemOfListManager.PostItemOfList(value); }

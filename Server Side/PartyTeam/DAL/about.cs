@@ -15,6 +15,6 @@ namespace DAL
     public partial class about
     {
         public int Id { get; set; }
-        public string Content { get; set; }
+        public string Information { get; set; }
     }
 }

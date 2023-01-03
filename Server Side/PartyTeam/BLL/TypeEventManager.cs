@@ -11,7 +11,7 @@ namespace BLL
 {
     public class TypeEventManager
     {
-        public static List<typeeventDTO> Gettypes()
+        public static List<typeeventDTO> GetTypes()
         {
             List<typeevent> list = TypeEvent.Get();
             return typeeventDTO.CreateDTOList(list);
@@ -23,10 +23,18 @@ namespace BLL
             List<typeeventDTO> typeeventDTOs = typeeventDTO.CreateDTOList(typeevents);
             return typeeventDTOs;
         }
-        public static void PostType(typeevent i)
+        public static List<typeeventDTO> GetTypesByCategoryId(int id)
         {
-            TypeEvent.Post(i);
+            List<typeevent> list = TypeEvent.Get();
+            List<typeevent> typeevents = list.Where(c => c.CategoryId == id).ToList();
+            List<typeeventDTO> typeeventDTOs = typeeventDTO.CreateDTOList(typeevents);
+            return typeeventDTOs;
         }
+        public static void PostType(typeevent t)
+        {
+            typeevent newT = TypeEvent.Post(t);
+        }
+       
         public static void PutTE(typeevent te)
         {
             TypeEvent.Put(te);

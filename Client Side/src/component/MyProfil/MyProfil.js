@@ -1,3 +1,5 @@
+
+
 const MyPropil = (props) => {
     return (
         <>
@@ -12,9 +14,6 @@ const MyPropil = (props) => {
                 {/* נשלח לפוקציית עדכון של כל הפרטים */}
 
             </form>
-
-
-
         </>
     )
 }

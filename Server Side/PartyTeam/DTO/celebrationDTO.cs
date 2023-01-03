@@ -11,15 +11,16 @@ namespace DTO
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public Nullable<int> PepoleAmount { get; set; }
-        public System.DateTime DateCelebration { get; set; }
-        public System.TimeSpan StartHour { get; set; }
-        public Nullable<int> Lenght { get; set; }
+        public int? PepoleAmount { get; set; }
+        public System.DateTime? DateCelebration { get; set; }
+        public System.TimeSpan? StartHour { get; set; }
         public string ImportantText { get; set; }
-        public Nullable<bool> EncodedCelebration { get; set; }
-        public Nullable<bool> InEditingCelebration { get; set; }
+        public bool? EncodedCelebration { get; set; }
         public int CelebrationType { get; set; }
         public string Address { get; set; }
+        public int EventManager { get; set; }
+
+        public customerDTO managerDetails { get; set; }
 
         public celebrationDTO()
         {
@@ -29,15 +30,15 @@ namespace DTO
         {
             Id = ce.Id;
             Name = ce.Name;
-            //PepoleAmount = (int)ce.PepoleAmount;
-            DateCelebration = (DateTime)ce.DateCelebration;
+            PepoleAmount = ce.PepoleAmount;
+            DateCelebration = ce.DateCelebration;
             StartHour = (TimeSpan)ce.StartHour;
-            //Lenght = (int)ce.Lenght;
-            //ImportantText = ce.ImportantText;
-            //EncodedCelebration = (bool)ce.EncodedCelebration;
-            //InEditingCelebration = (bool)ce.InEditingCelebration;
-            //CelebrationType = (int)ce.CelebrationType;
-            //Address = ce.Address;
+            ImportantText = ce.ImportantText;
+            EncodedCelebration = (bool)ce.EncodedCelebration;
+            CelebrationType = (int)ce.CelebrationType;
+            Address = ce.Address;
+            EventManager = (int)ce.EventManager;
+            managerDetails = new customerDTO(ce.customer);
         }
         public celebration FromDTOToTable()
         {
@@ -47,12 +48,11 @@ namespace DTO
             ce.PepoleAmount = PepoleAmount;
             ce.DateCelebration = DateCelebration;
             ce.StartHour = StartHour;
-            ce.Lenght = Lenght;
             ce.ImportantText = ImportantText;
             ce.EncodedCelebration = EncodedCelebration;
-            ce.InEditingCelebration = InEditingCelebration;
             ce.CelebrationType = CelebrationType;
             ce.Address = Address;
+            ce.EventManager = EventManager;
             return ce;
         }
         public static List<celebrationDTO> CreateDTOList(List<celebration> list)

@@ -11,4 +11,7 @@ namespace PartyTeam.Models
         public string password { get; set; }
         
     }
+
+
+
 }

@@ -18,7 +18,6 @@ namespace DAL
         public celebration()
         {
             this.customerofevent = new HashSet<customerofevent>();
-            this.itemtoevent = new HashSet<itemtoevent>();
             this.noteevent = new HashSet<noteevent>();
         }
     
@@ -27,18 +26,16 @@ namespace DAL
         public Nullable<int> PepoleAmount { get; set; }
         public Nullable<System.DateTime> DateCelebration { get; set; }
         public Nullable<System.TimeSpan> StartHour { get; set; }
-        public Nullable<int> Lenght { get; set; }
         public string ImportantText { get; set; }
         public Nullable<bool> EncodedCelebration { get; set; }
-        public Nullable<bool> InEditingCelebration { get; set; }
         public Nullable<int> CelebrationType { get; set; }
         public string Address { get; set; }
+        public Nullable<int> EventManager { get; set; }
     
+        public virtual customer customer { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<customerofevent> customerofevent { get; set; }
         public virtual typeevent typeevent { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<itemtoevent> itemtoevent { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<noteevent> noteevent { get; set; }
     }

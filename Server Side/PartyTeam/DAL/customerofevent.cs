@@ -15,11 +15,12 @@ namespace DAL
     public partial class customerofevent
     {
         public int Id { get; set; }
-        public Nullable<int> CustomerId { get; set; }
-        public Nullable<int> CelebrationId { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
+        public int CelebrationId { get; set; }
         public Nullable<bool> Status { get; set; }
     
         public virtual celebration celebration { get; set; }
-        public virtual customer customer { get; set; }
     }
 }

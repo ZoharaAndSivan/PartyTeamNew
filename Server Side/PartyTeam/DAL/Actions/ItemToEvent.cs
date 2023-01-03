@@ -39,7 +39,6 @@ namespace DAL.Actions
                 itemtoevent newItemtoevent = db.itemtoevent.FirstOrDefault(x => x.Id == itemtoevent.Id);
                 newItemtoevent.CelebrationId = itemtoevent.CelebrationId;
                 newItemtoevent.Amount = itemtoevent.Amount;
-                newItemtoevent.celebration = itemtoevent.celebration;
                 newItemtoevent.CustomerId = itemtoevent.CustomerId;
                 newItemtoevent.Describe = itemtoevent.Describe;
                 newItemtoevent.Name = itemtoevent.Name;

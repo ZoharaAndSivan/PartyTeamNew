@@ -19,8 +19,8 @@ namespace BLL
         public static List<categoryDTO> GetCategoryById(int id)
         {
             List<category> list = Category.Get();
-            List<category> categories = list.Where(c => c.Id == id).ToList();
-            List<categoryDTO> categoryDTOs = categoryDTO.CreateDTOList(categories);
+            List<category> category = list.Where(c => c.Id == id).ToList();
+            List<categoryDTO> categoryDTOs = categoryDTO.CreateDTOList(category);
             return categoryDTOs;
         }
     

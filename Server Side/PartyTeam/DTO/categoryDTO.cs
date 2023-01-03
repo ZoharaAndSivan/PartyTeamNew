@@ -14,7 +14,7 @@ namespace DTO
         public string Name { get; set; }
         public List<typeeventDTO> typeEvents { get; set; }
 
-        public virtual typeevent typeevent { get; set; }
+        //public virtual typeevent typeevent { get; set; }
 
         public categoryDTO()
         {

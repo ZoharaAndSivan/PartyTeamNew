@@ -32,7 +32,6 @@ namespace DAL.Actions
                 db.SaveChanges();
                 return customer;
             }
-
         }
         public static customer Put(customer customer)
         {
@@ -41,12 +40,11 @@ namespace DAL.Actions
                 customer newCustomer = db.customer.FirstOrDefault(x => x.Id == customer.Id);
                 newCustomer.Name = customer.Name;
                 newCustomer.Approve = customer.Approve;
-                newCustomer.customerofevent = customer.customerofevent;
                 newCustomer.Email = customer.Email;
                 newCustomer.Image = customer.Image;
                 newCustomer.Password = customer.Password;
                 newCustomer.Phone = customer.Phone;
-                newCustomer.Status = customer.Status;
+                newCustomer.Status = customer.Status;   
                 db.SaveChanges();
                 return newCustomer;
             }

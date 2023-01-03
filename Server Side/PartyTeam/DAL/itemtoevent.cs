@@ -23,7 +23,5 @@ namespace DAL
         public Nullable<int> CustomerId { get; set; }
         public Nullable<bool> ToBeTaken { get; set; }
         public Nullable<bool> ToEveryone { get; set; }
-    
-        public virtual celebration celebration { get; set; }
     }
 }

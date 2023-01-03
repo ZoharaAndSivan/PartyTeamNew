@@ -23,10 +23,11 @@ namespace BLL
             List<itemoflistDTO> itemoflistDTOs = itemoflistDTO.CreateDTOList(ItemOfLists);
             return itemoflistDTOs;
         }
-        public static void PostItemOfList(ItemOfList c)
+        public static void PostItemOfList(ItemOfList i)
         {
-            ItemOfListAct.Post(c);            
+            ItemOfList newI = ItemOfListAct.Post(i);
         }
+     
         public static void PutIOL(ItemOfList ite)
         {
             ItemOfListAct.Put(ite);

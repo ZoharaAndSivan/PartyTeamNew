@@ -60,6 +60,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="aboutDTO.cs" />
     <Compile Include="categoryDTO.cs" />
     <Compile Include="celebrationDTO.cs" />
     <Compile Include="customerDTO.cs" />

@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="PartyTeamModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="PartyTeamModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <!--Errors Found During Generation:
 warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="about">
@@ -12,7 +12,7 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="Content" Type="nvarchar" MaxLength="50" />
+          <Property Name="Information" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="category">
           <Key>
@@ -31,12 +31,11 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           <Property Name="PepoleAmount" Type="int" />
           <Property Name="DateCelebration" Type="date" />
           <Property Name="StartHour" Type="time" Precision="7" />
-          <Property Name="Lenght" Type="int" />
           <Property Name="ImportantText" Type="nchar" MaxLength="300" />
           <Property Name="EncodedCelebration" Type="bit" />
-          <Property Name="InEditingCelebration" Type="bit" />
           <Property Name="CelebrationType" Type="int" />
           <Property Name="Address" Type="nchar" MaxLength="30" />
+          <Property Name="EventManager" Type="int" />
         </EntityType>
         <EntityType Name="customer">
           <Key>
@@ -49,15 +48,17 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           <Property Name="Email" Type="nchar" MaxLength="20" />
           <Property Name="Status" Type="int" />
           <Property Name="Approve" Type="bit" />
-          <Property Name="Image" Type="nchar" MaxLength="20" />
+          <Property Name="Image" Type="varchar" MaxLength="100" />
         </EntityType>
         <EntityType Name="customerofevent">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="CustomerId" Type="int" />
-          <Property Name="CelebrationId" Type="int" />
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="20" />
+          <Property Name="Email" Type="nchar" MaxLength="20" Nullable="false" />
+          <Property Name="Phone" Type="nchar" MaxLength="10" />
+          <Property Name="CelebrationId" Type="int" Nullable="false" />
           <Property Name="Status" Type="bit" />
         </EntityType>
         <EntityType Name="ItemOfList">
@@ -93,6 +94,16 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           <Property Name="ToShow" Type="bit" />
           <Property Name="Note" Type="nchar" MaxLength="350" />
         </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
         <EntityType Name="typeevent">
           <Key>
             <PropertyRef Name="Id" />
@@ -101,10 +112,21 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           <Property Name="CategoryId" Type="int" />
           <Property Name="Name" Type="nchar" MaxLength="20" />
           <Property Name="Describe" Type="nchar" MaxLength="60" />
-          <Property Name="Status" Type="bit" />
         </EntityType>
+        <Association Name="FK_celebration_customer">
+          <End Role="customer" Type="Self.customer" Multiplicity="0..1" />
+          <End Role="celebration" Type="Self.celebration" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="customer">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="celebration">
+              <PropertyRef Name="EventManager" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_customerofevent_celebration">
-          <End Role="celebration" Type="Self.celebration" Multiplicity="0..1" />
+          <End Role="celebration" Type="Self.celebration" Multiplicity="1" />
           <End Role="customerofevent" Type="Self.customerofevent" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="celebration">
@@ -112,18 +134,6 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
             </Principal>
             <Dependent Role="customerofevent">
               <PropertyRef Name="CelebrationId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_customerofevent_customer">
-          <End Role="customer" Type="Self.customer" Multiplicity="0..1" />
-          <End Role="customerofevent" Type="Self.customerofevent" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="customer">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="customerofevent">
-              <PropertyRef Name="CustomerId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -140,26 +150,14 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_ItemOfList_TypeCelebration">
-          <End Role="typeevent" Type="Self.typeevent" Multiplicity="1" />
-          <End Role="ItemOfList" Type="Self.ItemOfList" Multiplicity="0..1" />
+          <End Role="typeevent" Type="Self.typeevent" Multiplicity="0..1" />
+          <End Role="ItemOfList" Type="Self.ItemOfList" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="typeevent">
               <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="ItemOfList">
-              <PropertyRef Name="Id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_itemtoevent_event">
-          <End Role="celebration" Type="Self.celebration" Multiplicity="0..1" />
-          <End Role="itemtoevent" Type="Self.itemtoevent" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="celebration">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="itemtoevent">
-              <PropertyRef Name="CelebrationId" />
+              <PropertyRef Name="KindId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -195,19 +193,20 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           <EntitySet Name="ItemOfList" EntityType="Self.ItemOfList" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="itemtoevent" EntityType="Self.itemtoevent" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="noteevent" EntityType="Self.noteevent" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="typeevent" EntityType="Self.typeevent" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="about" EntityType="Self.about" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
     [about].[Id] AS [Id], 
-    [about].[Content] AS [Content]
+    [about].[Information] AS [Information]
     FROM [dbo].[about] AS [about]</DefiningQuery>
           </EntitySet>
+          <AssociationSet Name="FK_celebration_customer" Association="Self.FK_celebration_customer">
+            <End Role="customer" EntitySet="customer" />
+            <End Role="celebration" EntitySet="celebration" />
+          </AssociationSet>
           <AssociationSet Name="FK_customerofevent_celebration" Association="Self.FK_customerofevent_celebration">
             <End Role="celebration" EntitySet="celebration" />
-            <End Role="customerofevent" EntitySet="customerofevent" />
-          </AssociationSet>
-          <AssociationSet Name="FK_customerofevent_customer" Association="Self.FK_customerofevent_customer">
-            <End Role="customer" EntitySet="customer" />
             <End Role="customerofevent" EntitySet="customerofevent" />
           </AssociationSet>
           <AssociationSet Name="FK_event_typeevent" Association="Self.FK_event_typeevent">
@@ -218,10 +217,6 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
             <End Role="typeevent" EntitySet="typeevent" />
             <End Role="ItemOfList" EntitySet="ItemOfList" />
           </AssociationSet>
-          <AssociationSet Name="FK_itemtoevent_event" Association="Self.FK_itemtoevent_event">
-            <End Role="celebration" EntitySet="celebration" />
-            <End Role="itemtoevent" EntitySet="itemtoevent" />
-          </AssociationSet>
           <AssociationSet Name="FK_noteevent_event" Association="Self.FK_noteevent_event">
             <End Role="celebration" EntitySet="celebration" />
             <End Role="noteevent" EntitySet="noteevent" />
@@ -231,8 +226,7 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
             <End Role="typeevent" EntitySet="typeevent" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="PartyTeamModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -254,15 +248,14 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           <Property Name="PepoleAmount" Type="Int32" />
           <Property Name="DateCelebration" Type="DateTime" Precision="0" />
           <Property Name="StartHour" Type="Time" Precision="7" />
-          <Property Name="Lenght" Type="Int32" />
           <Property Name="ImportantText" Type="String" MaxLength="300" FixedLength="true" Unicode="true" />
           <Property Name="EncodedCelebration" Type="Boolean" />
-          <Property Name="InEditingCelebration" Type="Boolean" />
           <Property Name="CelebrationType" Type="Int32" />
           <Property Name="Address" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+          <Property Name="EventManager" Type="Int32" />
+          <NavigationProperty Name="customer" Relationship="Self.FK_celebration_customer" FromRole="celebration" ToRole="customer" />
           <NavigationProperty Name="customerofevent" Relationship="Self.FK_customerofevent_celebration" FromRole="celebration" ToRole="customerofevent" />
           <NavigationProperty Name="typeevent" Relationship="Self.FK_event_typeevent" FromRole="celebration" ToRole="typeevent" />
-          <NavigationProperty Name="itemtoevent" Relationship="Self.FK_itemtoevent_event" FromRole="celebration" ToRole="itemtoevent" />
           <NavigationProperty Name="noteevent" Relationship="Self.FK_noteevent_event" FromRole="celebration" ToRole="noteevent" />
         </EntityType>
         <EntityType Name="customer">
@@ -276,19 +269,20 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           <Property Name="Email" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
           <Property Name="Status" Type="Int32" />
           <Property Name="Approve" Type="Boolean" />
-          <Property Name="Image" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
-          <NavigationProperty Name="customerofevent" Relationship="Self.FK_customerofevent_customer" FromRole="customer" ToRole="customerofevent" />
+          <Property Name="Image" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="celebration" Relationship="Self.FK_celebration_customer" FromRole="customer" ToRole="celebration" />
         </EntityType>
         <EntityType Name="customerofevent">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="CustomerId" Type="Int32" />
-          <Property Name="CelebrationId" Type="Int32" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Phone" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="CelebrationId" Type="Int32" Nullable="false" />
           <Property Name="Status" Type="Boolean" />
           <NavigationProperty Name="celebration" Relationship="Self.FK_customerofevent_celebration" FromRole="customerofevent" ToRole="celebration" />
-          <NavigationProperty Name="customer" Relationship="Self.FK_customerofevent_customer" FromRole="customerofevent" ToRole="customer" />
         </EntityType>
         <EntityType Name="ItemOfList">
           <Key>
@@ -314,7 +308,6 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           <Property Name="CustomerId" Type="Int32" />
           <Property Name="ToBeTaken" Type="Boolean" />
           <Property Name="ToEveryone" Type="Boolean" />
-          <NavigationProperty Name="celebration" Relationship="Self.FK_itemtoevent_event" FromRole="itemtoevent" ToRole="celebration" />
         </EntityType>
         <EntityType Name="noteevent">
           <Key>
@@ -326,6 +319,16 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           <Property Name="Note" Type="String" MaxLength="350" FixedLength="true" Unicode="true" />
           <NavigationProperty Name="celebration" Relationship="Self.FK_noteevent_event" FromRole="noteevent" ToRole="celebration" />
         </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
         <EntityType Name="typeevent">
           <Key>
             <PropertyRef Name="Id" />
@@ -334,7 +337,6 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           <Property Name="CategoryId" Type="Int32" />
           <Property Name="Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
           <Property Name="Describe" Type="String" MaxLength="60" FixedLength="true" Unicode="true" />
-          <Property Name="Status" Type="Boolean" />
           <NavigationProperty Name="category" Relationship="Self.FK_typeevent_category" FromRole="typeevent" ToRole="category" />
           <NavigationProperty Name="celebration" Relationship="Self.FK_event_typeevent" FromRole="typeevent" ToRole="celebration" />
           <NavigationProperty Name="ItemOfList" Relationship="Self.FK_ItemOfList_TypeCelebration" FromRole="typeevent" ToRole="ItemOfList" />
@@ -344,7 +346,7 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="Content" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Information" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <Association Name="FK_typeevent_category">
           <End Role="category" Type="Self.category" Multiplicity="0..1" />
@@ -358,8 +360,20 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_celebration_customer">
+          <End Role="customer" Type="Self.customer" Multiplicity="0..1" />
+          <End Role="celebration" Type="Self.celebration" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="customer">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="celebration">
+              <PropertyRef Name="EventManager" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_customerofevent_celebration">
-          <End Role="celebration" Type="Self.celebration" Multiplicity="0..1" />
+          <End Role="celebration" Type="Self.celebration" Multiplicity="1" />
           <End Role="customerofevent" Type="Self.customerofevent" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="celebration">
@@ -382,18 +396,6 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_itemtoevent_event">
-          <End Role="celebration" Type="Self.celebration" Multiplicity="0..1" />
-          <End Role="itemtoevent" Type="Self.itemtoevent" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="celebration">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="itemtoevent">
-              <PropertyRef Name="CelebrationId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_noteevent_event">
           <End Role="celebration" Type="Self.celebration" Multiplicity="0..1" />
           <End Role="noteevent" Type="Self.noteevent" Multiplicity="*" />
@@ -406,27 +408,15 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_customerofevent_customer">
-          <End Role="customer" Type="Self.customer" Multiplicity="0..1" />
-          <End Role="customerofevent" Type="Self.customerofevent" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="customer">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="customerofevent">
-              <PropertyRef Name="CustomerId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_ItemOfList_TypeCelebration">
-          <End Role="typeevent" Type="Self.typeevent" Multiplicity="1" />
-          <End Role="ItemOfList" Type="Self.ItemOfList" Multiplicity="0..1" />
+          <End Role="typeevent" Type="Self.typeevent" Multiplicity="0..1" />
+          <End Role="ItemOfList" Type="Self.ItemOfList" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="typeevent">
               <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="ItemOfList">
-              <PropertyRef Name="Id" />
+              <PropertyRef Name="KindId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -438,11 +428,16 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           <EntitySet Name="ItemOfList" EntityType="Self.ItemOfList" />
           <EntitySet Name="itemtoevent" EntityType="Self.itemtoevent" />
           <EntitySet Name="noteevent" EntityType="Self.noteevent" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
           <EntitySet Name="typeevent" EntityType="Self.typeevent" />
           <EntitySet Name="about" EntityType="Self.about" />
           <AssociationSet Name="FK_typeevent_category" Association="Self.FK_typeevent_category">
             <End Role="category" EntitySet="category" />
             <End Role="typeevent" EntitySet="typeevent" />
+          </AssociationSet>
+          <AssociationSet Name="FK_celebration_customer" Association="Self.FK_celebration_customer">
+            <End Role="customer" EntitySet="customer" />
+            <End Role="celebration" EntitySet="celebration" />
           </AssociationSet>
           <AssociationSet Name="FK_customerofevent_celebration" Association="Self.FK_customerofevent_celebration">
             <End Role="celebration" EntitySet="celebration" />
@@ -452,17 +447,9 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
             <End Role="typeevent" EntitySet="typeevent" />
             <End Role="celebration" EntitySet="celebration" />
           </AssociationSet>
-          <AssociationSet Name="FK_itemtoevent_event" Association="Self.FK_itemtoevent_event">
-            <End Role="celebration" EntitySet="celebration" />
-            <End Role="itemtoevent" EntitySet="itemtoevent" />
-          </AssociationSet>
           <AssociationSet Name="FK_noteevent_event" Association="Self.FK_noteevent_event">
             <End Role="celebration" EntitySet="celebration" />
             <End Role="noteevent" EntitySet="noteevent" />
-          </AssociationSet>
-          <AssociationSet Name="FK_customerofevent_customer" Association="Self.FK_customerofevent_customer">
-            <End Role="customer" EntitySet="customer" />
-            <End Role="customerofevent" EntitySet="customerofevent" />
           </AssociationSet>
           <AssociationSet Name="FK_ItemOfList_TypeCelebration" Association="Self.FK_ItemOfList_TypeCelebration">
             <End Role="typeevent" EntitySet="typeevent" />
@@ -492,12 +479,11 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
                 <ScalarProperty Name="PepoleAmount" ColumnName="PepoleAmount" />
                 <ScalarProperty Name="DateCelebration" ColumnName="DateCelebration" />
                 <ScalarProperty Name="StartHour" ColumnName="StartHour" />
-                <ScalarProperty Name="Lenght" ColumnName="Lenght" />
                 <ScalarProperty Name="ImportantText" ColumnName="ImportantText" />
                 <ScalarProperty Name="EncodedCelebration" ColumnName="EncodedCelebration" />
-                <ScalarProperty Name="InEditingCelebration" ColumnName="InEditingCelebration" />
                 <ScalarProperty Name="CelebrationType" ColumnName="CelebrationType" />
                 <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="EventManager" ColumnName="EventManager" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -519,7 +505,9 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
             <EntityTypeMapping TypeName="PartyTeamModel.customerofevent">
               <MappingFragment StoreEntitySet="customerofevent">
                 <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
                 <ScalarProperty Name="CelebrationId" ColumnName="CelebrationId" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
               </MappingFragment>
@@ -561,6 +549,17 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="PartyTeamModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="typeevent">
             <EntityTypeMapping TypeName="PartyTeamModel.typeevent">
               <MappingFragment StoreEntitySet="typeevent">
@@ -568,7 +567,6 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
                 <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Describe" ColumnName="Describe" />
-                <ScalarProperty Name="Status" ColumnName="Status" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -576,7 +574,7 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
             <EntityTypeMapping TypeName="PartyTeamModel.about">
               <MappingFragment StoreEntitySet="about">
                 <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="Information" ColumnName="Information" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

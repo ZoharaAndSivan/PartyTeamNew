@@ -24,7 +24,10 @@ namespace BLL
             List<customerDTO> customerDTOs = customerDTO.CreateDTOList(customers);
             return customerDTOs;
         }
+        public void SendEamil(object email)
+        {
 
+        }
 
         public static customerDTO LoginUser(string email, string password)
         {

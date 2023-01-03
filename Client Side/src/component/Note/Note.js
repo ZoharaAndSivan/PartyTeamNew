@@ -1,34 +1,34 @@
-import { useNavigate } from 'react-router';
-import { useRef ,useState, useEffect} from "react";
-const Note = () => {
-    const [note, setNote] = useState([]);
+import { useNavigate, useParams } from "react-router";
+import { useEffect } from "react";
+import { connect } from "react-redux";
+import { GetNoteAction } from "../../action/NoteEvent";
+const Note = (props) => {
+  let {id} = useParams();
+  useEffect(() => {
+    props.GetNoteAction(id);
+  }, []);
+  let nav = useNavigate();
 
-useEffect(() => {
-    //כאן אמורה להיות קריאה לשרת
-    
-    let fakeNote=  [
-        {note:"זה לא מאוחר מדי?"},
-        {note:" כמה כסף צריך להביא ?"},
-
-      ];
-      setNote(fakeNote);
-}, [])
-let nav = useNavigate();
-
-
-    return (
-        <>
-         
-            <h1>הערות משתתפי האירוע</h1>
-            <div className="card">
-                <p>
-                    {note.map((item) => { return  <ul key={item.id} ><li>{item.note} </li>  </ul> })}
-                </p>
-
-            </div>
-     
-
-        </>
-    )
-}
-export default Note;
+  return (
+    <>
+      <h1>הערות משתתפי האירוע</h1>
+      <div className="card">
+        <p>
+          {props.noteEvent.map((item) => {
+            return (
+              <ul key={item.Id}>
+                <li>{item.Note} </li>{" "}
+              </ul>
+            );
+          })}
+        </p>
+      </div>
+    </>
+  );
+};
+const mapStateToProps = (state) => {
+  return {
+    noteEvent: state.noteEvent,
+  };
+};
+export default connect(mapStateToProps, { GetNoteAction })(Note);

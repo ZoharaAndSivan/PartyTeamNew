@@ -11,7 +11,7 @@ namespace BLL
 {
     public class CustomerOfEventManager
     {
-        public static  List<customerofeventDTO> GetCustomers()
+        public static List<customerofeventDTO> GetCustomers()
         {
             List<customerofevent> list = CustomerOfEvent.Get();
             return customerofeventDTO.CreateDTOList(list);
@@ -23,15 +23,20 @@ namespace BLL
             List<customerofeventDTO> customerofeventDTOs = customerofeventDTO.CreateDTOList(customerofevents);
             return customerofeventDTOs;
         }
-        public static customer GetManagerOfEvent(int id)
+        public static List<customerofeventDTO> GetCustomersConfirmedArrival(int id)
         {
             List<customerofevent> list = CustomerOfEvent.Get();
-            customerofevent managerId = list.FirstOrDefault(c => c.Status == false && c.CelebrationId == id);
-            List<customer> customers = Customer.Get();
-            customer Manager = customers.FirstOrDefault(c => c.Id == managerId.CustomerId);
-            return Manager;
+            List<customerofevent> customerofevents = list.Where(c => c.CelebrationId == id && c.Status == true).ToList();
+            List<customerofeventDTO> customerofeventDTOs = customerofeventDTO.CreateDTOList(customerofevents);
+            return customerofeventDTOs;
         }
-
+        public static List<customerofeventDTO> GetCustomersNotConfirmedArrival(int id)
+        {
+            List<customerofevent> list = CustomerOfEvent.Get();
+            List<customerofevent> customerofevents = list.Where(c => c.CelebrationId == id && c.Status == false).ToList();
+            List<customerofeventDTO> customerofeventDTOs = customerofeventDTO.CreateDTOList(customerofevents);
+            return customerofeventDTOs;
+        }
         public static customerofeventDTO PostCustomerOfEvent(customerofevent c)
         {
             customerofevent newC = CustomerOfEvent.Post(c);
@@ -40,6 +45,10 @@ namespace BLL
         public static void PutCOE(customerofevent coe)
         {
             CustomerOfEvent.Put(coe);
+        }
+        public static customerofevent ConfirmArrival (string email, bool answer)
+        {
+            return CustomerOfEvent.ConfirmArrival(email, answer);
         }
         public static void Delete(int i)
         {

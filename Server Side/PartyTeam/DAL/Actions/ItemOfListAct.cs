@@ -27,11 +27,12 @@ namespace DAL.Actions
         {
             using (PartyTeamEntities db = new PartyTeamEntities())
             {
-                db.ItemOfList.Add(itemOfList);
+                itemOfList = db.ItemOfList.Add(itemOfList);
                 db.SaveChanges();
-                return itemOfList;
+                return itemOfList;  
             }
         }
+      
         public static ItemOfList Put(ItemOfList ItemOfList)
         {
             using (PartyTeamEntities db = new PartyTeamEntities())
@@ -41,7 +42,6 @@ namespace DAL.Actions
                 newItemOfList.KindId = ItemOfList.KindId;
                 newItemOfList.Price = ItemOfList.Price;
                 newItemOfList.AmountOfPerson = ItemOfList.AmountOfPerson;
-                newItemOfList.typeevent = ItemOfList.typeevent;
                 db.SaveChanges();
                 return newItemOfList;
             }

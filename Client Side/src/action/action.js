@@ -49,6 +49,20 @@ export const addEventLevelOneAction = (details) => {
       );
   };
 };
+export const getEvents = () => {
+  return (dispatch) => {
+    axios.get("http://localhost:56570/api/Celebration/Get").then(
+      (response) => {
+        console.log(response);
+        dispatch(saveEvents(response.data));
+      },
+      (err) => {
+        console.log(err);
+        console.log("קרתה שגיאה");
+      }
+    );
+  };
+};
 
 export const getCategoriesAction = () => {
   return (dispatch) => {
@@ -74,7 +88,7 @@ export const logInAction = (email, password) => {
       })
       .then(
         (response) => {
-          console.log(response);
+          console.log(response.data);
           dispatch(saveUser(response.data));
         },
         (err) => {
@@ -85,12 +99,12 @@ export const logInAction = (email, password) => {
   };
 };
 
-export const getCustomerOfEventByEventId = (evetId) => {
+export const getCustomerOfEventByEventId = (eventId) => {
   return (dispatch) => {
     axios
       .get(
         "http://localhost:56570/api/CostomerOfEvent/GetCustomerOfEventByEventId/" +
-          evetId
+          eventId
       )
       .then(
         (response) => {
@@ -105,70 +119,13 @@ export const getCustomerOfEventByEventId = (evetId) => {
   };
 };
 
-//ניתוב חדשששש מצד שרתתתתתתת-----זוהרה
-//עדגון פרטי לקוח
+//עדכון פרטי לקוח
 export const updateUserAction = (user) => {
   return (dispatch) => {
-    axios
-      .put("http://localhost:56570/api/Celebration/Get", user) ///קישור לא נכון
-      .then(
-        (response) => {
-          console.log(response);
-          dispatch(saveUser(response.data));
-        },
-        (err) => {
-          console.log(err);
-          console.log("קרתה שגיאה");
-        }
-      );
-  };
-};
-
-//ניתוב חדשששש מצד שרתתתתתתת-----זוהרה
-//הבאת האודות מהשרת
-export const getAboutAction = () => {
-  return (dispatch) => {
-    axios
-      .get("http://localhost:56570/api/Celebration/Get") ///קישור לא נכון
-      .then(
-        (response) => {
-          console.log(response);
-          dispatch(saveAbout(response.data));
-        },
-        (err) => {
-          console.log(err);
-          console.log("קרתה שגיאה");
-        }
-      );
-  };
-};
-
-//ניתוב חדשששש מצד שרתתתתתתת-----זוהרה
-//עדכון האודות
-export const putAboutAction = (record) => {
-  return (dispatch) => {
-    axios
-      .put("http://localhost:56570/api/itemoflist/Put/" + record) //שגויי הניתוב
-      .then(
-        (response) => {
-          console.log(response);
-          dispatch(saveAbout(record));
-        },
-        (err) => {
-          console.log(err);
-          console.log("קרתה שגיאה");
-        }
-      );
-  };
-};
-//מנהל
-//אישורי אירועים
-export const getEvents = () => {
-  return (dispatch) => {
-    axios.get("http://localhost:56570/api/Celebration/Get").then(
+    axios.put("http://localhost:56570/api/Customer/Put/", user).then(
       (response) => {
         console.log(response);
-        dispatch(saveEvents(response.data));
+        dispatch(saveUser(response.data));
       },
       (err) => {
         console.log(err);
@@ -178,20 +135,72 @@ export const getEvents = () => {
   };
 };
 
-// export const getCustomers = () => {
-//     return (dispatch) => {
-//         axios.get("http://localhost:56570/api/Customer/Get").
-//             then(response => {
-//                 console.log(response);
-//                 dispatch(saveUser(response.data))
-//             },
-//                 err => {
-//                     console.log(err);
-//                     console.log("קרתה שגיאה");
-//                 })
-//     }
-// }
+//מנהל
+//אישורי אירועים
+export const getEventsNotApproval = () => {
+  return (dispatch) => {
+    axios.get("http://localhost:56570/api/Celebration/GetNotApproval").then(
+      (response) => {
+        console.log(response);
+        dispatch(saveEventsNotApproval(response.data));
+      },
+      (err) => {
+        console.log(err);
+        console.log("קרתה שגיאה");
+      }
+    );
+  };
+};
+export const changeEventStatus = (EventId, Answer) => {
+  return (dispatch) => {
+    axios
+      .put("http://localhost:56570/api/Celebration/ChaneEventStatus ", { 
+        EventId, Answer 
+      })
+      .then(
+        (response) => {
+          console.log(response);
+          dispatch(saveEventsNotApproval(response.data));
+        },
+        (err) => {
+          console.log(err);
+          console.log("קרתה שגיאה");
+        }
+      );
+  };
+};
 
+//הבאת האודות מהשרת
+export const getAboutAction = () => {
+  return (dispatch) => {
+    axios.get("http://localhost:56570/api/About/Get").then(
+      (response) => {
+        console.log(response);
+        dispatch(saveAbout(response.data[0].Information));
+      },
+      (err) => {
+        console.log(err);
+        console.log("קרתה שגיאה");
+      }
+    );
+  };
+};
+
+//עדכון האודות
+export const putAboutAction = (record) => {
+  return (dispatch) => {
+    axios.put("http://localhost:56570/api/About/Put/" + record).then(
+      (response) => {
+        console.log(response);
+        dispatch(saveAbout(record));
+      },
+      (err) => {
+        console.log(err);
+        console.log("קרתה שגיאה");
+      }
+    );
+  };
+};
 export const addRecord = (record) => {
   return (dispatch) => {
     axios.post("http://localhost:56570/api/itemoflist/post/" + record).then(
@@ -219,22 +228,6 @@ export const putRecord = (record) => {
         console.log("קרתה שגיאה");
       }
     );
-  };
-};
-export const getManagerOfEvent = (id) => {
-  return (dispatch) => {
-    axios
-      .get("http://localhost:56570/api/CustomerOfEvent/GetManagerOfEvent/" + id)
-      .then(
-        (response) => {
-          console.log(response);
-          dispatch(saveManagerEvent(response.data));
-        },
-        (err) => {
-          console.log(err);
-          console.log("קרתה שגיאה");
-        }
-      );
   };
 };
 
@@ -287,12 +280,6 @@ export const saveUser = (user) => {
     payload: user,
   };
 };
-export const saveManagerEvent = (manager) => {
-  return {
-    type: "SAVE_MANAGER_EVENT",
-    payload: manager,
-  };
-};
 
 export const saveAlldetails = (event) => {
   return {
@@ -305,6 +292,13 @@ export const saveAlldetails = (event) => {
 export const saveEvents = (list) => {
   return {
     type: "SAVE_EVENTS",
+    payload: list,
+  };
+};
+
+export const saveEventsNotApproval = (list) => {
+  return {
+    type: "SAVE_EVENTS_FOR_APPROVAL",
     payload: list,
   };
 };

@@ -24,7 +24,7 @@ namespace PartyTeam.Controllers
         // POST: api/Category
         public void Post([FromBody]category value) { CategoryManager.PostCategory(value); }
         
-        //לנסות
+        //עובד
         // PUT: api/Category/5
         public void Put([FromBody]category value){ CategoryManager.PutCategory(value); }                
         

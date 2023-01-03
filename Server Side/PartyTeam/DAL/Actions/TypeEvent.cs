@@ -41,7 +41,6 @@ namespace DAL.Actions
                 newtypeevent.celebration = typeevent.celebration;
                 newtypeevent.Describe = typeevent.Describe;
                 newtypeevent.Name = typeevent.Name;
-                newtypeevent.Status = typeevent.Status;
                 db.SaveChanges();
                 return newtypeevent;
             }

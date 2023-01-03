@@ -42,8 +42,5 @@ namespace PartyTeam.Controllers
         //עובדדדדדדד
         // DELETE: api/Customer/5
         public void Delete(int id) { CustomerManager.Delete(id); }
-
-
-  
     }
 }

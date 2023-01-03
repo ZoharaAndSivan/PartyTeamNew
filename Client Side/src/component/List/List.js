@@ -1,7 +1,6 @@
 import "./List.css";
 import { useEffect } from "react";
 import { connect } from "react-redux";
-//import { getListByTypeAction } from "../../action/list";
 
 const List = (props) => {
     return (

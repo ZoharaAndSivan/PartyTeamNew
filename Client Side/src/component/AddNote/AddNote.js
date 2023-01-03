@@ -1,32 +1,48 @@
-import { useNavigate } from 'react-router';
-import { useRef, useState } from "react";
-const AddNote = () => {
+import { useNavigate } from "react-router";
+import { connect } from "react-redux";
+import { AddNoteAction } from "../../action/NoteEvent";
 
-    let fakeNote = useState([
-        { note: "זה לא מאוחר מדי?" },
-        { note: " כמה כסף צריך להביא ?" },
+const AddNote = (props) => {
+  let nav = useNavigate();
+  let text = {
+    data: "",
+    CelebrationId: props.cel
+  };
+  const change = (e) => {
+    let { name, value } = e.target;
+    text[name] = value;
+  };
+  const addNote = (note) => {
+    props.AddNoteAction(note);
+    alert("האירוע נוצר בהצלחה");
+    console.log(text);
+    nav("/homePage");
+  };
 
-    ]
-    );
-    let nav = useNavigate();
-    let textInput = useRef(null);
-
-    const addNote = () => {
-        let note = { note: textInput.current.value }
-        fakeNote = [...fakeNote, note];
-        textInput.current.value = "";
-        console.log(fakeNote);
-        alert("האירוע נוצר בהצלחה");
-        nav("/myEvent")
-    }
-
-    return (
-        <>
-            <h2>4 / 4</h2>
-            <h4>הוספת הערה</h4> 
-            <textarea className="form-control" maxLength="1000" placeholder="הוסף הערה" ref={textInput}></textarea>        
-            <input type="button" value="סיום" onClick={addNote} />
-        </>
-    )
-}
-export default AddNote;
+  return (
+    <>
+      <h2>4 / 4</h2>
+      <h4>הוספת הערה</h4>
+      <textarea
+        className="form-control"
+        maxLength="1000"
+        placeholder="הוסף הערה"
+        name="data"
+        onChange={change}
+      ></textarea>
+      <input
+        type="button"
+        value="סיום"
+        onClick={() => {
+          addNote(text.data);
+        }}
+      />
+    </>
+  );
+};  
+const mapStateToProps = (state) => {
+  return {
+    cel: state.currentEvent
+  };
+};
+export default connect(mapStateToProps, { AddNoteAction })(AddNote);

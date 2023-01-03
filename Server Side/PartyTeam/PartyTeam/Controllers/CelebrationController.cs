@@ -16,6 +16,12 @@ namespace PartyTeam.Controllers
         // GET: api/Celebartion
         public List<celebrationDTO> Get() { return CelebrationManager.GetCelebration(); }
 
+        // GET: api/Celebartion
+        public List<celebrationDTO> GetNotApproval() { return CelebrationManager.GetCelebrationNotApproval(); }
+        [HttpPost]
+        public List<celebrationDTO> GetOrderCelebrationByUserEmail([FromBody] EmailBody body) { return CelebrationManager.GetOrderCelebrationByUserEmail(body.Email); }
+        public List<celebrationDTO> GetMyCelebrationByUserId(int id) { return CelebrationManager.GetMyCelebrationByUserId(id); }
+
         //לבדוק למה זה לא עובד
         // GET: api/Celebartion/5
         [HttpGet]
@@ -48,12 +54,25 @@ namespace PartyTeam.Controllers
             }
         }
 
-        //לנסות
+        //עובד
         // PUT: api/Celebartion/5
         public void Put([FromBody] celebration value) { CelebrationManager.PutCelebration(value); }
+        [HttpPut]
+        public celebration ChangeEventStatus([FromBody] celebration cel)
+        {
+            int id = cel.Id;
+            bool answer = (bool)cel.EncodedCelebration;
+            return CelebrationManager.ChangeEventStatus(id, answer);
+        }
 
-        //לנסות
+        //עובד
         // DELETE: api/Celebartion/5
         public void Delete(int id) { CelebrationManager.Delete(id); }
+  
+    }
+
+    public class EmailBody
+    {
+        public string Email { get; set; }
     }
 }

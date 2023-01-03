@@ -37,12 +37,22 @@ namespace DAL.Actions
             using (PartyTeamEntities db = new PartyTeamEntities())
             {
                 customerofevent newCustomerofevent = db.customerofevent.FirstOrDefault(x => x.Id == customerofevent.Id);
+                newCustomerofevent.Name = customerofevent.Name;
+                newCustomerofevent.Email = customerofevent.Email;
+                newCustomerofevent.Phone = customerofevent.Phone;
                 newCustomerofevent.CelebrationId = customerofevent.CelebrationId;
-                newCustomerofevent.customer = customerofevent.customer;
-                newCustomerofevent.CustomerId = customerofevent.CustomerId;
                 newCustomerofevent.Status = customerofevent.Status;
                 db.SaveChanges();
                 return newCustomerofevent;
+            }
+        }
+        public static customerofevent ConfirmArrival(string email, bool answer)
+        {
+            using (PartyTeamEntities db = new PartyTeamEntities())
+            {
+                db.customerofevent.FirstOrDefault(x => x.Email == email).Status = answer;
+                db.SaveChanges();
+                return db.customerofevent.FirstOrDefault(x => x.Email == email);
             }
         }
         public static void Delete(int id)

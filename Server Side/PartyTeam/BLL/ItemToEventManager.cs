@@ -19,8 +19,8 @@ namespace BLL
         public static List<itemtoeventDTO> GetItemToEventByIdEvent(int id)
         {
             List<itemtoevent> list = ItemToEvent.Get().Where(c => c.CelebrationId == id).ToList();
-            List<itemtoevent> itemtoevents = list;
-            return itemtoeventDTO.CreateDTOList(itemtoevents);
+            List<itemtoevent> itemtoevent = list;
+            return itemtoeventDTO.CreateDTOList(itemtoevent);
             // return itemtoeventDTOs;
         }
         public static void PostItem(itemtoevent i)

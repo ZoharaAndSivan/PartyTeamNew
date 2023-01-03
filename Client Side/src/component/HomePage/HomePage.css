@@ -11,6 +11,10 @@ div .timeline__item-inner{
     height: 350px;
     
 }
+.block {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* style="width: 18rem;" */
 /* div div{
