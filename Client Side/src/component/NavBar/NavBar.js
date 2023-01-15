@@ -17,19 +17,21 @@ function Navbar(props) {
       </div>
       <nav className="navv">
         <div className="wraps">
-          <div className="aas">
-            <Link to="addEvent" className="dropbtn">
-              יצירת אירוע
-            </Link>
-          </div>
           {props.currentUser ? (
-            <div className="dropdown">
-              <button className="dropbtn"> האירועים שלי</button>
-              <div className="dropdown-content">
-                <Link to="/createdEvents"> אירועים שלי</Link>
-                <Link to="/orderedEvents"> הזמנות לאירועים</Link>
+            <>
+              <div className="aas">
+                <Link to="addEvent" className="dropbtn">
+                  יצירת אירוע
+                </Link>
               </div>
-            </div>
+              <div className="dropdown">
+                <button className="dropbtn"> האירועים שלי</button>
+                <div className="dropdown-content">
+                  <Link to="/createdEvents"> אירועים שלי</Link>
+                  <Link to="/orderedEvents"> הזמנות לאירועים</Link>
+                </div>
+              </div>
+            </>
           ) : null}
           {props.categories.map((c) => (
             <div className="dropdown" key={c.Id}>

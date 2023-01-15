@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const addUserAction = (user) => {
   return (dispatch) => {
-    axios.post("http://localhost:56570/api/Customer/post", user).then(
+    axios.post("http://localhost:56570/api/Customer/Post", user).then(
       (response) => {
         console.log(response);
         dispatch(newUser({ ...user, id: response.data }));

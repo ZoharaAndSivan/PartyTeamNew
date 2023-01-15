@@ -207,6 +207,7 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\CelebrationController.cs" />
+    <Compile Include="Controllers\Mail.cs" />
     <Compile Include="Controllers\CustomerOfEventController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\ItemOfListController.cs" />

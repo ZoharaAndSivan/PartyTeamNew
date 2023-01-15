@@ -18,15 +18,14 @@
     <Property Name="PepoleAmount" Type="Int32" />
     <Property Name="DateCelebration" Type="DateTime" Precision="0" />
     <Property Name="StartHour" Type="Time" Precision="7" />
-    <Property Name="Lenght" Type="Int32" />
     <Property Name="ImportantText" Type="String" MaxLength="300" FixedLength="true" Unicode="true" />
     <Property Name="EncodedCelebration" Type="Boolean" />
-    <Property Name="InEditingCelebration" Type="Boolean" />
     <Property Name="CelebrationType" Type="Int32" />
     <Property Name="Address" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="EventManager" Type="Int32" />
+    <NavigationProperty Name="customer" Relationship="Self.FK_celebration_customer" FromRole="celebration" ToRole="customer" />
     <NavigationProperty Name="customerofevent" Relationship="Self.FK_customerofevent_celebration" FromRole="celebration" ToRole="customerofevent" />
     <NavigationProperty Name="typeevent" Relationship="Self.FK_event_typeevent" FromRole="celebration" ToRole="typeevent" />
-    <NavigationProperty Name="itemtoevent" Relationship="Self.FK_itemtoevent_event" FromRole="celebration" ToRole="itemtoevent" />
     <NavigationProperty Name="noteevent" Relationship="Self.FK_noteevent_event" FromRole="celebration" ToRole="noteevent" />
   </EntityType>
   <EntityType Name="customer">
@@ -40,19 +39,20 @@
     <Property Name="Email" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
     <Property Name="Status" Type="Int32" />
     <Property Name="Approve" Type="Boolean" />
-    <Property Name="Image" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
-    <NavigationProperty Name="customerofevent" Relationship="Self.FK_customerofevent_customer" FromRole="customer" ToRole="customerofevent" />
+    <Property Name="Image" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="celebration" Relationship="Self.FK_celebration_customer" FromRole="customer" ToRole="celebration" />
   </EntityType>
   <EntityType Name="customerofevent">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="CustomerId" Type="Int32" />
-    <Property Name="CelebrationId" Type="Int32" />
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CelebrationId" Type="Int32" Nullable="false" />
     <Property Name="Status" Type="Boolean" />
     <NavigationProperty Name="celebration" Relationship="Self.FK_customerofevent_celebration" FromRole="customerofevent" ToRole="celebration" />
-    <NavigationProperty Name="customer" Relationship="Self.FK_customerofevent_customer" FromRole="customerofevent" ToRole="customer" />
   </EntityType>
   <EntityType Name="ItemOfList">
     <Key>
@@ -78,7 +78,6 @@
     <Property Name="CustomerId" Type="Int32" />
     <Property Name="ToBeTaken" Type="Boolean" />
     <Property Name="ToEveryone" Type="Boolean" />
-    <NavigationProperty Name="celebration" Relationship="Self.FK_itemtoevent_event" FromRole="itemtoevent" ToRole="celebration" />
   </EntityType>
   <EntityType Name="noteevent">
     <Key>
@@ -90,6 +89,16 @@
     <Property Name="Note" Type="String" MaxLength="350" FixedLength="true" Unicode="true" />
     <NavigationProperty Name="celebration" Relationship="Self.FK_noteevent_event" FromRole="noteevent" ToRole="celebration" />
   </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
   <EntityType Name="typeevent">
     <Key>
       <PropertyRef Name="Id" />
@@ -98,7 +107,6 @@
     <Property Name="CategoryId" Type="Int32" />
     <Property Name="Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
     <Property Name="Describe" Type="String" MaxLength="60" FixedLength="true" Unicode="true" />
-    <Property Name="Status" Type="Boolean" />
     <NavigationProperty Name="category" Relationship="Self.FK_typeevent_category" FromRole="typeevent" ToRole="category" />
     <NavigationProperty Name="celebration" Relationship="Self.FK_event_typeevent" FromRole="typeevent" ToRole="celebration" />
     <NavigationProperty Name="ItemOfList" Relationship="Self.FK_ItemOfList_TypeCelebration" FromRole="typeevent" ToRole="ItemOfList" />
@@ -108,7 +116,7 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" />
-    <Property Name="Content" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Information" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <Association Name="FK_typeevent_category">
     <End Role="category" Type="Self.category" Multiplicity="0..1" />
@@ -122,8 +130,20 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_celebration_customer">
+    <End Role="customer" Type="Self.customer" Multiplicity="0..1" />
+    <End Role="celebration" Type="Self.celebration" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="celebration">
+        <PropertyRef Name="EventManager" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_customerofevent_celebration">
-    <End Role="celebration" Type="Self.celebration" Multiplicity="0..1" />
+    <End Role="celebration" Type="Self.celebration" Multiplicity="1" />
     <End Role="customerofevent" Type="Self.customerofevent" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="celebration">
@@ -146,18 +166,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_itemtoevent_event">
-    <End Role="celebration" Type="Self.celebration" Multiplicity="0..1" />
-    <End Role="itemtoevent" Type="Self.itemtoevent" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="celebration">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="itemtoevent">
-        <PropertyRef Name="CelebrationId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_noteevent_event">
     <End Role="celebration" Type="Self.celebration" Multiplicity="0..1" />
     <End Role="noteevent" Type="Self.noteevent" Multiplicity="*" />
@@ -170,27 +178,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_customerofevent_customer">
-    <End Role="customer" Type="Self.customer" Multiplicity="0..1" />
-    <End Role="customerofevent" Type="Self.customerofevent" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="customer">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="customerofevent">
-        <PropertyRef Name="CustomerId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_ItemOfList_TypeCelebration">
-    <End Role="typeevent" Type="Self.typeevent" Multiplicity="1" />
-    <End Role="ItemOfList" Type="Self.ItemOfList" Multiplicity="0..1" />
+    <End Role="typeevent" Type="Self.typeevent" Multiplicity="0..1" />
+    <End Role="ItemOfList" Type="Self.ItemOfList" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="typeevent">
         <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="ItemOfList">
-        <PropertyRef Name="Id" />
+        <PropertyRef Name="KindId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -202,11 +198,16 @@
     <EntitySet Name="ItemOfList" EntityType="Self.ItemOfList" />
     <EntitySet Name="itemtoevent" EntityType="Self.itemtoevent" />
     <EntitySet Name="noteevent" EntityType="Self.noteevent" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
     <EntitySet Name="typeevent" EntityType="Self.typeevent" />
     <EntitySet Name="about" EntityType="Self.about" />
     <AssociationSet Name="FK_typeevent_category" Association="Self.FK_typeevent_category">
       <End Role="category" EntitySet="category" />
       <End Role="typeevent" EntitySet="typeevent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_celebration_customer" Association="Self.FK_celebration_customer">
+      <End Role="customer" EntitySet="customer" />
+      <End Role="celebration" EntitySet="celebration" />
     </AssociationSet>
     <AssociationSet Name="FK_customerofevent_celebration" Association="Self.FK_customerofevent_celebration">
       <End Role="celebration" EntitySet="celebration" />
@@ -216,17 +217,9 @@
       <End Role="typeevent" EntitySet="typeevent" />
       <End Role="celebration" EntitySet="celebration" />
     </AssociationSet>
-    <AssociationSet Name="FK_itemtoevent_event" Association="Self.FK_itemtoevent_event">
-      <End Role="celebration" EntitySet="celebration" />
-      <End Role="itemtoevent" EntitySet="itemtoevent" />
-    </AssociationSet>
     <AssociationSet Name="FK_noteevent_event" Association="Self.FK_noteevent_event">
       <End Role="celebration" EntitySet="celebration" />
       <End Role="noteevent" EntitySet="noteevent" />
-    </AssociationSet>
-    <AssociationSet Name="FK_customerofevent_customer" Association="Self.FK_customerofevent_customer">
-      <End Role="customer" EntitySet="customer" />
-      <End Role="customerofevent" EntitySet="customerofevent" />
     </AssociationSet>
     <AssociationSet Name="FK_ItemOfList_TypeCelebration" Association="Self.FK_ItemOfList_TypeCelebration">
       <End Role="typeevent" EntitySet="typeevent" />

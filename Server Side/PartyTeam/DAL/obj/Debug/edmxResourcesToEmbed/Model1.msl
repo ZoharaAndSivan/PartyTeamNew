@@ -18,12 +18,11 @@
           <ScalarProperty Name="PepoleAmount" ColumnName="PepoleAmount" />
           <ScalarProperty Name="DateCelebration" ColumnName="DateCelebration" />
           <ScalarProperty Name="StartHour" ColumnName="StartHour" />
-          <ScalarProperty Name="Lenght" ColumnName="Lenght" />
           <ScalarProperty Name="ImportantText" ColumnName="ImportantText" />
           <ScalarProperty Name="EncodedCelebration" ColumnName="EncodedCelebration" />
-          <ScalarProperty Name="InEditingCelebration" ColumnName="InEditingCelebration" />
           <ScalarProperty Name="CelebrationType" ColumnName="CelebrationType" />
           <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="EventManager" ColumnName="EventManager" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -45,7 +44,9 @@
       <EntityTypeMapping TypeName="PartyTeamModel.customerofevent">
         <MappingFragment StoreEntitySet="customerofevent">
           <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
           <ScalarProperty Name="CelebrationId" ColumnName="CelebrationId" />
           <ScalarProperty Name="Status" ColumnName="Status" />
         </MappingFragment>
@@ -87,6 +88,17 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="PartyTeamModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="typeevent">
       <EntityTypeMapping TypeName="PartyTeamModel.typeevent">
         <MappingFragment StoreEntitySet="typeevent">
@@ -94,7 +106,6 @@
           <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Describe" ColumnName="Describe" />
-          <ScalarProperty Name="Status" ColumnName="Status" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -102,7 +113,7 @@
       <EntityTypeMapping TypeName="PartyTeamModel.about">
         <MappingFragment StoreEntitySet="about">
           <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Information" ColumnName="Information" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

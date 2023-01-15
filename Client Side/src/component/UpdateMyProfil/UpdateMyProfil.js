@@ -1,6 +1,8 @@
+import { Avatar } from "@mui/material";
 import { connect } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { updateUserAction } from "../../action/Customer";
+import a from "./חופה.jpg"
 
 const UpdateMyProfil = (props) => {
   let nav = useNavigate();
@@ -20,8 +22,9 @@ const UpdateMyProfil = (props) => {
       <h1>פרטי משתמש</h1>
       <form role="form">
         <div className="form-group">
-          <img src={user.Image} ></img>
-          <label>שם משתמש</label><br/>
+          {/* <Avatar alt="Remy Sharp" src={a} /> */}
+          <label>שם משתמש</label>
+          <br />
           <input
             type="text"
             name="Name"
@@ -32,7 +35,8 @@ const UpdateMyProfil = (props) => {
           />
         </div>
         <div className="form-group">
-          <label>מייל</label><br/>
+          <label>מייל</label>
+          <br />
           <input
             type="email"
             name="Email"
@@ -43,7 +47,8 @@ const UpdateMyProfil = (props) => {
           />
         </div>
         <div className="form-group">
-          <label>סיסמא</label><br/>
+          <label>סיסמא</label>
+          <br />
           <input
             type="password"
             name="Password"
@@ -53,7 +58,8 @@ const UpdateMyProfil = (props) => {
           />
         </div>
         <div className="form-group">
-          <label>אימות סיסמא</label><br/>
+          <label>אימות סיסמא</label>
+          <br />
           <input
             type="password"
             name="Password"
@@ -63,7 +69,8 @@ const UpdateMyProfil = (props) => {
           />
         </div>
         <div className="form-group">
-          <label>טלפון</label><br/>
+          <label>טלפון</label>
+          <br />
           <input
             type="phone"
             name="Phone"

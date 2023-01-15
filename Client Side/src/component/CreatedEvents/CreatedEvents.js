@@ -13,15 +13,22 @@ const CreatedEvents = (props) => {
       {props.myEvents ? (
         <div className="container">
           {props.myEvents.map((e) => {
-            return (
-              <div
-                key={e.Id}
-                className="celebration"
-                onClick={() => nav("/allDetailsForEventManager/" + e.Id)}
-              >
-                {e.Name}
-              </div>
-            );
+            
+              return (
+                <div
+                  key={e.Id}
+                  className="celebration"
+                  onClick={() => nav("/allDetailsForEventManager/" + e.Id)}
+                >
+                  {e.Name}
+                </div>
+              );
+            
+            // else {
+            //   <div>אירועים בהמתנה לאישור
+            //     <div>{e.Name}</div>
+            //   </div>
+            // }
           })}
         </div>
       ) : (

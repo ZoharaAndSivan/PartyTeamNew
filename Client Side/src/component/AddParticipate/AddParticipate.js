@@ -25,7 +25,7 @@ const AddParticipate = (props) => {
   };
   return (
     <>
-      <h2>4 / 2</h2>
+      <h2>2 / 2</h2>
       <h4> הוספת משתתפים</h4>
       <form role="form">
         <div className="form-group">
@@ -77,9 +77,9 @@ const AddParticipate = (props) => {
     </>
   );
 };
-const mapStateToProps = (state) =>{
-  return{
-    cel: state.currentEvent
+const mapStateToProps = (state) => {
+  return {
+    cel: state.currentEvent,
   };
 };
-export default connect(null, { Post })(AddParticipate);
+export default connect(mapStateToProps, { Post })(AddParticipate);

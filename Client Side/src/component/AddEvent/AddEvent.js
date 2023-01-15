@@ -35,22 +35,22 @@ const AddEvent = (props) => {
     l.CelebrationType = c.Id;
     if (c.Id == 36) l.EncodedCelebration = false;
   };
-  const validation = () => {
-    if (l.DateCelebration < Date().now()) {
-      alert("unvalide date");
-      date = false;
-    }
-    if (l.Name.length == 0 || l.Name.length == 2) {
-      alert("unvalide name");
-      Name = false;
-    }
-    if (l.PepoleAmount == 1) {
-      alert("אין אפשרות ליצור אירוע לאדם אחד");
-      pepole = false;
-    }
-  };
+  // const validation = () => {
+  //   if (l.DateCelebration < Date().now()) {
+  //     alert("unvalide date");
+  //     date = false;
+  //   }
+  //   if (l.Name.length == 0 || l.Name.length == 2) {
+  //     alert("unvalide name");
+  //     Name = false;
+  //   }
+  //   if (l.PepoleAmount == 1) {
+  //     alert("אין אפשרות ליצור אירוע לאדם אחד");
+  //     pepole = false;
+  //   }
+  // };
   const add = (event) => {
-    validation();
+    // validation();
     if (l.DateCelebration == null) alert("enetr date");
     if (l.Name == null) alert("enter name");
     if (l.StartHour == null) alert("enter start hour");
@@ -58,19 +58,20 @@ const AddEvent = (props) => {
     if (l.PepoleAmount == null) alert("enter pepole amount");
     l.EventManager = props.customer.Id;
     event.preventDefault();
-    if (
-      l.DateCelebration &&
-      l.Name &&
-      l.StartHour &&
-      l.Address &&
-      l.PepoleAmount &&
-      Name &&
-      date &&
-      address &&
-      pepole &&
-      starthour
-    )
-      props.addEventLevelOneAction(l);
+    // if (
+    //   l.DateCelebration &&
+    //   l.Name &&
+    //   l.StartHour &&
+    //   l.Address &&
+    //   l.PepoleAmount &&
+    //   Name &&
+    //   date &&
+    //   address &&
+    //   pepole &&
+    //   starthour
+    // )
+    console.log(l);
+    props.addEventLevelOneAction(l);
     nav("/addParticipate");
   };
 
@@ -85,7 +86,7 @@ const AddEvent = (props) => {
         </>
       ) : (
         <>
-          <h2> 4 / 1</h2>
+          <h2> 2 / 1</h2>
           <h4 > פרטי אירוע </h4>
           <form role="form">
             <div className="form-group">

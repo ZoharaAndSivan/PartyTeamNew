@@ -86,7 +86,7 @@ namespace DAL.Actions
                 celebration c = db.celebration.FirstOrDefault(ca => ca.Id == id);
                 db.celebration.Remove(c);
                 db.SaveChanges();
-            }
+            }   
         }
     }
 }

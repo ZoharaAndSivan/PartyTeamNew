@@ -9,7 +9,8 @@ const EventApprovals = (props) => {
     props.getEventsNotApproval();
   }, []);
   const changeStatus = (item, value) => {
-    props.changeEventStatus(item.id, value);
+    console.log(item)
+    props.changeEventStatus(item.Id, value);
   };
   return (
     <>
@@ -21,9 +22,10 @@ const EventApprovals = (props) => {
                 {item.Name}
                 {/* {item.customersOfEvent.Id} */}
                 <p>שם מבקש:{item.managerDetails.Name}</p>
-                <button onClick={() => { changeStatus(item, true);}}>
+                <button onClick={() => {changeStatus(item, true);}}>
                   אישור
                 </button>
+                {console.log(item)}
                 <button onClick={() => {changeStatus(item, false);}}>
                   סירוב
                 </button>

@@ -10,7 +10,8 @@ import { PutList } from "../../action/TypeEvent";
 
 const ListActions = (props) => {
   let { id } = useParams();
-  let list = { ...props.lists.find((l) => l.id == id) };
+  let list = { ...props.lists.find((l) => l.Id == id) };
+  console.log(list);
   let nav = useNavigate();
   useEffect(() => {
     props.getListByTypeAction(id);
@@ -49,7 +50,7 @@ const ListActions = (props) => {
   };
   return (
     <>
-      <h1>הרשימה שלי</h1>
+      <h1>{list.Name}</h1>
       <input
         type="text"
         name="Name"

@@ -18,11 +18,11 @@ const EditEvent = (props) => {
   };
   const editEvent = () => {
     props.updateEventOneLevelAction(item);
-    nav("/editParticipate/:" + id);
+    nav("/editParticipates");
   };
   return (
     <>
-      <h2> 4 / 1</h2>
+      <h2> 2 / 1</h2>
       <h4> עדכון פרטי אירוע </h4>
       <form role="form">
         <div className="form-group">

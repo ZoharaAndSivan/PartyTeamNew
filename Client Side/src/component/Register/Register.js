@@ -25,55 +25,58 @@ const Register = (props) => {
     if (type === "password" && value.length === 8) value = +value;
     r[name] = value;
   };
-  const validation = (r) => {
-    if (r.name.length == 0 || r.name < 2) {
-      alert("unvalid name");
-      name = false;
-    }
-    if (r.phoneNumber < 10 || r.phoneNumber > 10) {
-      alert("unvalid phone number");
-      phoneNumber = false;
-    }
-    if (r.email.length == 0 || r.email > 6) {
-      alert("unvalid email");
-      email = false;
-    }
-    if (
-      r.password.contain("/'") ||
-      r.password.contain("/") ||
-      r.password.length < 8 ||
-      !r.password.contain("@") ||
-      !r.password.contain(".") ||
-      r.password.findIndex("@") != 4
-    ) {
-      alert(
-        "A valid password should contain 8 characters. numbers and letters."
-      );
-      password = false;
-    }
-    if (r.password != r.passwordVerification) {
-      alert("Passwords are not the same");
-      isSame = false;
-    }
-  };
+  // const validation = (r) => {
+  //   if (r.name.length == 0 || r.name < 2) {
+  //     alert("unvalid name");
+  //     name = false;
+  //   }
+  //   if (r.phoneNumber < 10 || r.phoneNumber > 10) {
+  //     alert("unvalid phone number");
+  //     phoneNumber = false;
+  //   }
+  //   if (r.email.length == 0 || r.email > 6) {
+  //     alert("unvalid email");
+  //     email = false;
+  //   }
+  //   if (
+  //     r.password.contain("/'") ||
+  //     r.password.contain("/") ||
+  //     r.password.length < 8 ||
+  //     !r.password.contain("@") ||
+  //     !r.password.contain(".") ||
+  //     r.password.findIndex("@") != 4
+  //   ) {
+  //     alert(
+  //       "A valid password should contain 8 characters. numbers and letters."
+  //     );
+  //     password = false;
+  //   }
+  //   if (r.password != r.passwordVerification) {
+  //     alert("Passwords are not the same");
+  //     isSame = false;
+  //   }
+  // };
   const addUser = () => {
-    validation();
-    if (
-      name &&
-      password &&
-      email &&
-      phoneNumber &&
-      r.name &&
-      r.phoneNumber &&
-      r.email &&
-      r.password &&
-      isSame
-    ) {
-      props.addUserAction(r);
-      nav("/homepage");
-    } else {
-      alert("check");
-    }
+    // validation();
+    // if (
+    //   name &&
+    //   password &&
+    //   email &&
+    //   phoneNumber &&
+    //   r.name &&
+    //   r.phoneNumber &&
+    //   r.email &&
+    //   r.password &&
+    //   isSame
+    // ) {
+    //   props.addUserAction(r);
+    //   nav("/homepage");
+    // } else {
+    //   alert("check");
+    // }
+    console.log("hi " + r);
+    props.addUserAction(r);
+    nav("/homepage");
   };
   return (
     <>

@@ -21,7 +21,6 @@ const AddNote = (props) => {
 
   return (
     <>
-      <h2>4 / 4</h2>
       <h4>הוספת הערה</h4>
       <textarea
         className="form-control"

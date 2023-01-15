@@ -22,6 +22,7 @@ namespace PartyTeam.Controllers
         public List<celebrationDTO> GetOrderCelebrationByUserEmail([FromBody] EmailBody body) { return CelebrationManager.GetOrderCelebrationByUserEmail(body.Email); }
         public List<celebrationDTO> GetMyCelebrationByUserId(int id) { return CelebrationManager.GetMyCelebrationByUserId(id); }
 
+        //בטח בגלל ה-ID
         //לבדוק למה זה לא עובד
         // GET: api/Celebartion/5
         [HttpGet]
@@ -58,10 +59,10 @@ namespace PartyTeam.Controllers
         // PUT: api/Celebartion/5
         public void Put([FromBody] celebration value) { CelebrationManager.PutCelebration(value); }
         [HttpPut]
-        public celebration ChangeEventStatus([FromBody] celebration cel)
+        public celebration ChangeEventStatus([FromBody] Answer cel)
         {
-            int id = cel.Id;
-            bool answer = (bool)cel.EncodedCelebration;
+            int id = cel.id;
+            bool answer = cel.answer;
             return CelebrationManager.ChangeEventStatus(id, answer);
         }
 
@@ -74,5 +75,10 @@ namespace PartyTeam.Controllers
     public class EmailBody
     {
         public string Email { get; set; }
+    }
+    public class Answer
+    {
+        public int id { get; set; }
+        public bool answer { get; set; }
     }
 }

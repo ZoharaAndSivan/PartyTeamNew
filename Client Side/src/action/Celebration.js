@@ -90,6 +90,7 @@ export const updateEventAnswer = (id, answer) => {
   };
 };
 export const changeEventStatus = (EventId, Answer) => {
+  console.log(EventId, Answer)
   return (dispatch) => {
     axios
       .put("http://localhost:56570/api/Celebration/ChangeEventStatus ", {

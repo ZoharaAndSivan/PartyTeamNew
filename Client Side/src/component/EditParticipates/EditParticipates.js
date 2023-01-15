@@ -1,9 +1,9 @@
 import { connect } from "react-redux";
 import { useNavigate, useParams } from "react-router";
+import { getCustomerOfEventByEventId } from "../../action/CustomerOfEvent";
 import { Put } from "../../action/CustomerOfEvent";
 
 const EditParticipate = (props) => {
-  let { id } = useParams();
   let nav = useNavigate();
   const change = (e) => {
     let { name, value, type } = e.target;
@@ -11,11 +11,16 @@ const EditParticipate = (props) => {
     props.participateOfEvent[name] = value;
   };
   const editParticipate = () => {
+    console.log("editParticipate");
     props.Put(props.participateOfEvent);
+  };
+  const finish = () => {
+    console.log("finished");
+    nav("myEvent");
   };
   return (
     <>
-      <h2>4 / 2</h2>
+      <h2>2 / 2</h2>  
       <h4> עריכת משתתפים</h4>
       {props.participateOfEvent ? (
         <>
@@ -52,53 +57,9 @@ const EditParticipate = (props) => {
           })}
         </>
       ) : null}
-      {/* <form role="form">
-        <div className="form-group">
-          <label>שם משתתף</label>
-          <input
-            type="text"
-            name="Name"
-            className="form-control"
-            placeholder="הכנס שם משתתף"
-            onChange={change}
-          />
-        </div>
-        <div className="form-group">
-          <label>מייל</label>
-          <input
-            type="email"
-            name="Email"
-            className="form-control"
-            placeholder="הכנס מייל"
-            onChange={change}
-          />
-        </div>
-        <div className="form-group">
-          <label>טלפון</label>
-          <input
-            type="text"
-            name="Phone"
-            className="form-control"
-            placeholder="הכנס טלפון"
-            onChange={change}
-          />
-        </div>
-        <button
-          type="button"
-          className="btn btn-default"
-          onClick={addParticipate}
-        >
-          +
-        </button>
-        <br />
-        <button
-          type="button"
-          className="btn btn-default"
-          onClick={addParticipate2}
-        >
-          המשך
-        </button>
-      </form> */}
+      <button onClick={finish} className="btn btn-primary">
+        end
+      </button>
     </>
   );
 };
@@ -107,4 +68,6 @@ const mapStateToProps = (state) => {
     participateOfEvent: state.participateOfEvent,
   };
 };
-export default connect(mapStateToProps, { Put })(EditParticipate);
+export default connect(mapStateToProps, { Put, getCustomerOfEventByEventId })(
+  EditParticipate
+);

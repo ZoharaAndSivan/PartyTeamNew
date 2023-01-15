@@ -73,7 +73,7 @@ function App(props) {
         <Route path="createdEvents" element={<CreatedEvents />} />
         <Route path="myEvent" element={<MyEvent />} />
         <Route path="editEvent/:id" element={<EditEvent />} />
-        <Route path="editParticipates/:id" element={<EditParticipates />} />
+        <Route path="editParticipates" element={<EditParticipates />} />
         <Route path="describeOfEvent/:id" element={<DescribeOfEvent />} />
         <Route path="about" element={<About />} />
         <Route path="exit" element={<Exit />} />

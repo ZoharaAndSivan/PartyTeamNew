@@ -37,7 +37,7 @@ const Category = (props) => {
     alert("Updated category");
   };
   return (
-    <>
+    <><br/>
       <input
         type="text"
         name="category"

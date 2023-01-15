@@ -20,21 +20,21 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TypeId" Type="int" Nullable="false" />
-          <Property Name="Name" Type="nchar" MaxLength="40" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="celebration">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Name" Type="nchar" MaxLength="50" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
           <Property Name="PepoleAmount" Type="int" />
           <Property Name="DateCelebration" Type="date" />
           <Property Name="StartHour" Type="time" Precision="7" />
-          <Property Name="ImportantText" Type="nchar" MaxLength="300" />
+          <Property Name="ImportantText" Type="varchar" MaxLength="50" />
           <Property Name="EncodedCelebration" Type="bit" />
           <Property Name="CelebrationType" Type="int" />
-          <Property Name="Address" Type="nchar" MaxLength="30" />
+          <Property Name="Address" Type="varchar" MaxLength="50" />
           <Property Name="EventManager" Type="int" />
         </EntityType>
         <EntityType Name="customer">
@@ -42,10 +42,10 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Name" Type="nchar" MaxLength="20" />
-          <Property Name="Password" Type="nchar" MaxLength="10" />
-          <Property Name="Phone" Type="nchar" MaxLength="10" />
-          <Property Name="Email" Type="nchar" MaxLength="20" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="Password" Type="varchar" MaxLength="50" />
+          <Property Name="Phone" Type="varchar" MaxLength="50" />
+          <Property Name="Email" Type="varchar" MaxLength="50" />
           <Property Name="Status" Type="int" />
           <Property Name="Approve" Type="bit" />
           <Property Name="Image" Type="varchar" MaxLength="100" />
@@ -55,8 +55,8 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="Name" Type="nchar" MaxLength="20" />
-          <Property Name="Email" Type="nchar" MaxLength="20" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Phone" Type="nchar" MaxLength="10" />
           <Property Name="CelebrationId" Type="int" Nullable="false" />
           <Property Name="Status" Type="bit" />
@@ -67,7 +67,7 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="KindId" Type="int" />
-          <Property Name="Name" Type="nvarchar" MaxLength="25" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
           <Property Name="Price" Type="float" />
           <Property Name="AmountOfPerson" Type="int" />
         </EntityType>
@@ -92,7 +92,7 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="CelebrationId" Type="int" />
           <Property Name="ToShow" Type="bit" />
-          <Property Name="Note" Type="nchar" MaxLength="350" />
+          <Property Name="Note" Type="varchar" MaxLength="350" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -110,8 +110,8 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="CategoryId" Type="int" />
-          <Property Name="Name" Type="nchar" MaxLength="20" />
-          <Property Name="Describe" Type="nchar" MaxLength="60" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="Describe" Type="varchar" MaxLength="60" />
         </EntityType>
         <Association Name="FK_celebration_customer">
           <End Role="customer" Type="Self.customer" Multiplicity="0..1" />
@@ -138,7 +138,9 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_event_typeevent">
-          <End Role="typeevent" Type="Self.typeevent" Multiplicity="0..1" />
+          <End Role="typeevent" Type="Self.typeevent" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="celebration" Type="Self.celebration" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="typeevent">
@@ -150,7 +152,9 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_ItemOfList_TypeCelebration">
-          <End Role="typeevent" Type="Self.typeevent" Multiplicity="0..1" />
+          <End Role="typeevent" Type="Self.typeevent" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="ItemOfList" Type="Self.ItemOfList" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="typeevent">
@@ -174,7 +178,9 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_typeevent_category">
-          <End Role="category" Type="Self.category" Multiplicity="0..1" />
+          <End Role="category" Type="Self.category" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="typeevent" Type="Self.typeevent" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="category">
@@ -236,7 +242,7 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TypeId" Type="Int32" Nullable="false" />
-          <Property Name="Name" Type="String" MaxLength="40" FixedLength="true" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="typeevent" Relationship="Self.FK_typeevent_category" FromRole="category" ToRole="typeevent" />
         </EntityType>
         <EntityType Name="celebration">
@@ -244,14 +250,14 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="PepoleAmount" Type="Int32" />
           <Property Name="DateCelebration" Type="DateTime" Precision="0" />
           <Property Name="StartHour" Type="Time" Precision="7" />
-          <Property Name="ImportantText" Type="String" MaxLength="300" FixedLength="true" Unicode="true" />
+          <Property Name="ImportantText" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="EncodedCelebration" Type="Boolean" />
           <Property Name="CelebrationType" Type="Int32" />
-          <Property Name="Address" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="EventManager" Type="Int32" />
           <NavigationProperty Name="customer" Relationship="Self.FK_celebration_customer" FromRole="celebration" ToRole="customer" />
           <NavigationProperty Name="customerofevent" Relationship="Self.FK_customerofevent_celebration" FromRole="celebration" ToRole="customerofevent" />
@@ -263,10 +269,10 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
-          <Property Name="Password" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Phone" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Email" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Status" Type="Int32" />
           <Property Name="Approve" Type="Boolean" />
           <Property Name="Image" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
@@ -277,8 +283,8 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
-          <Property Name="Email" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Phone" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
           <Property Name="CelebrationId" Type="Int32" Nullable="false" />
           <Property Name="Status" Type="Boolean" />
@@ -290,7 +296,7 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="KindId" Type="Int32" />
-          <Property Name="Name" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Price" Type="Double" />
           <Property Name="AmountOfPerson" Type="Int32" />
           <NavigationProperty Name="typeevent" Relationship="Self.FK_ItemOfList_TypeCelebration" FromRole="ItemOfList" ToRole="typeevent" />
@@ -316,7 +322,7 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="CelebrationId" Type="Int32" />
           <Property Name="ToShow" Type="Boolean" />
-          <Property Name="Note" Type="String" MaxLength="350" FixedLength="true" Unicode="true" />
+          <Property Name="Note" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="celebration" Relationship="Self.FK_noteevent_event" FromRole="noteevent" ToRole="celebration" />
         </EntityType>
         <EntityType Name="sysdiagrams">
@@ -335,8 +341,8 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="CategoryId" Type="Int32" />
-          <Property Name="Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
-          <Property Name="Describe" Type="String" MaxLength="60" FixedLength="true" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Describe" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="category" Relationship="Self.FK_typeevent_category" FromRole="typeevent" ToRole="category" />
           <NavigationProperty Name="celebration" Relationship="Self.FK_event_typeevent" FromRole="typeevent" ToRole="celebration" />
           <NavigationProperty Name="ItemOfList" Relationship="Self.FK_ItemOfList_TypeCelebration" FromRole="typeevent" ToRole="ItemOfList" />
