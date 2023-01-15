@@ -21,7 +21,8 @@ const AddParticipate = (props) => {
   };
   const addParticipate2 = () => {
     addParticipate();
-    nav("/addNote");
+    alert("האירוע נוצר בהצלחה");
+    nav("/homePage");
   };
   return (
     <>

@@ -2,6 +2,7 @@ import { connect } from "react-redux";
 import { Route, useNavigate, useParams } from "react-router";
 import Event from "../Event/Event";
 import { ConfirmArrival } from "../../action/CustomerOfEvent";
+import AddNote from "../AddNote/AddNote";
 
 const AllDetailsForParticpates = (props) => {
   let nav = useNavigate();
@@ -15,6 +16,7 @@ const AllDetailsForParticpates = (props) => {
     <>
       <Event item={item} />
       <input type="checkbox" onChange={arrival} /><label>Confirm arrival</label>
+      <AddNote item={item}/>
     </>
   );
 };

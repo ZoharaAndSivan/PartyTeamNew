@@ -6,7 +6,7 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="TypeId" Type="Int32" Nullable="false" />
-    <Property Name="Name" Type="String" MaxLength="40" FixedLength="true" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="typeevent" Relationship="Self.FK_typeevent_category" FromRole="category" ToRole="typeevent" />
   </EntityType>
   <EntityType Name="celebration">
@@ -14,14 +14,14 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="PepoleAmount" Type="Int32" />
     <Property Name="DateCelebration" Type="DateTime" Precision="0" />
     <Property Name="StartHour" Type="Time" Precision="7" />
-    <Property Name="ImportantText" Type="String" MaxLength="300" FixedLength="true" Unicode="true" />
+    <Property Name="ImportantText" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="EncodedCelebration" Type="Boolean" />
     <Property Name="CelebrationType" Type="Int32" />
-    <Property Name="Address" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="EventManager" Type="Int32" />
     <NavigationProperty Name="customer" Relationship="Self.FK_celebration_customer" FromRole="celebration" ToRole="customer" />
     <NavigationProperty Name="customerofevent" Relationship="Self.FK_customerofevent_celebration" FromRole="celebration" ToRole="customerofevent" />
@@ -33,10 +33,10 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
-    <Property Name="Password" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-    <Property Name="Phone" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-    <Property Name="Email" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Status" Type="Int32" />
     <Property Name="Approve" Type="Boolean" />
     <Property Name="Image" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
@@ -47,8 +47,8 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" />
-    <Property Name="Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
-    <Property Name="Email" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Phone" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <Property Name="CelebrationId" Type="Int32" Nullable="false" />
     <Property Name="Status" Type="Boolean" />
@@ -60,7 +60,7 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="KindId" Type="Int32" />
-    <Property Name="Name" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Price" Type="Double" />
     <Property Name="AmountOfPerson" Type="Int32" />
     <NavigationProperty Name="typeevent" Relationship="Self.FK_ItemOfList_TypeCelebration" FromRole="ItemOfList" ToRole="typeevent" />
@@ -86,7 +86,7 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="CelebrationId" Type="Int32" />
     <Property Name="ToShow" Type="Boolean" />
-    <Property Name="Note" Type="String" MaxLength="350" FixedLength="true" Unicode="true" />
+    <Property Name="Note" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="celebration" Relationship="Self.FK_noteevent_event" FromRole="noteevent" ToRole="celebration" />
   </EntityType>
   <EntityType Name="sysdiagrams">
@@ -105,8 +105,8 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="CategoryId" Type="Int32" />
-    <Property Name="Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
-    <Property Name="Describe" Type="String" MaxLength="60" FixedLength="true" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Describe" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="category" Relationship="Self.FK_typeevent_category" FromRole="typeevent" ToRole="category" />
     <NavigationProperty Name="celebration" Relationship="Self.FK_event_typeevent" FromRole="typeevent" ToRole="celebration" />
     <NavigationProperty Name="ItemOfList" Relationship="Self.FK_ItemOfList_TypeCelebration" FromRole="typeevent" ToRole="ItemOfList" />
