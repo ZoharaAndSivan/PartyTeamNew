@@ -24,7 +24,7 @@ export const addEventLevelOneAction = (details) => {
   return (dispatch) => {
     axios.post("http://localhost:56570/api/Celebration/Post", details).then(
       (response) => {
-        console.log(response);
+        console.log(response.data);
         dispatch(saveAlldetails(response.data));
       },
       (err) => {

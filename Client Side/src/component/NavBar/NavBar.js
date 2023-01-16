@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "./NavBar.css";
 import ourlogo from "./partyteam.png";
 import { getListByTypeAction } from "../../action/ItemOfList";
+import { Avatar } from "@mui/material";
 
 function Navbar(props) {
   const goToList = (listType) => {
@@ -19,6 +20,7 @@ function Navbar(props) {
         <div className="wraps">
           {props.currentUser ? (
             <>
+              <Avatar alt="Remy Sharp" src={props.currentUser.Image} />
               <div className="aas">
                 <Link to="addEvent" className="dropbtn">
                   יצירת אירוע

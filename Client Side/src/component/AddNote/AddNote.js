@@ -5,7 +5,7 @@ import { AddNoteAction } from "../../action/NoteEvent";
 const AddNote = (props) => {
   let nav = useNavigate();
   let text = {
-    data: "",
+    Note: "",
     CelebrationId: props.item.Id,
     ToShow: false,
   };
@@ -18,9 +18,9 @@ const AddNote = (props) => {
     text.ToShow = true;
   };
   const addNote = (note) => {
-    props.AddNoteAction(note);
+    text.Note = note;
     console.log(text);
-    alert("Added");
+    props.AddNoteAction(text); 
   };
 
   return (
@@ -33,12 +33,12 @@ const AddNote = (props) => {
         name="data"
         onChange={change}
       ></textarea>
-      <label>To show to everybody?</label><input type="checkbox" onChange={show} />
-      
-
+      <label>To show to everybody?</label>
+      <input type="checkbox" onChange={show} />
+      <br/>
       <input
         type="button"
-        value="סיום"
+        value="הוסף"
         onClick={() => {
           addNote(text.data);
         }}

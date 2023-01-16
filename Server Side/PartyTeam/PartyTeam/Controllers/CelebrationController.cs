@@ -42,16 +42,15 @@ namespace PartyTeam.Controllers
         //עובדדדדדדדדדד
         // POST: api/Celebartion
         [HttpPost]
-        public IHttpActionResult Post([FromBody] celebration value)
+        public int Post([FromBody] celebration value)
         {
             try
             {
-                CelebrationManager.PostCelebration(value);
-                return Ok();
+                return CelebrationManager.PostCelebration(value);                
             }
             catch
             {
-                return BadRequest("לא הצלחנו להקים");
+                return 0;
             }
         }
 

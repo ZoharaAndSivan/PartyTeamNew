@@ -81,6 +81,7 @@ const AddParticipate = (props) => {
 const mapStateToProps = (state) => {
   return {
     cel: state.currentEvent,
+    arr: state.participateOfEvent
   };
 };
 export default connect(mapStateToProps, { Post })(AddParticipate);

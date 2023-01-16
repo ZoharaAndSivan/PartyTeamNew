@@ -42,9 +42,9 @@ namespace BLL
             List<celebrationDTO> myOrderCelebrationDTOs = celebrationDTO.CreateDTOList(list);
             return myOrderCelebrationDTOs;
         }
-        public static void PostCelebration(celebration c)
+        public static int PostCelebration(celebration c)
         {
-            Celebration.Post(c);            
+            return Celebration.Post(c);            
         }
         public static void PutCelebration(celebration c)
         {

@@ -66,8 +66,7 @@ export const putParticipate = (participate) => {
 };
 export const ConfirmArrival = (Email, Status) => {
   return (dispatch) => {
-    axios
-      .put("http://localhost:56570/api/CustomerOfEvent/ConfirmArrival ", {
+    axios.put("http://localhost:56570/api/CustomerOfEvent/ConfirmArrival ", {
         Email,
         Status,
       })
