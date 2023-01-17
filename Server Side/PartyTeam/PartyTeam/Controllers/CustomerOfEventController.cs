@@ -31,15 +31,21 @@ namespace PartyTeam.Controllers
         // PUT: api/CostomerOfEvent/5
         public void Put([FromBody] customerofevent value) { CustomerOfEventManager.PutCOE(value); }
         [HttpPut]
-        public customerofevent ConfirmArrival([FromBody] customerofevent cust)
+        public void ConfirmArrival(answer cust)
         {
             string email = cust.Email;
-            bool answer = (bool)cust.Status;
-            return CustomerOfEventManager.ConfirmArrival(email, answer);
+            bool answer = cust.Status;
+            CustomerOfEventManager.ConfirmArrival(email, answer);
         }
 
         //עובדדדדדד
         // DELETE: api/CostomerOfEvent/5
         public void Delete(int id) { CustomerOfEventManager.Delete(id); }
+
+    }
+    public class answer
+    {
+        public string Email { get; set; }
+        public bool Status { get; set; }
     }
 }

@@ -104,3 +104,5 @@ C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט 
 C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\BLL\obj\Debug\BLL.dll
 C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\BLL\obj\Debug\BLL.pdb
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\BLL\bin\Debug\Models.dll
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\BLL\bin\Debug\Models.pdb

@@ -846,3 +846,5 @@ C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט 
 C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\PartyTeam\obj\Debug\PartyTeam.csproj.CopyComplete
 C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\PartyTeam\obj\Debug\PartyTeam.dll
 C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\PartyTeam\obj\Debug\PartyTeam.pdb
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\PartyTeam\bin\Models.dll
+C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\PartyTeam\bin\Models.pdb

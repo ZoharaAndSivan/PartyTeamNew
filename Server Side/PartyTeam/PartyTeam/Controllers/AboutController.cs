@@ -1,6 +1,8 @@
 ﻿using BLL;
 using DAL;
+using DAL.Actions;
 using DTO;
+using Models;
 using PartyTeam.Models;
 using System;
 using System.Collections.Generic;
@@ -15,14 +17,11 @@ namespace PartyTeam.Controllers
     {
         //עובדדדדדדדד
         // GET: api/About
-        public List<about> Get() { return AboutManager.GetAbout(); }
+        public AboutData Get() { return AboutManager.GetAbout(); }
 
         //לנסות
         // PUT: api/About/5
-        public void Put([FromBody] about value) { AboutManager.PutAbout(value); }
+        public void Put([FromBody] AboutData value) { AboutManager.PutAbout(value); }
 
-        //עובדדדדדדד
-        // DELETE: api/About/5
-        public void Delete(int id) { AboutManager.Delete(id); }
     }
 }

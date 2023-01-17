@@ -58,7 +58,7 @@ namespace PartyTeam.Controllers
         // PUT: api/Celebartion/5
         public void Put([FromBody] celebration value) { CelebrationManager.PutCelebration(value); }
         [HttpPut]
-        public celebration ChangeEventStatus([FromBody] Answer cel)
+        public celebration ChangeEventStatus(Answer cel)
         {
             int id = cel.id;
             bool answer = cel.answer;

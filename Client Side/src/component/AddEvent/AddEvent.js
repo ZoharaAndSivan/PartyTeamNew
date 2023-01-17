@@ -20,6 +20,7 @@ const AddEvent = (props) => {
     Address: "",
     EventManager: null,
     EncodedCelebration: true,
+    ImportantText: "",
   };
   let Name = true;
   let pepole = true;

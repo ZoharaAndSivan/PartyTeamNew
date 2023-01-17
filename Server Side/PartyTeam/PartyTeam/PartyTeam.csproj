@@ -320,6 +320,10 @@
       <Project>{3d9f4107-5fb0-440f-8556-6e29aada1e19}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{2E6561B8-BC5E-4839-9B7F-26E5560461C0}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

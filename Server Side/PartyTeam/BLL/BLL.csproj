@@ -81,6 +81,10 @@
       <Project>{3d9f4107-5fb0-440f-8556-6e29aada1e19}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{2e6561b8-bc5e-4839-9b7f-26e5560461c0}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

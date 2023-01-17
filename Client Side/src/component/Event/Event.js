@@ -6,7 +6,7 @@ const Event = (props) => {
       </p>
       <br />
       <p>
-        <label> המתקיים בתאריך {props.item.DateCelebration}</label>
+        <label> המתקיים בתאריך {new Date(props.item.DateCelebration).toLocaleDateString()}</label>
       </p>
       <br />
       <p>
