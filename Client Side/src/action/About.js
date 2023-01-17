@@ -4,8 +4,8 @@ export const getAboutAction = () => {
   return (dispatch) => {
     axios.get("http://localhost:56570/api/About/Get").then(
       (response) => {
-        console.log(response);
-        dispatch(saveAbout(response.data[0].Information));
+        console.log("get data about from server" ,response);
+        dispatch(saveAbout(response.data));
       },
       (err) => {
         console.log(err);
@@ -22,7 +22,7 @@ export const saveAbout = (text) => {
 };
 export const putAboutAction = (record) => {
   return (dispatch) => {
-    axios.put("http://localhost:56570/api/About/Put/" + record).then(
+    axios.put("http://localhost:56570/api/About/Put" , record).then(
       (response) => {
         console.log(response);
         dispatch(saveAbout(record));

@@ -47,14 +47,14 @@ namespace DAL.Actions
                 return newCustomerofevent;
             }
         }
-        public static customerofevent ConfirmArrival(string email, bool answer)
+        public static void ConfirmArrival(string email, bool answer)
         {
             using (PartyTeamEntities db = new PartyTeamEntities())
             {
                 db.customerofevent.FirstOrDefault(x => x.Email == email).Status = answer;
                 db.SaveChanges();
-                SendEmailToUser("אישרת הגעה לאירוע", "", email);
-                return db.customerofevent.FirstOrDefault(x => x.Email == email);
+                //SendEmailToUser("אישרת הגעה לאירוע", "", email);
+                db.customerofevent.FirstOrDefault(x => x.Email == email);
             }
         }
         public static bool SendEmailToUser(string subject, string body, string emailAddress)

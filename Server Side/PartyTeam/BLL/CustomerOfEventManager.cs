@@ -46,9 +46,9 @@ namespace BLL
         {
             CustomerOfEvent.Put(coe);
         }
-        public static customerofevent ConfirmArrival (string email, bool answer)
+        public static void ConfirmArrival (string email, bool answer)
         {
-            return CustomerOfEvent.ConfirmArrival(email, answer);
+            CustomerOfEvent.ConfirmArrival(email, answer);
         }
         public static void Delete(int i)
         {

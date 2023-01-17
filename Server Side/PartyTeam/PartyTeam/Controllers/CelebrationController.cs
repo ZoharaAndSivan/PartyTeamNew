@@ -42,16 +42,15 @@ namespace PartyTeam.Controllers
         //עובדדדדדדדדדד
         // POST: api/Celebartion
         [HttpPost]
-        public IHttpActionResult Post([FromBody] celebration value)
+        public int Post([FromBody] celebration value)
         {
             try
             {
-                CelebrationManager.PostCelebration(value);
-                return Ok();
+                return CelebrationManager.PostCelebration(value);                
             }
             catch
             {
-                return BadRequest("לא הצלחנו להקים");
+                return 0;
             }
         }
 
@@ -59,7 +58,7 @@ namespace PartyTeam.Controllers
         // PUT: api/Celebartion/5
         public void Put([FromBody] celebration value) { CelebrationManager.PutCelebration(value); }
         [HttpPut]
-        public celebration ChangeEventStatus([FromBody] Answer cel)
+        public celebration ChangeEventStatus(Answer cel)
         {
             int id = cel.id;
             bool answer = cel.answer;

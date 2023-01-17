@@ -8,6 +8,10 @@ function MangerNavbar(props) {
   const goToList = (listType) => {
     props.getListByTypeAction(listType);
   };
+  // const exit = () => {
+  //   // props.currentUser = null;
+  //   nav("/homepage");
+  // };
   return (
     <>
       <div>
@@ -56,9 +60,9 @@ function MangerNavbar(props) {
               </Link>
             ) : null}
             <div className="dropdown-content">
-              <Link to="exit" className="d">
-                יציאה
-              </Link>
+            <button
+                onClick={console.log("exit")}
+              >יציאה</button>
             </div>
           </div>
         </div>

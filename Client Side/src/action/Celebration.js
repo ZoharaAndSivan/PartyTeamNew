@@ -24,7 +24,7 @@ export const addEventLevelOneAction = (details) => {
   return (dispatch) => {
     axios.post("http://localhost:56570/api/Celebration/Post", details).then(
       (response) => {
-        console.log(response);
+        console.log(response.data);
         dispatch(saveAlldetails(response.data));
       },
       (err) => {
@@ -84,23 +84,23 @@ export const saveEventsNotApproval = (list) => {
   };
 };
 export const updateEventAnswer = (id, answer) => {
+  console.log(id, answer);
   return {
     type: "UPDATE_EVENT_ANSWER",
     payload: { id: id, answer: answer },
   };
 };
-export const changeEventStatus = (EventId, Answer) => {
-  console.log(EventId, Answer)
+export const changeEventStatus = (id, answer) => {
+  console.log(id, answer);
   return (dispatch) => {
     axios
       .put("http://localhost:56570/api/Celebration/ChangeEventStatus ", {
-        EventId,
-        Answer,
+        id,
+        answer,
       })
       .then(
         (response) => {
-          console.log(response);
-          dispatch(updateEventAnswer(EventId, Answer));
+          dispatch(updateEventAnswer(id, answer));
         },
         (err) => {
           console.log(err);

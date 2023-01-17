@@ -17,6 +17,8 @@ const initialState = {
   noteEvent: [],
   numNewEvents: 0,
   numNewUsers: 0,
+  numConfirm: 0,
+
   currentEvent: null,
   lists: [],
 };
@@ -61,6 +63,7 @@ const reducer = (state = initialState, action) => {
         ...state,
         myEvents: [...state.myEvents, action.payload],
         numNewEvents: state.numNewEvents + 1,
+        currentEvent: action.payload
       };
     case "ADD_CATEGORY":
       console.log(action.payload);

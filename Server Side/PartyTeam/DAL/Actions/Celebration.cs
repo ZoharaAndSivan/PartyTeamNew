@@ -40,13 +40,13 @@ namespace DAL.Actions
                 return db.celebration.FirstOrDefault(x => x.Id == id);
             }
         }
-        public static celebration Post(celebration celebration)
+        public static int Post(celebration celebration)
         {
             using (PartyTeamEntities db = new PartyTeamEntities())
             {
                 celebration = db.celebration.Add(celebration);
                 db.SaveChanges();
-                return celebration;
+                return celebration.Id;
             }
         }
         public static celebration ChangeEventStatus(int id, bool answer)

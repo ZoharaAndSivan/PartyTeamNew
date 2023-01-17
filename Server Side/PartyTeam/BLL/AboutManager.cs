@@ -1,6 +1,7 @@
 ﻿using DAL;
 using DAL.Actions;
 using DTO;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,17 +12,16 @@ namespace BLL
 {
     public class AboutManager
     {
-        public static List<about> GetAbout()
+        public static AboutData GetAbout()
         {
-            return About.Get();
+            return AboutJSON.Get();
         }
-        public static void PutAbout(about a)
+        public static void PutAbout(AboutData a)
         {
-            About.Put(a);
+            AboutJSON.Put(a);
         }
-        public static void Delete(int i)
-        {
-            About.Delete(i);
-        }
+     
+
+ 
     }
 }

@@ -1,46 +1,76 @@
 import About from "../About/About";
 import { putAboutAction } from "../../action/About";
 import { connect } from "react-redux";
-import aboutData from "../../Assets/about.json";
-import { useEffect } from "react";
-const fs = require("fs");
-
+import { useEffect, useState } from "react";
 
 const AboutEdit = (props) => {
-  const updatedData = { ...aboutData };
-  updatedData.heading = "dsfdsfdsfdsfds";
-  // const updatedData = {
-  //    heading:"arif updated",
-  //    heading2:"shariati updated",
-  //    content1:"gfdg",
-  //    heading3:"shariati updated",
-  //    content2:"gfdg"
-  // }
-  let a = {
-    id: null,
-    content: "",
-  };
-  const change = (e) => {
-    let { name, value } = e.target;
-    a[name] = value;
-  };
-  let edit = async () => {
-    // props.putAboutAction(a);
+  const [h1Edit, setH1Edit] = useState(false);
+  const [p1Edit, setP1Edit] = useState(false);
+
+  const aboutData = props.about;
+  const saveAboutData = () => {
+    props.putAboutAction(aboutData);
   };
 
-  //
   return (
     <>
       <h1>About Page Manager - edit</h1>
-      <About />
-      <input
-        type="text"
-        name="content"
-        placeholder="עוד עלינו"
-        onChange={change}
-      />
+      <div>
+        {h1Edit == false ? (
+          <h1
+            onDoubleClick={() => {
+              setH1Edit(true);
+            }}
+          >
+            {props.about.heading}
+          </h1>
+        ) : (
+          <input
+            type="text"
+            name="heading"
+            defaultValue={props.about.heading}
+            onChange={(e) => {
+              aboutData[e.target.name] = e.target.value;
+            }}
+            onDoubleClick={() => {
+              setH1Edit(false);
+            }}
+          />
+        )}
+      </div>
+      <div>
+        {p1Edit == false ? (
+          <p
+            onDoubleClick={() => {
+              setP1Edit(true);
+            }}
+          >
+            {props.about.p1}
+          </p>
+        ) : (
+          <input
+            type="text"
+            name="p1"
+            defaultValue={props.about.p1}
+            onChange={(e) => {
+              aboutData[e.target.name] = e.target.value;
+            }}
+            onDoubleClick={() => {
+              setP1Edit(false);
+            }}
+          />
+        )}
+      </div>
+
       <label>update</label>
-      <input type="button" value="עדכון" onClick={edit} />
+      <input
+        type="button"
+        value="עדכון"
+        onClick={() => {
+          console.log(aboutData);
+          saveAboutData();
+        }}
+      />
     </>
   );
 };

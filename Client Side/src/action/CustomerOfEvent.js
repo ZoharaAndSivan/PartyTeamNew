@@ -19,6 +19,25 @@ export const getCustomerOfEventByEventId = (eventId) => {
       );
   };
 };
+export const getDetailsByEmail = (id, email) => {
+  return (dispatch) => {
+    axios
+      .get("http://localhost:56570/api/CustomerOfEvent/GetDetailsByEmail/", {
+        id,
+        email,
+      })
+      .then(
+        (response) => {
+          console.log(response);
+          dispatch(saveCustomersOfEvent(response.data));
+        },
+        (err) => {
+          console.log(err);
+          console.log("קרתה שגיאה");
+        }
+      );
+  };
+};
 
 export const saveCustomersOfEvent = (participatesList) => {
   return {
