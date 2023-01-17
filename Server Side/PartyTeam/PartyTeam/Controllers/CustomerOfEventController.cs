@@ -22,6 +22,17 @@ namespace PartyTeam.Controllers
         public List<customerofeventDTO> GetCustomerOfEventByEventId(int id) { return CustomerOfEventManager.GetCustomerOfEventById(id); }
         public List<customerofeventDTO> GetCustomersConfirmedArrival(int id) { return CustomerOfEventManager.GetCustomersConfirmedArrival(id); }
         public List<customerofeventDTO> GetCustomersNotConfirmedArrival(int id) { return CustomerOfEventManager.GetCustomersNotConfirmedArrival(id); }
+        public bool GetDetailsByEmail(int id,string email) {
+            List<customerofeventDTO> arr = CustomerOfEventManager.GetCustomersNotConfirmedArrival(id);
+            foreach (customerofeventDTO item in arr)
+            {
+                if(item.Email == email)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
         //עובדדדדדד לא
         // POST: api/CostomerOfEvent

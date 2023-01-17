@@ -30,46 +30,41 @@ namespace DAL.Actions
             using (PartyTeamEntities db = new PartyTeamEntities())
             {
                 db.customer.Add(customer);
-                db.SaveChanges();                
-                SendEmailToUser("הרשמה לאתר partyteam", "נרשמת בהצלחה לאתר PartyTeam. סיסממא ${1}.${0} פרטי ההתחברות שלך הם:שם משתמש:", customer.Email);
+                db.SaveChanges();
+                SendEmailToUser("הרשמה לאתר partyteam", "נרשמת בהצלחה לאתר PartyTeam. סיסממא {1}.{0} פרטי ההתחברות שלך הם:שם משתמש:", customer.Email);
                 return customer;
             }
         }
         public static bool SendEmailToUser(string subject, string body, string emailAddress)
         {
 
-            using (MailMessage mail = new MailMessage())
+            MailMessage mail = new MailMessage();
+
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine();
+            sb.Append(body).AppendLine();
+            sb.AppendLine();
+            try
             {
-                StringBuilder sb = new StringBuilder();
-                sb.AppendLine();
-                sb.Append(body).AppendLine();
-                sb.AppendLine();
-                try
-                {
-                    SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+                SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
 
-
-                    mail.From = new MailAddress("zoharasivan@gmail.com");
-                    mail.To.Add(emailAddress);
-                    mail.Subject = subject;
-                    string bodyStr = sb.ToString();
-                    mail.Body = bodyStr;
-
-
-                    SmtpServer.Port = 587;
-                    SmtpServer.Credentials = new System.Net.NetworkCredential("zoharasivan@gmail.com", "zoharaandsivan");
-                    SmtpServer.EnableSsl = true;
-
-
-                    SmtpServer.Send(mail);
-                    return true;
-                }
-                catch (Exception ex)
-                {
-                    string str = ex.Message;
-                    return false;
-                }
+                mail.From = new MailAddress("zoharasivan@gmail.com");
+                mail.To.Add(new MailAddress(emailAddress));
+                mail.Subject = subject;
+                string bodyStr = sb.ToString();
+                mail.Body = bodyStr;
+                SmtpServer.Port = 587;
+                SmtpServer.Credentials = new System.Net.NetworkCredential("zoharasivan@gmail.com", "SIVANZORI123");
+                SmtpServer.EnableSsl = true;
+                SmtpServer.Send(mail);
+                return true;
             }
+            catch (Exception ex)
+            {
+                string str = ex.Message;
+                return false;
+            }
+
         }
         public static customer Put(customer customer)
         {

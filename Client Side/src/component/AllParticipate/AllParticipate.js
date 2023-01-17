@@ -9,28 +9,30 @@ const AllParticipate = (props) => {
   useEffect(() => {}, [props.participateOfEvent]);
   return (
     <>
-      <h1>כל המשתתפים</h1>
       <div>
         {props.participateOfEvent.map((item, index) => (
-          <div key={index}>
-            {/* <div key={index}>{item.Name}</div> */}
+          <>
+            <h1>כל המשתתפים</h1>
+            <div key={index}>
+              {/* <div key={index}>{item.Name}</div> */}
 
-            {item.Status=="true" ? (
-              <>
-                <h3>משתתפים שאישרו הגעה</h3>
-                <div key={index}>
-                  {item.Name} {item.Email} {item.Phone}
-                </div>
-              </>
-            ) : (
-              <>
-                <h3>משתתפים שלא אישרו הגעה</h3>
-                <div key={index}>
-                  {item.Name} {item.Email} {item.Phone}
-                </div>
-              </>
-            )}
-          </div>
+              {item.Status == "true" ? (
+                <>
+                  <h3>משתתפים שאישרו הגעה</h3>
+                  <div key={index}>
+                    {item.Name} {item.Email} {item.Phone}
+                  </div>
+                </>
+              ) : (
+                <>
+                  <h3>משתתפים שלא אישרו הגעה</h3>
+                  <div key={index}>
+                    {item.Name} {item.Email} {item.Phone}
+                  </div>
+                </>
+              )}
+            </div>
+          </>
         ))}
       </div>
     </>

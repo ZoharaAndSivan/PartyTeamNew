@@ -88,10 +88,11 @@ const AddEvent = (props) => {
       ) : (
         <>
           <h2> 2 / 1</h2>
-          <h4 > פרטי אירוע </h4>
+          <h4> פרטי אירוע </h4>
           <form role="form">
             <div className="form-group">
-              <label>סוג אירוע</label><br/>
+              <label>סוג אירוע</label>
+              <br />
               <select>
                 {props.types.map((c) => (
                   <option value={c.Name} onChange={type(c)} key={c.Id}>
@@ -102,7 +103,8 @@ const AddEvent = (props) => {
               </select>
             </div>
             <div className="form-group">
-              <label>שם אירוע</label><br/>
+              <label>שם אירוע</label>
+              <br />
               <input
                 type="text"
                 name="Name"
@@ -112,7 +114,8 @@ const AddEvent = (props) => {
               />
             </div>
             <div className="form-group">
-              <label>כתובת </label><br/>
+              <label>כתובת </label>
+              <br />
               <input
                 type="text"
                 name="Address"
@@ -122,7 +125,8 @@ const AddEvent = (props) => {
               />
             </div>
             <div className="form-group">
-              <label>תאריך </label><br/>
+              <label>תאריך </label>
+              <br />
               <input
                 type="date"
                 name="CelebrationDate"
@@ -133,7 +137,8 @@ const AddEvent = (props) => {
             </div>
             {/* הייתי רוצה לאחר מכן שהתצוגה של פרטי האירוע אז למשתתפים התאריך יופיע יותר יפה -כמו בהזמנה  */}
             <div className="form-group">
-              <label>שעת התחלה </label><br/>
+              <label>שעת התחלה </label>
+              <br />
               <input
                 type="time"
                 name="StartHour"
@@ -143,7 +148,8 @@ const AddEvent = (props) => {
               />
             </div>
             <div className="form-group">
-              <label>כמות מוזמנים משוערת </label><br/>
+              <label>כמות מוזמנים משוערת </label>
+              <br />
               <input
                 type="number"
                 name="PepoleAmount"
@@ -152,7 +158,15 @@ const AddEvent = (props) => {
                 onChange={change}
               />
             </div>
-            {/*  קומ]וננטה אחרת -----אך ןרק אם מילא את כל הפרטים כאן תופעל פונקצייה בלחיצה שתשלח לשלב הבא */}
+            <h4>הוספת טסקט חשוב</h4>
+            <textarea
+              className="form-control"
+              maxLength="1000"
+              placeholder="הוסף הערה"
+              name="ImportantText"
+              onChange={change}
+            ></textarea>
+            {/* אך ןרק אם מילא את כל הפרטים כאן תופעל פונקצייה בלחיצה שתשלח לשלב הבא */}
             <button
               type="submit"
               className="btn btn-primary"

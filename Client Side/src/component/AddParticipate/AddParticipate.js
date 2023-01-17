@@ -27,8 +27,7 @@ const AddParticipate = (props) => {
     participate[name] = value;
     setP(participate);
   };
-  const addParticipate = () => {
-  };
+  const addParticipate = () => {};
   const addParticipate2 = () => {
     addParticipate();
     alert("האירוע נוצר בהצלחה");
@@ -36,16 +35,23 @@ const AddParticipate = (props) => {
   };
 
   const addParticipateToClient = () => {
-    setPartList([...partList, p]);
-    setP({
-      Name: "",
-      Email: "",
-      Phone: "",
-      CelebrationId: props.cel,
-      Status: false,
-    });
-    props.Post(p);
-
+    {
+      partList.map(
+        (part) => (
+          part.Email == p.Email
+            ? console.log("משתתף זה כבר קיים")
+            : setPartList([...partList, p]),
+          setP({
+            Name: "",
+            Email: "",
+            Phone: "",
+            CelebrationId: props.cel,
+            Status: false,
+          }),
+          props.Post(p)
+        )
+      );
+    }
   };
   return (
     <>

@@ -74,7 +74,6 @@ const Register = (props) => {
     // } else {
     //   alert("check");
     // }
-    console.log("hi " + r);
     props.addUserAction(r);
     nav("/homepage");
   };
