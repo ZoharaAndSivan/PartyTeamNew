@@ -93,3 +93,7 @@ C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט 
 C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\bin\Debug\System.Web.Http.xml
 C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\bin\Debug\System.Web.Http.Cors.xml
 C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeamNew\Server Side\PartyTeam\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeamNew\Server Side\PartyTeam\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeamNew\Server Side\PartyTeam\DAL\obj\Debug\DAL.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeamNew\Server Side\PartyTeam\DAL\obj\Debug\DAL.pdb

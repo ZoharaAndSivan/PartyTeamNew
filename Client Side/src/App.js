@@ -42,8 +42,9 @@ function App(props) {
   });
   return (
     <>
+    <AddItem/>
       {props.currentType != 1 ? <Navbar /> : <MangerNavBar />}
-      
+      <AddParticipate/>
       <Routes>
         <Route path="list" element={<List />} />
         <Route path="homePage" element={<HomePage />} />

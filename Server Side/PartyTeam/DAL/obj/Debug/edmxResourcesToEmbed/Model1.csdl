@@ -89,16 +89,6 @@
     <Property Name="Note" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="celebration" Relationship="Self.FK_noteevent_event" FromRole="noteevent" ToRole="celebration" />
   </EntityType>
-  <EntityType Name="sysdiagrams">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="principal_id" Type="Int32" Nullable="false" />
-    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="version" Type="Int32" />
-    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
-  </EntityType>
   <EntityType Name="typeevent">
     <Key>
       <PropertyRef Name="Id" />
@@ -119,7 +109,9 @@
     <Property Name="Information" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <Association Name="FK_typeevent_category">
-    <End Role="category" Type="Self.category" Multiplicity="0..1" />
+    <End Role="category" Type="Self.category" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="typeevent" Type="Self.typeevent" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="category">
@@ -155,7 +147,9 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_event_typeevent">
-    <End Role="typeevent" Type="Self.typeevent" Multiplicity="0..1" />
+    <End Role="typeevent" Type="Self.typeevent" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="celebration" Type="Self.celebration" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="typeevent">
@@ -179,7 +173,9 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_ItemOfList_TypeCelebration">
-    <End Role="typeevent" Type="Self.typeevent" Multiplicity="0..1" />
+    <End Role="typeevent" Type="Self.typeevent" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="ItemOfList" Type="Self.ItemOfList" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="typeevent">
@@ -198,7 +194,6 @@
     <EntitySet Name="ItemOfList" EntityType="Self.ItemOfList" />
     <EntitySet Name="itemtoevent" EntityType="Self.itemtoevent" />
     <EntitySet Name="noteevent" EntityType="Self.noteevent" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
     <EntitySet Name="typeevent" EntityType="Self.typeevent" />
     <EntitySet Name="about" EntityType="Self.about" />
     <AssociationSet Name="FK_typeevent_category" Association="Self.FK_typeevent_category">

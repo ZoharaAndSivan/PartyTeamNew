@@ -4,9 +4,15 @@ import "./AddEvent.css";
 import { addEventLevelOneAction } from "../../action/Celebration";
 import { getAllTypes } from "../../action/TypeEvent";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Button, TextField } from "@mui/material";
+import { Select } from "@mui/material";
+import SendIcon from '@mui/icons-material/Send';
+<<<<<<< Updated upstream
+=======
 
+>>>>>>> Stashed changes
 const AddEvent = (props) => {
+
   useEffect(() => {
     props.getAllTypes();
   }, []);
@@ -77,95 +83,132 @@ const AddEvent = (props) => {
 
   return (
     <>
-      {/* להוסיף תנאי שאם ההמתמש עוד לא נרשם לאתר אז יישלח לטופס ההרשמה */}
+<<<<<<< Updated upstream
+    <h2> 2 / 1</h2>
+    <h4 > פרטי אירוע </h4>
+    <form role="form">
+      <div className="form-group">
+        <label>סוג אירוע</label><br />
+        <Select>
+          {props.types.map((c) => (
+            <option value={c.Name} onChange={type(c)} key={c.Id}>
+              {" "}
+              {c.Name}
+            </option>
+          ))}
+        </Select>
+      </div>
+      <TextField name="Name" id="outlined-basic" label="שם אירוע" variant="outlined" onChange={change} /><br/><br/>
+      <TextField name="Address" id="outlined-basic" label="כתובת" variant="outlined" onChange={change} /><br/>
+{/* 
+      <MobileDatePicker
+        label="Date mobile"
+        inputFormat="MM/DD/YYYY"
+        onChange={change}
+        
+      /> */}
+      <div className="form-group">
+        <label>תאריך </label><br />
+        <input
+          type="date"
+          name="CelebrationDate"
+          // className="form-control"
+          placeholder="הכנס תאריך"
+          onChange={change}
+        />
+      </div>
+      {/* הייתי רוצה לאחר מכן שהתצוגה של פרטי האירוע אז למשתתפים התאריך יופיע יותר יפה -כמו בהזמנה  */}
+      <div className="form-group">
+        <label>שעת התחלה </label><br />
+        <input
+          type="time"
+          name="StartHour"
+          // className="form-control"
+          placeholder="הכנס שעת התחלה"
+          onChange={change}
+        />
+      </div>
+
+      <TextField name="PepoleAmount" id="outlined-basic" label="כמות מוזמנים משוערת" variant="outlined" onChange={change} />
+      <Button  type="submit" variant="contained" endIcon={<SendIcon />} onClick={(e) => {
+          add(e);
+        }}>
+    הוסף
+  </Button>
+  
+    </form>
+  </>
+
+
+);
+=======
+      {/* להוסיף תנאי שאם ההמתמש עוד לא נרשם לאתר אז יישלח לטופס ההרשמה
       {props.customer == null ? (
         <>
           {" "}
           <p>אינך רשום לאתר? </p> <Link to={"/register"}> להרשמה לחץ כאן </Link>
           <p>משתמש רשום? </p> <Link to={"/login"}> להתחברות לחץ כאן</Link>
         </>
-      ) : (
-        <>
-          <h2> 2 / 1</h2>
-          <h4 > פרטי אירוע </h4>
-          <form role="form">
-            <div className="form-group">
-              <label>סוג אירוע</label><br/>
-              <select>
-                {props.types.map((c) => (
-                  <option value={c.Name} onChange={type(c)} key={c.Id}>
-                    {" "}
-                    {c.Name}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div className="form-group">
-              <label>שם אירוע</label><br/>
-              <input
-                type="text"
-                name="Name"
-                // className="form-control"
-                placeholder="הכנס שם אירוע"
-                onChange={change}
-              />
-            </div>
-            <div className="form-group">
-              <label>כתובת </label><br/>
-              <input
-                type="text"
-                name="Address"
-                // className="form-control"
-                placeholder="הכנס כתובת"
-                onChange={change}
-              />
-            </div>
-            <div className="form-group">
-              <label>תאריך </label><br/>
-              <input
-                type="date"
-                name="CelebrationDate"
-                // className="form-control"
-                placeholder="הכנס תאריך"
-                onChange={change}
-              />
-            </div>
-            {/* הייתי רוצה לאחר מכן שהתצוגה של פרטי האירוע אז למשתתפים התאריך יופיע יותר יפה -כמו בהזמנה  */}
-            <div className="form-group">
-              <label>שעת התחלה </label><br/>
-              <input
-                type="time"
-                name="StartHour"
-                // className="form-control"
-                placeholder="הכנס שעת התחלה"
-                onChange={change}
-              />
-            </div>
-            <div className="form-group">
-              <label>כמות מוזמנים משוערת </label><br/>
-              <input
-                type="number"
-                name="PepoleAmount"
-                // className="form-control"
-                placeholder="הכנס כמות מוזמנים משוערת"
-                onChange={change}
-              />
-            </div>
-            {/*  קומ]וננטה אחרת -----אך ןרק אם מילא את כל הפרטים כאן תופעל פונקצייה בלחיצה שתשלח לשלב הבא */}
-            <button
-              type="submit"
-              className="btn btn-primary"
-              onClick={(e) => {
-                add(e);
-              }}
-            >
-              המשך
-            </button>
-          </form>
-        </>
-      )}
+      ) : ( */}
+      <>
+        <h2> 2 / 1</h2>
+        <h4 > פרטי אירוע </h4>
+        <form role="form">
+          <div className="form-group">
+            <label>סוג אירוע</label><br />
+            <Select>
+              {props.types.map((c) => (
+                <option value={c.Name} onChange={type(c)} key={c.Id}>
+                  {" "}
+                  {c.Name}
+                </option>
+              ))}
+            </Select>
+          </div>
+          <TextField name="Name" id="outlined-basic" label="שם אירוע" variant="outlined" onChange={change} /><br/><br/>
+          <TextField name="Address" id="outlined-basic" label="כתובת" variant="outlined" onChange={change} /><br/>
+{/* 
+          <MobileDatePicker
+            label="Date mobile"
+            inputFormat="MM/DD/YYYY"
+            onChange={change}
+            
+          /> */}
+          <div className="form-group">
+            <label>תאריך </label><br />
+            <input
+              type="date"
+              name="CelebrationDate"
+              // className="form-control"
+              placeholder="הכנס תאריך"
+              onChange={change}
+            />
+          </div>
+          {/* הייתי רוצה לאחר מכן שהתצוגה של פרטי האירוע אז למשתתפים התאריך יופיע יותר יפה -כמו בהזמנה  */}
+          <div className="form-group">
+            <label>שעת התחלה </label><br />
+            <input
+              type="time"
+              name="StartHour"
+              // className="form-control"
+              placeholder="הכנס שעת התחלה"
+              onChange={change}
+            />
+          </div>
+
+          <TextField name="PepoleAmount" id="outlined-basic" label="כמות מוזמנים משוערת" variant="outlined" onChange={change} />
+          <Button  type="submit" variant="contained" endIcon={<SendIcon />} onClick={(e) => {
+              add(e);
+            }}>
+        הוסף
+      </Button>
+      
+        </form>
+      </>
+
     </>
   );
+>>>>>>> Stashed changes
 };
 
 const mapStateToProps = (state) => {

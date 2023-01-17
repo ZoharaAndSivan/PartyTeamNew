@@ -104,3 +104,7 @@ C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט 
 C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\BLL\obj\Debug\BLL.dll
 C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\BLL\obj\Debug\BLL.pdb
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeamNew\Server Side\PartyTeam\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeamNew\Server Side\PartyTeam\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeamNew\Server Side\PartyTeam\BLL\obj\Debug\BLL.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeamNew\Server Side\PartyTeam\BLL\obj\Debug\BLL.pdb

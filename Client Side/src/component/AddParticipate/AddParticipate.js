@@ -1,6 +1,8 @@
+import { Button, Fab, TextField } from "@mui/material";
 import { connect } from "react-redux";
 import { useNavigate } from "react-router";
 import { Post } from "../../action/CustomerOfEvent";
+import AddIcon from '@mui/icons-material/Add';
 
 const AddParticipate = (props) => {
   let nav = useNavigate();
@@ -29,17 +31,26 @@ const AddParticipate = (props) => {
       <h2>2 / 2</h2>
       <h4> הוספת משתתפים</h4>
       <form role="form">
-        <div className="form-group">
-          <label>שם משתתף</label>
-          <input
-            type="text"
-            name="Name"
-            className="form-control"
-            placeholder="הכנס שם משתתף"
-            onChange={change}
-          />
-        </div>
-        <div className="form-group">
+
+      <TextField name="Name" id="outlined-basic" label="שם משתתף" variant="outlined" onChange={change} />
+      <TextField name="Email" type="email" id="outlined-basic" label="מייל" variant="outlined" onChange={change} />
+      <TextField name="Phone" id="outlined-basic" label="טלפון" variant="outlined" onChange={change} />
+
+      
+      <Button   variant="contained"  onClick={addParticipate}>
+      <Fab color="primary" aria-label="add">
+        <AddIcon  />
+      </Fab>
+  </Button>
+        {/* <button
+          type="button"
+          className="btn btn-default"
+          onClick={addParticipate}
+        >
+          +
+        </button> */}
+        <br />
+        {/* <div className="form-group">
           <label>מייל</label>
           <input
             type="email"
@@ -48,32 +59,11 @@ const AddParticipate = (props) => {
             placeholder="הכנס מייל"
             onChange={change}
           />
-        </div>
-        <div className="form-group">
-          <label>טלפון</label>
-          <input
-            type="text"
-            name="Phone"
-            className="form-control"
-            placeholder="הכנס טלפון"
-            onChange={change}
-          />
-        </div>
-        <button
-          type="button"
-          className="btn btn-default"
-          onClick={addParticipate}
-        >
-          +
-        </button>
-        <br />
-        <button
-          type="button"
-          className="btn btn-default"
-          onClick={addParticipate2}
-        >
+        </div> */}
+          <Button variant="contained"  onClick={addParticipate2}>
           המשך
-        </button>
+  </Button>
+     
       </form>
     </>
   );
