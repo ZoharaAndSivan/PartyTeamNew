@@ -4,13 +4,11 @@ import { Routes, Route } from "react-router";
 import Login from "./component/Login/Login";
 import Register from "./component/Register/Register";
 import Advert from "./component/Advert/Advert";
-import Exit from "./component/Exit/Exit";
 import AddEvent from "./component/AddEvent/AddEvent";
 import MyEvent from "./component/MyEvent/MyEvent";
 import About from "./component/About/About";
 import Navbar from "./component/NavBar/NavBar";
 import AddParticipate from "./component/AddParticipate/AddParticipate";
-import AddItem from "./component/AddItem/AddItem";
 import AddNote from "./component/AddNote/AddNote";
 import OrderedEvents from "./component/OrderedEvents/OrderedEvents";
 import CreatedEvents from "./component/CreatedEvents/CreatedEvents";
@@ -67,7 +65,6 @@ function App(props) {
           path="allDetailsForParticipates/:id"
           element={<AllDetailsForParticpates />}
         />
-        <Route path="addItem" element={<AddItem />} />
         <Route path="addNote" element={<AddNote />} />
         <Route path="orderedEvents" element={<OrderedEvents />} />
         <Route path="createdEvents" element={<CreatedEvents />} />
@@ -76,7 +73,6 @@ function App(props) {
         <Route path="editParticipates" element={<EditParticipates />} />
         <Route path="describeOfEvent/:id" element={<DescribeOfEvent />} />
         <Route path="about" element={<About />} />
-        <Route path="exit" element={<Exit />} />
         <Route path="updateMyProfil" element={<UpdateMyProfil />} />
 
         <Route path="managerNavBar" element={<MangerNavBar />} />

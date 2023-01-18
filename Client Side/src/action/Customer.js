@@ -1,5 +1,7 @@
 import axios from "axios";
-
+export const logOut = () => {
+  logOutA();
+};
 export const addUserAction = (user) => {
   return (dispatch) => {
     axios.post("http://localhost:56570/api/Customer/Post", user).then(
@@ -58,5 +60,11 @@ export const newUser = (user) => {
   return {
     type: "NEW_USER",
     payload: user,
+  };
+};
+export const logOutA = () => {
+  return {
+    type: "LOG_OUT",
+    payload: null,
   };
 };

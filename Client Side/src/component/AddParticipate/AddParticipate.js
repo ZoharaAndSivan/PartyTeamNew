@@ -13,6 +13,11 @@ const AddParticipate = (props) => {
     CelebrationId: props.cel,
     Status: false,
   });
+  const [errors, setErrors] = useState({
+    Name: false,
+    Email: false,
+    Phone: false,
+  });
   // let participate = {
   //   Name: "",
   //   Email: "",
@@ -27,31 +32,50 @@ const AddParticipate = (props) => {
     participate[name] = value;
     setP(participate);
   };
-  const addParticipate = () => {};
-  const addParticipate2 = () => {
-    addParticipate();
+  const end = () => {
     alert("האירוע נוצר בהצלחה");
     nav("/homePage");
   };
 
   const addParticipateToClient = () => {
-    {
-      partList.map(
-        (part) => (
-          part.Email == p.Email
-            ? console.log("משתתף זה כבר קיים")
-            : setPartList([...partList, p]),
-          setP({
-            Name: "",
-            Email: "",
-            Phone: "",
-            CelebrationId: props.cel,
-            Status: false,
-          }),
-          props.Post(p)
-        )
-      );
+    if (!validate()) return;
+    setPartList([...partList, p]);
+    setP({
+      Name: "",
+      Email: "",
+      Phone: "",
+      CelebrationId: props.cel,
+      Status: false,
+    });
+    props.Post(p);
+  };
+
+  const validate = () => {
+    const validName = new RegExp("^[a-zA-Z0-9._:$!%-]$.{6,}");
+    const validEmail = new RegExp(
+      "^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$"
+    );
+    const validPhone = new RegExp("^[0-9].{10}");
+    if (validName.test(p.Name) == false) {
+      const newErrors = { ...errors };
+      newErrors["Name"] = true;
+      setErrors(newErrors);
+      return false;
     }
+    if (validEmail.test(p.Email) == false) {
+      const newErrors = { ...errors };
+      newErrors["Email"] = true;
+      setErrors(newErrors);
+      return false;
+    }
+    
+    if (validPhone.test(p.Phone) == false) {
+      const newErrors = { ...errors };
+      newErrors["Phone"] = true;
+      setErrors(newErrors);
+      return false;
+    }
+    return true;
   };
   return (
     <>
@@ -113,13 +137,11 @@ const AddParticipate = (props) => {
           +
         </button>
         <br />
-        <button
-          type="button"
-          className="btn btn-default"
-          onClick={addParticipate2}
-        >
+        <button type="button" className="btn btn-default" onClick={end}>
           המשך
         </button>
+
+        {errors.Email && <p>יש שגיאה בכתובת האימייל</p>}
       </form>
     </>
   );

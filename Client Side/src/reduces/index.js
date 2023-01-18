@@ -63,7 +63,7 @@ const reducer = (state = initialState, action) => {
         ...state,
         myEvents: [...state.myEvents, action.payload],
         numNewEvents: state.numNewEvents + 1,
-        currentEvent: action.payload
+        currentEvent: action.payload,
       };
     case "ADD_CATEGORY":
       console.log(action.payload);
@@ -170,6 +170,11 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         types: action.payload,
+      };
+    case "LOG_OUT":
+      return {
+        ...state,
+        currentUser: null,
       };
   }
   return state;

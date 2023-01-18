@@ -2,16 +2,17 @@ import { connect } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import ourlogo from "../../component/NavBar/partyteam.png";
 import { getListByTypeAction } from "../../action/ItemOfList";
+import { logOut } from "../../action/Customer";
 
 function MangerNavbar(props) {
   const nav = useNavigate();
   const goToList = (listType) => {
     props.getListByTypeAction(listType);
   };
-  // const exit = () => {
-  //   // props.currentUser = null;
-  //   nav("/homepage");
-  // };
+  const exit = () => {
+    props.logOut();
+    nav("/homepage");
+  };
   return (
     <>
       <div>
@@ -61,7 +62,7 @@ function MangerNavbar(props) {
             ) : null}
             <div className="dropdown-content">
             <button
-                onClick={console.log("exit")}
+                onClick={exit}
               >יציאה</button>
             </div>
           </div>
@@ -78,4 +79,4 @@ const mapStateToProps = (state) => {
     user: state.currentUser,
   };
 };
-export default connect(mapStateToProps, { getListByTypeAction })(MangerNavbar);
+export default connect(mapStateToProps, { getListByTypeAction,logOut })(MangerNavbar);

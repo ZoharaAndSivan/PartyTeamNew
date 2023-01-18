@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import { useNavigate, useParams } from "react-router";
 import { updateEventOneLevelAction } from "../../action/Celebration";
 import { getAllTypes } from "../../action/TypeEvent";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const EditEvent = (props) => {
   useEffect(() => {
@@ -16,7 +16,53 @@ const EditEvent = (props) => {
     if (type === "number") value = +value;
     item[name] = value;
   };
+  const [errors, setErrors] = useState({
+    Name: false,
+    PepoleAmount: false,
+    Address: false,
+    ImportantText: false,
+  });
+  
+  const validate = () => {
+    const validName = new RegExp("^[a-zA-Z0-9._:$!%-]$.{6,}");
+    const validPepoleAmount = new RegExp(".{2,}");
+    const validImportantText = new RegExp("^[a-zA-Z0-9._:$!%-].{2,}");
+    if (item.DateCelebration < Date().now()) {
+      alert("unvalide date");
+      return false;
+    }
+    if (validName.test(item.Name) == false) {
+      const newErrors = { ...errors };
+      newErrors["Name"] = true;
+      setErrors(newErrors);
+      return false;
+    }
+    if (validPepoleAmount.test(item.PepoleAmount) == false) {
+      const newErrors = { ...errors };
+      newErrors["PepoleAmount"] = true;
+      setErrors(newErrors);
+      return false;
+    }
+    if (validName.test(item.Address) == false) {
+      const newErrors = { ...errors };
+      newErrors["Address"] = true;
+      setErrors(newErrors);
+      return false;
+    }
+    if (validImportantText.test(item.ImportantText) == false) {
+      const newErrors = { ...errors };
+      newErrors["ImportantText"] = true;
+      setErrors(newErrors);
+      return false;
+    }
+  };
   const editEvent = () => {
+    if (!validate()) return;
+    if (item.DateCelebration == null) alert("enetr date");
+    if (item.Name == null) alert("enter name");
+    if (item.StartHour == null) alert("enter start hour");
+    if (item.Address == null) alert("enter address");
+    if (item.PepoleAmount == null) alert("enter pepole amount");
     props.updateEventOneLevelAction(item);
     nav("/editParticipates");
   };
@@ -89,6 +135,15 @@ const EditEvent = (props) => {
             defaultValue={item.PepoleAmount}
           />
         </div>
+        <h4>הוספת טסקט חשוב</h4>
+        <textarea
+          className="form-control"
+          maxLength="1000"
+          placeholder="הוסף הערה"
+          name="ImportantText"
+          onChange={change}
+          defaultValue={item.ImportantText}
+        ></textarea>
         <button
           type="submit"
           className="btn btn-default"

@@ -1,7 +1,8 @@
 import { connect } from "react-redux";
-import { useNavigate, useParams } from "react-router";
+import { useNavigate } from "react-router";
 import { getCustomerOfEventByEventId } from "../../action/CustomerOfEvent";
 import { Put } from "../../action/CustomerOfEvent";
+import { useState } from "react";
 
 const EditParticipate = (props) => {
   let nav = useNavigate();
@@ -10,13 +11,46 @@ const EditParticipate = (props) => {
     if (type === "number") value = +value;
     props.participateOfEvent[name] = value;
   };
-  const editParticipate = () => {
+  const [errors, setErrors] = useState({
+    Name: false,
+    Email: false,
+    Phone: false,
+  });
+  const validate = (p) => {
+    const validName = new RegExp("^[a-zA-Z0-9._:$!%-]$.{6,}");
+    const validEmail = new RegExp(
+      "^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$"
+    );
+    const validPhone = new RegExp("^[0-9].{10}");
+    if (validName.test(p.Name) == false) {
+      const newErrors = { ...errors };
+      newErrors["Name"] = true;
+      setErrors(newErrors);
+      return false;
+    }
+    if (validEmail.test(p.Email) == false) {
+      const newErrors = { ...errors };
+      newErrors["Email"] = true;
+      setErrors(newErrors);
+      return false;
+    }
+    
+    if (validPhone.test(p.Phone) == false) {
+      const newErrors = { ...errors };
+      newErrors["Phone"] = true;
+      setErrors(newErrors);
+      return false;
+    }
+    return true;
+  };
+  const editParticipate = (p) => {
+    if (!validate(p)) return;
     console.log("editParticipate");
     props.Put(props.participateOfEvent);
   };
   const finish = () => {
     console.log("finished");
-    nav("myEvent");
+    nav("/myEvent");
   };
   return (
     <>
@@ -48,7 +82,7 @@ const EditParticipate = (props) => {
                 <button
                   type="button"
                   className="btn btn-default"
-                  onClick={editParticipate}
+                  onClick={(e)=>editParticipate(e)}
                 >
                   ערוך
                 </button>

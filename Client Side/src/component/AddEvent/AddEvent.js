@@ -5,6 +5,7 @@ import { addEventLevelOneAction } from "../../action/Celebration";
 import { getAllTypes } from "../../action/TypeEvent";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const AddEvent = (props) => {
   useEffect(() => {
@@ -22,11 +23,6 @@ const AddEvent = (props) => {
     EncodedCelebration: true,
     ImportantText: "",
   };
-  let Name = true;
-  let pepole = true;
-  let starthour = true;
-  let address = true;
-  let date = true;
   const change = (e) => {
     let { name, value, type } = e.target;
     if (type === "number") value = +value;
@@ -36,22 +32,48 @@ const AddEvent = (props) => {
     l.CelebrationType = c.Id;
     if (c.Id == 36) l.EncodedCelebration = false;
   };
-  // const validation = () => {
-  //   if (l.DateCelebration < Date().now()) {
-  //     alert("unvalide date");
-  //     date = false;
-  //   }
-  //   if (l.Name.length == 0 || l.Name.length == 2) {
-  //     alert("unvalide name");
-  //     Name = false;
-  //   }
-  //   if (l.PepoleAmount == 1) {
-  //     alert("אין אפשרות ליצור אירוע לאדם אחד");
-  //     pepole = false;
-  //   }
-  // };
+  const [errors, setErrors] = useState({
+    Name: false,
+    PepoleAmount: false,
+    Address: false,
+    ImportantText: false,
+  });
+
+  const validate = () => {
+    const validName = new RegExp("^[a-zA-Z0-9._:$!%-]$.{6,}");
+    const validPepoleAmount = new RegExp(".{2,}");
+    const validImportantText = new RegExp("^[a-zA-Z0-9._:$!%-].{2,}");
+    if (l.DateCelebration < Date().now()) {
+      alert("unvalide date");
+      return false;
+    }
+    if (validName.test(l.Name) == false) {
+      const newErrors = { ...errors };
+      newErrors["Name"] = true;
+      setErrors(newErrors);
+      return false;
+    }
+    if (validPepoleAmount.test(l.PepoleAmount) == false) {
+      const newErrors = { ...errors };
+      newErrors["PepoleAmount"] = true;
+      setErrors(newErrors);
+      return false;
+    }
+    if (validName.test(l.Address) == false) {
+      const newErrors = { ...errors };
+      newErrors["Address"] = true;
+      setErrors(newErrors);
+      return false;
+    }
+    if (validImportantText.test(l.ImportantText) == false) {
+      const newErrors = { ...errors };
+      newErrors["ImportantText"] = true;
+      setErrors(newErrors);
+      return false;
+    }
+  };
   const add = (event) => {
-    // validation();
+    if (!validate()) return;
     if (l.DateCelebration == null) alert("enetr date");
     if (l.Name == null) alert("enter name");
     if (l.StartHour == null) alert("enter start hour");
@@ -59,19 +81,6 @@ const AddEvent = (props) => {
     if (l.PepoleAmount == null) alert("enter pepole amount");
     l.EventManager = props.customer.Id;
     event.preventDefault();
-    // if (
-    //   l.DateCelebration &&
-    //   l.Name &&
-    //   l.StartHour &&
-    //   l.Address &&
-    //   l.PepoleAmount &&
-    //   Name &&
-    //   date &&
-    //   address &&
-    //   pepole &&
-    //   starthour
-    // )
-    console.log(l);
     props.addEventLevelOneAction(l);
     nav("/addParticipate");
   };

@@ -14,7 +14,8 @@ const AllDetailsForParticpates = (props) => {
 
   const arrival = (e) => {
     let a = props.getDetailsByEmail(id, props.customer.Email);
-    if (a == true) console.log("hi i'm in arrival");
+    if (a == true) 
+    console.log("hi i'm in arrival");
     props.ConfirmArrival(props.customer.Email, true);
   };
   return (

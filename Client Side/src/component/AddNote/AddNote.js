@@ -37,18 +37,9 @@ const AddNote = (props) => {
         name="data"
         onChange={change}
       />
-      {/*       <textarea
-        className="form-control"
-        maxLength="1000"
-        placeholder="הוסף הערה"
-        name="data"
-        onChange={change}
-      ></textarea> */}
-
       <label>To show to everybody?</label>
       <input type="checkbox" onChange={show} />
       <br />
-
       <Button
         type="submit"
         variant="contained"

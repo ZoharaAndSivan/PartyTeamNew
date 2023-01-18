@@ -44,6 +44,8 @@ const Category = (props) => {
         placeholder="cateory name"
         onChange={changeCategory}
         defaultValue={category.Name}
+        minLength="5"
+        required
       />
       <input type="button" name="edit" value="edit" onClick={edit} />
       <div className="list-os-listsdh">
@@ -67,6 +69,7 @@ const Category = (props) => {
           type="text"
           placeholder={"תיאור"}
           onChange={change}
+          required
         />
         <input type="button" value={"add a new list"} onClick={addList} />
       </form>

@@ -12,10 +12,6 @@ const Login = (props) => {
 
   const change = (e) => {
     let { name, value, type } = e.target;
-    // if (type === "number")
-    //     value = +value;
-    //     if(type==="password" && value.length===8)
-    //       value = +value;
     l[name] = value;
   };
 
@@ -29,23 +25,15 @@ const Login = (props) => {
     }
   };
 
-  // if (props.currentType == 1) nav("/managerNavBar");
-  // else nav("/homePage");
-
   return (
     <>
       <h1>התחברות</h1>
       <form role="form">
-        {/* <div class="form-group">
-                    <label>שם משתמש</label>
-                    <input type="text" name="name" class="form-control" placeholder="הכנס שם משתמש" />
-                </div> */}
         <div className="form-group">
           <label>מייל</label><br/>
           <input
             type="email"
             name="email"
-            // className="form-control"
             placeholder="הכנס מייל"
             required
             onChange={(event) => change(event)}
@@ -56,7 +44,6 @@ const Login = (props) => {
           <input
             type="password"
             name="password"
-            // className="form-control"
             placeholder="הכנס סיסמא"
             required
             onChange={(event) => change(event)}
