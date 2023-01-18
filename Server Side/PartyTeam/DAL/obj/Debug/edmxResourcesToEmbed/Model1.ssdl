@@ -89,16 +89,6 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
     <Property Name="ToShow" Type="bit" />
     <Property Name="Note" Type="varchar" MaxLength="350" />
   </EntityType>
-  <EntityType Name="sysdiagrams">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
-    <Property Name="principal_id" Type="int" Nullable="false" />
-    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="version" Type="int" />
-    <Property Name="definition" Type="varbinary(max)" />
-  </EntityType>
   <EntityType Name="typeevent">
     <Key>
       <PropertyRef Name="Id" />
@@ -194,7 +184,6 @@ warning 6002: The table/view 'PartyTeam.dbo.about' does not have a primary key d
     <EntitySet Name="ItemOfList" EntityType="Self.ItemOfList" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="itemtoevent" EntityType="Self.itemtoevent" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="noteevent" EntityType="Self.noteevent" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="typeevent" EntityType="Self.typeevent" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="about" EntityType="Self.about" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 

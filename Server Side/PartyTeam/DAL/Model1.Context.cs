@@ -32,7 +32,6 @@ namespace DAL
         public virtual DbSet<ItemOfList> ItemOfList { get; set; }
         public virtual DbSet<itemtoevent> itemtoevent { get; set; }
         public virtual DbSet<noteevent> noteevent { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<typeevent> typeevent { get; set; }
         public virtual DbSet<about> about { get; set; }
     }

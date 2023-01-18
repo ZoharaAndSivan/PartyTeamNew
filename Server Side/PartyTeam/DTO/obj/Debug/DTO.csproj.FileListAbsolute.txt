@@ -93,5 +93,7 @@ C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט 
 C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\obj\Debug\DTO.csproj.CopyComplete
 C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\obj\Debug\DTO.dll
 C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\obj\Debug\DTO.pdb
-C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\bin\Debug\Models.dll
-C:\Users\זוהרה ברקוביץ\Desktop\בסיעתא דשמיא פרויקט גמר\PartyTeamNew\Server Side\PartyTeam\DTO\bin\Debug\Models.pdb
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeamNew\Server Side\PartyTeam\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeamNew\Server Side\PartyTeam\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeamNew\Server Side\PartyTeam\DTO\obj\Debug\DTO.dll
+C:\Users\smsio\OneDrive\מסמכים\GitHub\PartyTeamNew\Server Side\PartyTeam\DTO\obj\Debug\DTO.pdb
